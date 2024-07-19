@@ -522,6 +522,10 @@
 									{
 										"t": "l",
 										"l": 116348565
+									},
+									{
+										"t": "s",
+										"script": "pressAll();\n"
 									}
 								]
 							}
@@ -1506,8 +1510,17 @@
 						"t": "p",
 						"d": {
 							"a": {
-								"t": "l",
-								"l": 212846523
+								"t": "q",
+								"data": [
+									{
+										"t": "l",
+										"l": 212846523
+									},
+									{
+										"t": "s",
+										"script": "//\n// Activate mods on target layer\npressAll();\n"
+									}
+								]
 							}
 						}
 					},
@@ -1517,8 +1530,17 @@
 							"t": 200,
 							"e": false,
 							"a": {
-								"t": "t",
-								"c": "space"
+								"t": "q",
+								"data": [
+									{
+										"t": "t",
+										"c": "space"
+									},
+									{
+										"t": "s",
+										"script": "//\n// Facilitate quick space -> symbols.\npressAll();"
+									}
+								]
 							}
 						}
 					}
@@ -1548,8 +1570,17 @@
 						"t": "p",
 						"d": {
 							"a": {
-								"t": "l",
-								"l": 262857896
+								"t": "q",
+								"data": [
+									{
+										"t": "l",
+										"l": 262857896
+									},
+									{
+										"t": "s",
+										"script": "//\n// Activate mods on target layer\npressAll();\n"
+									}
+								]
 							}
 						}
 					}
@@ -1559,8 +1590,17 @@
 						"t": "p",
 						"d": {
 							"a": {
-								"t": "l",
-								"l": 41429312
+								"t": "q",
+								"data": [
+									{
+										"t": "l",
+										"l": 41429312
+									},
+									{
+										"t": "s",
+										"script": "//\n// Activate mods on target layer\npressAll();"
+									}
+								]
 							}
 						}
 					},
@@ -3276,8 +3316,17 @@
 						"t": "p",
 						"d": {
 							"a": {
-								"t": "l",
-								"l": 58064650
+								"t": "q",
+								"data": [
+									{
+										"t": "l",
+										"l": 58064650
+									},
+									{
+										"t": "s",
+										"script": "//\n// Activate mods on target layer\npressAll();"
+									}
+								]
 							}
 						}
 					}
@@ -4427,7 +4476,7 @@
 				"releaseScanCode": "releaseScanCodeButton(#buttonIndex, #key);",
 				"pressStenoKey": "pressStenoKeyButton(#buttonIndex, #key);",
 				"releaseStenoKey": "releaseStenoKeyButton(#buttonIndex, #key);",
-				"activateLayer": "updateDisplay();\npressAll();\nrgbUpdate();\nrgbUpdateUnderglow();\n"
+				"activateLayer": "updateDisplay();\nrgbUpdate();\nrgbUpdateUnderglow();\n"
 			},
 			"user_scripts": {
 				"RGB Scripts": "const SPEED_VALUES      = [[ 00 04 08 0c 10 18 20 30 40 ]];\nconst HUE_SPREAD_VALUES = [[ 00 10 20 28 30 38 40 48 50 ]];\nconst SATURATION_VALUES = [[ 00 20 40 50 60 68 70 78 80 ]];\nconst BRIGHTNESS_VALUES = [[ 00 08 10 20 40 60 80 c0 ff ]];\n\nfunc rgbUpdateKeyHueCycle(hShift, sat, spreadMultiplier, value) {\n  const HUE_CYCLE_RGB_ORDER = [[\n    00\n    0c 01\n    18 0d 02\n    19 0e 03\n    1a 0f 04\n    1b 10 05\n    24 1c 11\n    25 1d\n    26\n\n    27\n    28 1e\n    29 1f 12\n    20 13 06\n    21 14 07\n    22 15 08\n    23 16 09\n    17 0a\n    0b\n  ]];\n\n  for (var i = 0; i < 42; i = i + 1) {\n    setHsv(\n      HUE_CYCLE_RGB_ORDER[i],\n      spreadMultiplier*i + hShift,\n      sat,\n      value\n    );\n  }\n}\n\nfunc rgbUpdateUnderglowHueCycle(hShift, sat, spreadMultiplier, value) {\n  const COLOR_OFFSETS = [[\n    02 0b 0d  1d 1e 28\n    06 0f 14  16 1b 24\n  ]];\n\n  for (var i = 0; i < 12; i = i + 1) {\n    setHsv(\n      i + 42,\n      spreadMultiplier * COLOR_OFFSETS[i] + hShift,\n      sat,\n      value\n    );\n  }\n}\n\n#option(rgbUpdate, \"RGB Mode\", \"Hue Cycle\", rgbUpdateHueCycle)\n#option(rgbUpdateUnderglow, \"RGB Mode\",  \"Hue Cycle\",  noop)\nfunc rgbUpdateHueCycle() {\n    var hue = animationTime() * SPEED_VALUES[speed] + hueShift;\n    rgbUpdateKeyHueCycle(\n      hue,\n      SATURATION_VALUES[saturation] * 2,\n      HUE_SPREAD_VALUES[hueSpread] * 16,\n      BRIGHTNESS_VALUES[brightness]\n    );\n    rgbUpdateUnderglowHueCycle(\n      hue,\n      SATURATION_VALUES[saturation] * 2,\n      HUE_SPREAD_VALUES[hueSpread] * 16,\n      BRIGHTNESS_VALUES[brightness]\n    );\n}\n\nfunc rgbUpdateKeyConstantColor(r, g, b) {\n  for (var i = 0; i < 42; i = i + 1) {\n    setRgb(i, r, g, b);\n  }\n}\n\nfunc rgbUpdateAllConstantColor(r, g, b) {\n  for (var i = 0; i < 54; i = i + 1) {\n    setRgb(i, r, g, b);\n  }\n}\n\nfunc rgbUpdateKeyRandomColors(hShift, b, s) {\n  var alwaysFullBrightness = !shouldShowKeyAnimations();\n  for (var i = 0; i < 42; i = i + 1) {\n    var v = keyColorData[i];\n    if ((v >>> 24) < 32) {\n      v = alwaysFullBrightness\n            ? (v | 0x20000000)\n            : (v + 0x1000000);\n      keyColorData[i] = v;\n    }\n    setHsv(i, hShift + v, s, b * (v >>> 24) >> 5);\n  }\n}\n\nfunc rgbUpdateButtonRandomColor(buttonIndex) {\n    keyColorData[buttonIndex] = rand() & 0xffff;\n\n    // If there's no update of keys in the tick loop, update it now.\n    if (!isTimerActive(TIMER_ID_RGB_UPDATE)) {\n      rgbUpdate();\n    }\n}\n\nfunc rgbInitRandomColors() {\n  for (var i = 0; i < 42; i = i + 1) {\n    keyColorData[i] = (rand() & 0xffff) | 0x20000000;\n  }\n}\n\n// 256 step sine table.\nconst SINE_TABLE = [[ 80 83 86 89 8c 8f 92 95 98 9b 9e a2 a5 a7 aa ad b0 b3 b6 b9 bc be c1 c4 c6 c9 cb ce d0 d3 d5 d7 da dc de e0 e2 e4 e6 e8 ea eb ed ee f0 f1 f3 f4 f5 f6 f8 f9 fa fa fb fc fd fd fe fe fe ff ff ff ff ff ff ff fe fe fe fd fd fc fb fa fa f9 f8 f6 f5 f4 f3 f1 f0 ee ed eb ea e8 e6 e4 e2 e0 de dc da d7 d5 d3 d0 ce cb c9 c6 c4 c1 be bc b9 b6 b3 b0 ad aa a7 a5 a2 9e 9b 98 95 92 8f 8c 89 86 83 80 7c 79 76 73 70 6d 6a 67 64 61 5d 5a 58 55 52 4f 4c 49 46 43 41 3e 3b 39 36 34 31 2f 2c 2a 28 25 23 21 1f 1d 1b 19 17 15 14 12 11 0f 0e 0c 0b 0a 09 07 06 05 05 04 03 02 02 01 01 01 00 00 00 00 00 00 00 01 01 01 02 02 03 04 05 05 06 07 09 0a 0b 0c 0e 0f 11 12 14 15 17 19 1b 1d 1f 21 23 25 28 2a 2c 2f 31 34 36 39 3b 3e 41 43 46 49 4c 4f 52 55 58 5a 5d 61 64 67 6a 6d 70 73 76 79 7c ]];\n#option(rgbUpdate, \"RGB Mode\", \"Breathe\", rgbUpdateKeyBreatheCycle)\n#option(rgbUpdateUnderglow, \"RGB Mode\", \"Breathe\", noop)\nfunc rgbUpdateKeyBreatheCycle() {\n  // Sine wave between 4-20 brightness, with staggering of r, g, b values\n  // to reduce harsh steps.\n  var w = (0xc00 + (SINE_TABLE[(animationTime() >> 5) & 0xff] - 0x80) * (2 * 8));\n  rgbUpdateAllConstantColor((w + 0x53) >> 8, w >> 8, (w + 0xa6) >> 8);\n}\n\nconst DISCONNECTED_KEY_ORDER = [[ 00 01 02 03 04 05 04 03 02 01 ]];\nfunc rgbUpdateKeyConnectingCycle() {\n  for (var i = 0; i < 54; i = i + 1) {\n    setRgb(i, 0, 0, 0);\n  }\n\n  var index = getTime() >> 6;\n  var keyId = DISCONNECTED_KEY_ORDER[index % 10];\n  setHsv(keyId, index << 10, 0xf0, 16);\n}\n\nfunc shouldShowKeyAnimations() var {\n  var activePairConnection = getActivePairConnection();\n  if (activePairConnection == PAIR_CONNECTION_NONE) {\n    // To avoid flicker at startup while connecting to BLE\n    // do not show button animations when disconnected.\n    return 0;\n  }\n\n  if (activePairConnection == PAIR_CONNECTION_BLE) {\n    // To avoid power drain over BLE, only show animations if\n    // both sides are powered.\n    return isMainPowered() && isPairPowered();\n  }\n\n  return isMainPowered() || isPairPowered();\n}\n\nfunc animationTime() var {\n  return shouldShowKeyAnimations() ? getTime() : 0;\n}\n\n#option(rgbUpdate, \"RGB Mode\", \"Random Colors\", rgbUpdateRandomColors)\nfunc rgbUpdateRandomColors() {\n    rgbUpdateKeyRandomColors(\n      animationTime() * SPEED_VALUES[speed] + hueShift,\n      BRIGHTNESS_VALUES[brightness],\n      SATURATION_VALUES[saturation] * 2,\n    );\n}\n\nfunc rgbUpdate() {\n  if (isBleAdvertising()) {\n    rgbUpdateKeyConnectingCycle();\n  } else if (isHostSleeping()) {\n    rgbUpdateKeyBreatheCycle();\n    setUnderglowRgb(8, 8, 8);\n  } else {\n    #dispatch(per_layer, rgbUpdate, \"RGB Mode\", rgbUpdateHueCycle);\n  }\n}\n\nfunc setKeyRgb(r, g, b) {\n  r = r * brightness >> 3;\n  g = g * brightness >> 3;\n  b = b * brightness >> 3;\n  for(var i = 0; i < 42; i = i + 1) {\n    setRgb(i, r, g, b);\n  }\n}\n\nfunc setUnderglowRgb(r, g, b) {\n  r = r * brightness >> 3;\n  g = g * brightness >> 3;\n  b = b * brightness >> 3;\n  for(var i = 42; i < 54; i = i + 1) {\n    setRgb(i, r, g, b);\n  }\n}\n\nfunc rgbUpdateUnderglow() {\n  if (isWaitingForUserPresence() || isBleAdvertising()) {\n    setUnderglowRgb(0, 0, 0);\n    return;\n  }\n  if (isHostSleeping()) {\n    setUnderglowRgb(8, 8, 8);\n    return;\n  }\n\n  #dispatch(per_layer, rgbUpdateUnderglow, \"RGB Mode\",  rgbUpdateUnderglowWhite);\n}\n\n#option(rgbUpdateUnderglow, \"RGB Mode\",  \"Random Colors\", rgbUpdateUnderglowWhite)\nfunc rgbUpdateUnderglowWhite() {\n  setUnderglowRgb(128, 128, 128);\n}\n\n#option(rgbButtonPress, \"RGB Mode\", \"Random Colors\", rgbButtonPressRandomColor)\nfunc rgbButtonPressRandomColor() {\n  keyColorData[lastButtonIndex] = rand() & 0xffff;\n\n  // If there's no update of keys in the tick loop, update it now.\n  if (!isTimerActive(TIMER_ID_RGB_UPDATE)) {\n    rgbUpdate();\n  }\n}\n\n#option(rgbUpdate, \"RGB Mode\", \"Red\", rgbUpdateRed)\nfunc rgbUpdateRed() {\n  setKeyRgb(255, 0, 0);\n}\n\n#option(rgbUpdateUnderglow, \"RGB Mode\", \"Red\",  rgbUpdateUnderglowRed) \nfunc rgbUpdateUnderglowRed() {\n  setUnderglowRgb(255, 0, 0);\n}\n\n#option(rgbUpdate, \"RGB Mode\", \"Green\", rgbUpdateGreen)\nfunc rgbUpdateGreen() {\n  setKeyRgb(0, 255, 0);\n}\n\n#option(rgbUpdateUnderglow, \"RGB Mode\", \"Green\",  rgbUpdateUnderglowGreen) \nfunc rgbUpdateUnderglowGreen() {\n  setUnderglowRgb(0, 255, 0);\n}\n\n\n#option(rgbUpdate, \"RGB Mode\", \"Blue\", rgbUpdateBlue)\nfunc rgbUpdateBlue() {\n  setKeyRgb(0, 0, 255);\n}\n\n#option(rgbUpdateUnderglow, \"RGB Mode\", \"Blue\",  rgbUpdateUnderglowBlue) \nfunc rgbUpdateUnderglowBlue() {\n  setUnderglowRgb(0, 0, 255);\n}\n",
