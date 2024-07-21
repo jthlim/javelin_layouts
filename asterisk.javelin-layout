@@ -530,7 +530,7 @@
 						"d": {
 							"a": {
 								"t": "s",
-								"script": "if (getParameter(\"steno_mode\") != \"embedded\") {\n  console(\"set_steno_mode embedded\");\n  flashTimerDuration = 1000;\n} else {\n  console(\"set_steno_mode gemini\");\n  flashTimerDuration = 500;\n}\nflashTimerStart = getTime();\nstartTimer(TIMER_ID_LED_FLASH, 50, 1, @onLedFlashTimer);\nreleaseAll();"
+								"script": "// Toggle Steno\n// B Button on the Asterisk\nif (getParameter(\"steno_mode\") != \"embedded\") {\n  console(\"set_steno_mode embedded\");\n  flashTimerDuration = 1000;\n} else {\n  console(\"set_steno_mode gemini\");\n  flashTimerDuration = 500;\n}\nflashTimerStart = getTime();\nstartTimer(TIMER_ID_LED_FLASH, 50, 1, @onLedFlashTimer);\nreleaseAll();"
 							}
 						}
 					}
