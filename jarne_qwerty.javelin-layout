@@ -907,7 +907,8 @@
 				"Display": "ABC Icon",
 				"Auto-Activate Modifiers on Layer": "true",
 				"Always Power RGB": "false"
-			}
+			},
+			"sequences": {}
 		},
 		{
 			"id": 262857896,
@@ -1812,7 +1813,8 @@
 				"Display": "Symbol Icon",
 				"Auto-Activate Modifiers on Layer": "true",
 				"Always Power RGB": "false"
-			}
+			},
+			"sequences": {}
 		},
 		{
 			"id": 41429312,
@@ -2205,7 +2207,8 @@
 				"Display": "Function Icon",
 				"Auto-Activate Modifiers on Layer": "true",
 				"Always Power RGB": "false"
-			}
+			},
+			"sequences": {}
 		},
 		{
 			"id": 212846523,
@@ -2695,7 +2698,8 @@
 				"Display": "Navigation Icon",
 				"Auto-Activate Modifiers on Layer": "true",
 				"Always Power RGB": "false"
-			}
+			},
+			"sequences": {}
 		},
 		{
 			"id": 125635709,
@@ -3066,7 +3070,8 @@
 				"Display": "BLE Summary",
 				"Auto-Activate Modifiers on Layer": "false",
 				"Always Power RGB": "false"
-			}
+			},
+			"sequences": {}
 		},
 		{
 			"id": 58064650,
@@ -3560,7 +3565,8 @@
 				"Display": "Numpad Icon",
 				"Auto-Activate Modifiers on Layer": "true",
 				"Always Power RGB": "false"
-			}
+			},
+			"sequences": {}
 		},
 		{
 			"id": 61572736,
@@ -3690,7 +3696,8 @@
 				"Display": "Security Key Icon",
 				"Auto-Activate Modifiers on Layer": "false",
 				"Always Power RGB": "true"
-			}
+			},
+			"sequences": {}
 		}
 	],
 	"global": {
@@ -3748,7 +3755,7 @@
 				"pressScanCode": "pressScanCodeButton(#buttonIndex, #modifierMask, #key, #isModifier);",
 				"releaseScanCode": "releaseScanCodeButton(#key);",
 				"pressStenoKey": "pressStenoKeyButton(#key);",
-				"activateLayer": "if (#flag(per_layer, \"Auto-Activate Modifiers on Layer\", false)) {\n  pressAll();\n}\nupdateDisplay();\nrgbUpdate();\nrgbUpdateUnderglow();\n",
+				"activateLayer": "if (#flag(per_layer, \"Auto-Activate Modifiers on Layer\", false)) {\n  pressAll();\n}\nsetEnableButtonStates(#flag(per_layer, \"Enable individual keys in Key Layout tool\", false));\nupdateDisplay();\nrgbUpdate();\nrgbUpdateUnderglow();\n",
 				"press": "globalPress(#buttonIndex); \n",
 				"release": "globalRelease(); \n"
 			},
@@ -3762,7 +3769,8 @@
 				"Screen Saver Scripts": "const SCREEN_SAVER_TIMEOUT = 900000; // 15 minutes.\n\nfunc shouldUseScreenSaver() var {\n  if (getActivePairConnection() == PAIR_CONNECTION_BLE) {\n    return isPairPowered() && isMainPowered();\n  } else {\n    // No pair, or cable pair.\n    return isPairPowered() || isMainPowered();\n  }\n}\n\nvar isShowingScreenSaver = 0;\nvar screenSaverStartTime;\nvar screenSaverPosition[8];\nvar screenSaverVelocity[8];\nfunc startScreenSaver() {\n  if (!shouldUseScreenSaver()) return;\n\n  setAutoDraw(0, AUTO_DRAW_NONE);\n  setAutoDraw(1, AUTO_DRAW_NONE);\n\n  isShowingScreenSaver = 1;\n  screenSaverStartTime = getTime();\n  for (var i = 0; i < 8; i = i + 2) {\n    screenSaverPosition[i] = rand();\n    screenSaverPosition[i + 1] = rand();\n  }\n  for (var i = 0; i < 8; i = i + 1) {\n    var velocity = (rand() & 0x1ff) - 256;\n    velocity = velocity + (velocity < 0 ? -32 : 32);\n    screenSaverVelocity[i] = velocity;\n  }\n  drawScreenSaver();\n  startTimer(TIMER_ID_SCREEN_SAVER, 50, 1, @drawScreenSaver);\n}\n\nfunc wrap(x, max) var {\n  x = x % (2 * max);\n  if (x < 0) x = -x;\n  return x < max ? x : 2 * max - x;\n}\n\nfunc drawScreenSaver() {\n  const OVERLAY_HEIGHT = 16;\n\n  var timeElapsed = getTime() - screenSaverStartTime;\n\n  for (var display = 0; display < 2; display = display + 1) {\n    var index = 4 * display;\n    clearDisplay(display);\n\n    for (var i = 0; i < 5; i = i + 1) {\n      var effectiveTime = timeElapsed + i * 100;\n      drawLine(\n        display,\n        wrap(screenSaverPosition[index    ] + (effectiveTime * screenSaverVelocity[index    ] >> 13), DISPLAY_WIDTH),\n        wrap(screenSaverPosition[index + 1] + (effectiveTime * screenSaverVelocity[index + 1] >> 13), DISPLAY_HEIGHT - OVERLAY_HEIGHT) + OVERLAY_HEIGHT,\n        wrap(screenSaverPosition[index + 2] + (effectiveTime * screenSaverVelocity[index + 2] >> 13), DISPLAY_WIDTH),\n        wrap(screenSaverPosition[index + 3] + (effectiveTime * screenSaverVelocity[index + 3] >> 13), DISPLAY_HEIGHT - OVERLAY_HEIGHT) + OVERLAY_HEIGHT,\n      );\n    }\n  }\n}\n\nfunc updateScreenSaverTimer() {\n  if (isShowingScreenSaver) {\n    isShowingScreenSaver = 0;\n    updateDisplay();\n  }\n  startTimer(TIMER_ID_SCREEN_SAVER, SCREEN_SAVER_TIMEOUT, 1, @startScreenSaver);\n}\n\n",
 				"Magic Key Scripts": "var magicKey;\n\nfunc pressMagicKey(buttonIndex) {\n  magicKey = SC_NONE;\n  if (lastScanCodePressed == SC_MINUS\n      || lastScanCodePressed == SC_EQUAL) {\n    magicKey = SC_DOT | KEY_SHIFT;\n  } else if (lastScanCodePressed == (SC_9 | KEY_SHIFT)\n             || lastScanCodePressed == SC_BACKSLASH\n             || lastScanCodePressed == (SC_APOSTROPHE | KEY_SHIFT)) {\n    magicKey = SC_APOSTROPHE | KEY_SHIFT;\n  } else if (SC_1 <= lastScanCodePressed && lastScanCodePressed <= SC_0) {\n    magicKey = SC_COMMA;\n  } else if (SC_KP_1 <= lastScanCodePressed && lastScanCodePressed <= SC_KP_0) {\n    magicKey = SC_COMMA;\n  } else if ((lastScanCodePressed | KEY_SHIFT) == (SC_L_BRACKET | KEY_SHIFT)) {\n    magicKey = SC_ENTER;\n  } else if (lastScanCodePressed == SC_COMMA\n             || lastScanCodePressed == SC_DOT\n             || lastScanCodePressed == SC_KP_DOT) {\n    magicKey = SC_SPACE;\n  }\n\n  if (magicKey & KEY_SHIFT) {\n    pressScanCodeButton(buttonIndex, 0, SC_L_SHIFT, 1);\n  } \n  pressScanCodeButton(buttonIndex, (magicKey & KEY_SHIFT) ? MODIFIER_SHIFT : 0, magicKey & (KEY_SHIFT - 1), 0);\n}\n\nfunc releaseMagicKey() {\n  releaseScanCodeButton(magicKey & (KEY_SHIFT - 1));\n  if (magicKey & KEY_SHIFT) {\n    releaseScanCodeButton(SC_L_SHIFT);\n  } \n}"
 			},
-			"options": {}
+			"options": {},
+			"sequences": {}
 		}
 	}
 }

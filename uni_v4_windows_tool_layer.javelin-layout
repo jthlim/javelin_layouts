@@ -569,7 +569,10 @@
 			],
 			"scripts": {},
 			"user_scripts": {},
-			"options": {}
+			"options": {
+				"Enable individual keys in Key Layout tool": "true"
+			},
+			"sequences": {}
 		},
 		{
 			"id": 238019096,
@@ -1107,7 +1110,10 @@
 			],
 			"scripts": {},
 			"user_scripts": {},
-			"options": {}
+			"options": {
+				"Enable individual keys in Key Layout tool": "true"
+			},
+			"sequences": {}
 		}
 	],
 	"global": {
@@ -1146,9 +1152,12 @@
 				null,
 				null
 			],
-			"scripts": {},
+			"scripts": {
+				"activateLayer": "setEnableButtonStates(#flag(per_layer, \"Enable individual keys in Key Layout tool\", false));\n"
+			},
 			"user_scripts": {},
-			"options": {}
+			"options": {},
+			"sequences": {}
 		}
 	}
 }

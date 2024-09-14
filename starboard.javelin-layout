@@ -511,7 +511,10 @@
 			],
 			"scripts": {},
 			"user_scripts": {},
-			"options": {}
+			"options": {
+				"Enable individual keys in Key Layout tool": "true"
+			},
+			"sequences": {}
 		}
 	],
 	"global": {
@@ -550,12 +553,14 @@
 				null
 			],
 			"scripts": {
-				"init": "const SCRIPT_ID_STENO_MODE_UPDATE = 9;\n\n// Update the LED color at startup, and register for steno mode update callbacks.\nonStenoModeUpdate();\nsetScript(SCRIPT_ID_STENO_MODE_UPDATE, @onStenoModeUpdate);\n"
+				"init": "const SCRIPT_ID_STENO_MODE_UPDATE = 9;\n\n// Update the LED color at startup, and register for steno mode update callbacks.\nonStenoModeUpdate();\nsetScript(SCRIPT_ID_STENO_MODE_UPDATE, @onStenoModeUpdate);\n",
+				"activateLayer": "setEnableButtonStates(#flag(per_layer, \"Enable individual keys in Key Layout tool\", false));\n"
 			},
 			"user_scripts": {
 				"StenoModeUpdate Callback": "func onStenoModeUpdate() {\n  var stenoMode = getParameter(\"steno_mode\");\n  if (stenoMode == \"embedded\") {\n    setRgb(0, 0, 1, 0);\n  } else if (stenoMode == \"gemini\") {\n    setRgb(0, 1, 0, 0);\n  } else if (stenoMode == \"tx_bolt\") {\n    setRgb(0, 0, 0, 1);\n  } else if (stenoMode == \"procat\") {\n    setRgb(0, 1, 1, 0);\n  } else if (stenoMode == \"plover_hid\") {\n    setRgb(0, 0, 1, 1);\n  }\n}"
 			},
-			"options": {}
+			"options": {},
+			"sequences": {}
 		}
 	}
 }

@@ -538,7 +538,10 @@
 			],
 			"scripts": {},
 			"user_scripts": {},
-			"options": {}
+			"options": {
+				"Enable individual keys in Key Layout tool": "true"
+			},
+			"sequences": {}
 		}
 	],
 	"global": {
@@ -579,7 +582,8 @@
 				"releaseStenoKey": "releaseStenoKeyAndUpdateLed",
 				"pressStenoKey": "pressStenoKeyAndUpdateLed",
 				"init": "flashTimerDuration = 1000;\nflashTimerStart = getTime();\nstartTimer(TIMER_ID_LED_FLASH, 50, 1, @onLedFlashTimer);",
-				"header": "const TIMER_ID_LED_FLASH = 0;\nconst LED_PIN = 26;\n\nvar flashTimerStart;\nvar flashTimerDuration;\n"
+				"header": "const TIMER_ID_LED_FLASH = 0;\nconst LED_PIN = 26;\n\nvar flashTimerStart;\nvar flashTimerDuration;\n",
+				"activateLayer": "setEnableButtonStates(#flag(per_layer, \"Enable individual keys in Key Layout tool\", false));\n"
 			},
 			"user_scripts": {
 				"pressStenoKeyAndUpdateLed": "func pressStenoKeyAndUpdateLed(x) {\n  pressStenoKey(x);\n  updateLed();\n}",
@@ -587,7 +591,8 @@
 				"updateLed": "func updateLed() {\n  if (isTimerActive(TIMER_ID_LED_FLASH)) return;\n\n  if (checkButtonState(\"00000000000000000000000000\")) {\n    setGpioPin(LED_PIN, 0);\n  } else{\n    setGpioPinDutyCycle(LED_PIN, 5);\n  }\n}",
 				"onLedFlashTimer": "func onLedFlashTimer() {\n  var now = getTime();\n  var elapsed = now - flashTimerStart;\n  if (elapsed >= flashTimerDuration) {\n    stopTimer(TIMER_ID_LED_FLASH);\n    updateLed();\n  } else {\n    // Toggle between 0 and 10 every 250ms.\n    setGpioPinDutyCycle(LED_PIN, 10 * !((elapsed/250) & 1));\n  }\n}"
 			},
-			"options": {}
+			"options": {},
+			"sequences": {}
 		}
 	}
 }
