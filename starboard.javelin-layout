@@ -492,7 +492,7 @@
 						"d": {
 							"a": {
 								"t": "s",
-								"script": "// Toggle Steno\n// Toggle the steno mode between embedded and Gemini PR when USR is pressed.\n// LED RGB is updated in Global StenoModeUpdate callback.\nif (getParameter(\"steno_mode\") != \"embedded\") {\n  console(\"set_steno_mode embedded\");\n} else {\n  console(\"set_steno_mode gemini\");\n}\nreleaseAll();"
+								"script": "// Toggle Steno\n// Toggle the steno mode between embedded and Gemini PR when USR is pressed.\n// LED RGB is updated in Global StenoModeUpdate callback.\nreleaseAll();\nif (getParameter(\"steno_mode\") != \"embedded\") {\n  console(\"set_steno_mode embedded\");\n} else {\n  console(\"set_steno_mode gemini\");\n}\n"
 							}
 						}
 					}
