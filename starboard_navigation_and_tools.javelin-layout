@@ -512,7 +512,7 @@
 						"d": {
 							"a": {
 								"t": "s",
-								"script": "// Steno Mode\n// Toggle the steno mode between embedded and Gemini PR when USR is pressed.\n// LED RGB is updated in Global StenoModeUpdate callback.\nif (getParameter(\"steno_mode\") != \"embedded\") ß\n  console(\"set_steno_mode embedded\");\n} else {\n  console(\"set_steno_mode gemini\");\n}\nreleaseAll();"
+								"script": "// Toggle\\nSteno\\nMode\n// Toggle the steno mode between embedded and Gemini PR when USR is pressed.\n// LED RGB is updated in Global StenoModeUpdate callback.\nif (getParameter(\"steno_mode\") != \"embedded\") {\n  console(\"set_steno_mode embedded\");\n} else {\n  console(\"set_steno_mode gemini\");\n}\nreleaseAll();"
 							}
 						}
 					}
@@ -571,7 +571,7 @@
 								"t": "p",
 								"c": "z",
 								"m": [
-									227
+									"leftCommand"
 								]
 							}
 						}
@@ -583,7 +583,7 @@
 								"t": "r",
 								"c": "z",
 								"m": [
-									227
+									"leftCommand"
 								]
 							}
 						}
@@ -597,7 +597,7 @@
 								"t": "p",
 								"c": "x",
 								"m": [
-									227
+									"leftCommand"
 								]
 							}
 						}
@@ -609,7 +609,7 @@
 								"t": "r",
 								"c": "x",
 								"m": [
-									227
+									"leftCommand"
 								]
 							}
 						}
@@ -623,7 +623,7 @@
 								"t": "p",
 								"c": "c",
 								"m": [
-									227
+									"leftCommand"
 								]
 							}
 						}
@@ -635,7 +635,7 @@
 								"t": "r",
 								"c": "c",
 								"m": [
-									227
+									"leftCommand"
 								]
 							}
 						}
@@ -649,7 +649,7 @@
 								"t": "p",
 								"c": "v",
 								"m": [
-									227
+									"leftCommand"
 								]
 							}
 						}
@@ -661,7 +661,7 @@
 								"t": "r",
 								"c": "v",
 								"m": [
-									227
+									"leftCommand"
 								]
 							}
 						}
