@@ -4,7 +4,17 @@
 			"id": 0,
 			"name": "Default",
 			"keys": [
-				[],
+				[
+					{
+						"t": "p",
+						"d": {
+							"a": {
+								"t": "l",
+								"l": 157576715
+							}
+						}
+					}
+				],
 				[
 					{
 						"t": "p",
@@ -225,7 +235,17 @@
 						}
 					}
 				],
-				[],
+				[
+					{
+						"t": "p",
+						"d": {
+							"a": {
+								"t": "l",
+								"l": 30734263
+							}
+						}
+					}
+				],
 				[
 					{
 						"t": "p",
@@ -492,7 +512,7 @@
 						"d": {
 							"a": {
 								"t": "s",
-								"script": "// Toggle Steno\n// Toggle the steno mode between embedded and Gemini PR when USR is pressed.\n// LED RGB is updated in Global StenoModeUpdate callback.\nreleaseAll();\nif (getParameter(\"steno_mode\") != \"embedded\") {\n  console(\"set_steno_mode embedded\");\n} else {\n  console(\"set_steno_mode gemini\");\n}\n"
+								"script": "// Toggle\\nSteno\\nMode\n// Toggle the steno mode between embedded and Gemini PR when USR is pressed.\n// LED RGB is updated in Global StenoModeUpdate callback.\nif (getParameter(\"steno_mode\") != \"embedded\") ß\n  console(\"set_steno_mode embedded\");\n} else {\n  console(\"set_steno_mode gemini\");\n}\nreleaseAll();"
 							}
 						}
 					}
@@ -508,6 +528,282 @@
 						}
 					}
 				]
+			],
+			"scripts": {},
+			"user_scripts": {},
+			"options": {
+				"Enable individual keys in Key Layout tool": "true"
+			},
+			"sequences": {}
+		},
+		{
+			"id": 30734263,
+			"name": "Tools",
+			"keys": [
+				[],
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				[
+					{
+						"t": "r",
+						"d": {
+							"a": {
+								"t": "l",
+								"l": 0
+							}
+						}
+					}
+				],
+				[
+					{
+						"t": "p",
+						"d": {
+							"a": {
+								"t": "p",
+								"c": "z",
+								"m": [
+									"leftWindows"
+								]
+							}
+						}
+					},
+					{
+						"t": "r",
+						"d": {
+							"a": {
+								"t": "r",
+								"c": "z",
+								"m": [
+									"leftWindows"
+								]
+							}
+						}
+					}
+				],
+				[
+					{
+						"t": "p",
+						"d": {
+							"a": {
+								"t": "p",
+								"c": "x",
+								"m": [
+									"leftWindows"
+								]
+							}
+						}
+					},
+					{
+						"t": "r",
+						"d": {
+							"a": {
+								"t": "r",
+								"c": "x",
+								"m": [
+									"leftWindows"
+								]
+							}
+						}
+					}
+				],
+				[
+					{
+						"t": "p",
+						"d": {
+							"a": {
+								"t": "p",
+								"c": "c",
+								"m": [
+									"leftWindows"
+								]
+							}
+						}
+					},
+					{
+						"t": "r",
+						"d": {
+							"a": {
+								"t": "r",
+								"c": "c",
+								"m": [
+									"leftWindows"
+								]
+							}
+						}
+					}
+				],
+				[
+					{
+						"t": "p",
+						"d": {
+							"a": {
+								"t": "p",
+								"c": "v",
+								"m": [
+									"leftWindows"
+								]
+							}
+						}
+					},
+					{
+						"t": "r",
+						"d": {
+							"a": {
+								"t": "r",
+								"c": "v",
+								"m": [
+									"leftWindows"
+								]
+							}
+						}
+					}
+				],
+				[],
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"scripts": {},
+			"user_scripts": {},
+			"options": {
+				"Enable individual keys in Key Layout tool": "true"
+			},
+			"sequences": {}
+		},
+		{
+			"id": 157576715,
+			"name": "Navigation",
+			"keys": [
+				[
+					{
+						"t": "r",
+						"d": {
+							"a": {
+								"t": "l",
+								"l": 0
+							}
+						}
+					}
+				],
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				[
+					{
+						"t": "p",
+						"d": {
+							"a": {
+								"t": "p",
+								"c": "up"
+							}
+						}
+					},
+					{
+						"t": "r",
+						"d": {
+							"a": {
+								"t": "r",
+								"c": "up"
+							}
+						}
+					}
+				],
+				[],
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				[
+					{
+						"t": "p",
+						"d": {
+							"a": {
+								"t": "p",
+								"c": "left"
+							}
+						}
+					},
+					{
+						"t": "r",
+						"d": {
+							"a": {
+								"t": "r",
+								"c": "left"
+							}
+						}
+					}
+				],
+				[
+					{
+						"t": "p",
+						"d": {
+							"a": {
+								"t": "p",
+								"c": "down"
+							}
+						}
+					},
+					{
+						"t": "r",
+						"d": {
+							"a": {
+								"t": "r",
+								"c": "down"
+							}
+						}
+					}
+				],
+				[
+					{
+						"t": "p",
+						"d": {
+							"a": {
+								"t": "p",
+								"c": "right"
+							}
+						}
+					},
+					{
+						"t": "r",
+						"d": {
+							"a": {
+								"t": "r",
+								"c": "right"
+							}
+						}
+					}
+				],
+				[],
+				null,
+				null,
+				null,
+				null,
+				null,
+				[],
+				null
 			],
 			"scripts": {},
 			"user_scripts": {},
@@ -553,7 +849,7 @@
 				null
 			],
 			"scripts": {
-				"init": "const SCRIPT_ID_STENO_MODE_UPDATE = 9;\n\n// Update the LED color at startup, and register for steno mode update callbacks.\nonStenoModeUpdate();\nsetScript(SCRIPT_ID_STENO_MODE_UPDATE, @onStenoModeUpdate);\n",
+				"init": "const SCRIPT_ID_STENO_MODE_UPDATE = 9;\n\n// Update the RGB LED and register callback for future steno mode updates.\nonStenoModeUpdate();\nsetScript(SCRIPT_ID_STENO_MODE_UPDATE, @onStenoModeUpdate);\n",
 				"activateLayer": "setEnableButtonStates(#flag(per_layer, \"Enable individual keys in Key Layout tool\", false));\n"
 			},
 			"user_scripts": {
