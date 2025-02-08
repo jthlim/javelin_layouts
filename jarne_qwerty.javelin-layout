@@ -761,7 +761,7 @@
 								"t": "p",
 								"c": "equal",
 								"m": [
-									225
+									"leftShift"
 								]
 							}
 						}
@@ -773,7 +773,7 @@
 								"t": "r",
 								"c": "equal",
 								"m": [
-									225
+									"leftShift"
 								]
 							}
 						}
@@ -787,7 +787,7 @@
 								"t": "p",
 								"c": "grave",
 								"m": [
-									225
+									"leftShift"
 								]
 							}
 						}
@@ -799,7 +799,7 @@
 								"t": "r",
 								"c": "grave",
 								"m": [
-									225
+									"leftShift"
 								]
 							}
 						}
@@ -813,7 +813,7 @@
 								"t": "p",
 								"c": "n1",
 								"m": [
-									225
+									"leftShift"
 								]
 							}
 						}
@@ -825,7 +825,7 @@
 								"t": "r",
 								"c": "n1",
 								"m": [
-									225
+									"leftShift"
 								]
 							}
 						}
@@ -839,7 +839,7 @@
 								"t": "p",
 								"c": "n2",
 								"m": [
-									225
+									"leftShift"
 								]
 							}
 						}
@@ -851,7 +851,7 @@
 								"t": "r",
 								"c": "n2",
 								"m": [
-									225
+									"leftShift"
 								]
 							}
 						}
@@ -865,7 +865,7 @@
 								"t": "p",
 								"c": "n3",
 								"m": [
-									225
+									"leftShift"
 								]
 							}
 						}
@@ -877,7 +877,7 @@
 								"t": "r",
 								"c": "n3",
 								"m": [
-									225
+									"leftShift"
 								]
 							}
 						}
@@ -891,7 +891,7 @@
 								"t": "p",
 								"c": "n4",
 								"m": [
-									225
+									"leftShift"
 								]
 							}
 						}
@@ -903,7 +903,7 @@
 								"t": "r",
 								"c": "n4",
 								"m": [
-									225
+									"leftShift"
 								]
 							}
 						}
@@ -917,7 +917,7 @@
 								"t": "p",
 								"c": "n5",
 								"m": [
-									225
+									"leftShift"
 								]
 							}
 						}
@@ -929,7 +929,7 @@
 								"t": "r",
 								"c": "n5",
 								"m": [
-									225
+									"leftShift"
 								]
 							}
 						}
@@ -943,7 +943,7 @@
 								"t": "p",
 								"c": "n6",
 								"m": [
-									225
+									"leftShift"
 								]
 							}
 						}
@@ -955,7 +955,7 @@
 								"t": "r",
 								"c": "n6",
 								"m": [
-									225
+									"leftShift"
 								]
 							}
 						}
@@ -969,7 +969,7 @@
 								"t": "p",
 								"c": "n7",
 								"m": [
-									225
+									"leftShift"
 								]
 							}
 						}
@@ -981,7 +981,7 @@
 								"t": "r",
 								"c": "n7",
 								"m": [
-									225
+									"leftShift"
 								]
 							}
 						}
@@ -995,7 +995,7 @@
 								"t": "p",
 								"c": "n8",
 								"m": [
-									225
+									"leftShift"
 								]
 							}
 						}
@@ -1007,7 +1007,7 @@
 								"t": "r",
 								"c": "n8",
 								"m": [
-									225
+									"leftShift"
 								]
 							}
 						}
@@ -1021,7 +1021,7 @@
 								"t": "p",
 								"c": "n9",
 								"m": [
-									225
+									"leftShift"
 								]
 							}
 						}
@@ -1033,7 +1033,7 @@
 								"t": "r",
 								"c": "n9",
 								"m": [
-									225
+									"leftShift"
 								]
 							}
 						}
@@ -1047,7 +1047,7 @@
 								"t": "p",
 								"c": "n0",
 								"m": [
-									225
+									"leftShift"
 								]
 							}
 						}
@@ -1059,7 +1059,7 @@
 								"t": "r",
 								"c": "n0",
 								"m": [
-									225
+									"leftShift"
 								]
 							}
 						}
@@ -1114,7 +1114,7 @@
 								"t": "p",
 								"c": "backslash",
 								"m": [
-									225
+									"leftShift"
 								]
 							}
 						}
@@ -1126,7 +1126,7 @@
 								"t": "r",
 								"c": "backslash",
 								"m": [
-									225
+									"leftShift"
 								]
 							}
 						}
@@ -1180,7 +1180,7 @@
 								"t": "p",
 								"c": "lBracket",
 								"m": [
-									225
+									"leftShift"
 								]
 							}
 						}
@@ -1192,7 +1192,7 @@
 								"t": "r",
 								"c": "lBracket",
 								"m": [
-									225
+									"leftShift"
 								]
 							}
 						}
@@ -1206,7 +1206,7 @@
 								"t": "p",
 								"c": "rBracket",
 								"m": [
-									225
+									"leftShift"
 								]
 							}
 						}
@@ -1218,7 +1218,7 @@
 								"t": "r",
 								"c": "rBracket",
 								"m": [
-									225
+									"leftShift"
 								]
 							}
 						}
@@ -1252,7 +1252,7 @@
 								"t": "p",
 								"c": "minus",
 								"m": [
-									225
+									"leftShift"
 								]
 							}
 						}
@@ -1264,7 +1264,7 @@
 								"t": "r",
 								"c": "minus",
 								"m": [
-									225
+									"leftShift"
 								]
 							}
 						}
@@ -3010,18 +3010,18 @@
 				[]
 			],
 			"scripts": {
-				"header": "// Javelin constants\nconst SC_NONE = 0;\n\nconst SC_A = 0x04;\nconst SC_B = 0x05;\nconst SC_C = 0x06;\nconst SC_D = 0x07;\nconst SC_E = 0x08;\nconst SC_F = 0x09;\nconst SC_G = 0x0a;\nconst SC_H = 0x0b;\nconst SC_I = 0x0c;\nconst SC_J = 0x0d;\nconst SC_K = 0x0e;\nconst SC_L = 0x0f;\nconst SC_M = 0x10;\nconst SC_N = 0x11;\nconst SC_O = 0x12;\nconst SC_P = 0x13;\nconst SC_Q = 0x14;\nconst SC_R = 0x15;\nconst SC_S = 0x16;\nconst SC_T = 0x17;\nconst SC_U = 0x18;\nconst SC_V = 0x19;\nconst SC_W = 0x1a;\nconst SC_X = 0x1b;\nconst SC_Y = 0x1c;\nconst SC_Z = 0x1d;\n\nconst SC_1 = 0x1e;\nconst SC_2 = 0x1f;\nconst SC_3 = 0x20;\nconst SC_4 = 0x21;\nconst SC_5 = 0x22;\nconst SC_6 = 0x23;\nconst SC_7 = 0x24;\nconst SC_8 = 0x25;\nconst SC_9 = 0x26;\nconst SC_0 = 0x27;\n\nconst SC_ENTER = 0x28;\nconst SC_ESC = 0x29;\nconst SC_BACKSPACE = 0x2a;\nconst SC_TAB = 0x2b;\nconst SC_SPACE = 0x2c;\nconst SC_MINUS = 0x2d;\nconst SC_EQUAL = 0x2e;\nconst SC_L_BRACKET = 0x2f;\nconst SC_R_BRACKET = 0x30;\nconst SC_BACKSLASH = 0x31;\nconst SC_HASH_TILDE = 0x32;\nconst SC_SEMICOLON = 0x33;\nconst SC_APOSTROPHE = 0x34;\nconst SC_GRAVE = 0x35;\nconst SC_COMMA = 0x36;\nconst SC_DOT = 0x37;\nconst SC_SLASH = 0x38;\nconst SC_CAPS = 0x39;\n\nconst SC_F1 = 0x3a;\nconst SC_F2 = 0x3b;\nconst SC_F3 = 0x3c;\nconst SC_F4 = 0x3d;\nconst SC_F5 = 0x3e;\nconst SC_F6 = 0x3f;\nconst SC_F7 = 0x40;\nconst SC_F8 = 0x41;\nconst SC_F9 = 0x42;\nconst SC_F10 = 0x43;\nconst SC_F11 = 0x44;\nconst SC_F12 = 0x45;\n\nconst SC_SYS_RQ = 0x46;\nconst SC_SCROLL_LOCK = 0x47;\nconst SC_PAUSE = 0x48;\nconst SC_INSERT = 0x49;\nconst SC_HOME = 0x4a;\nconst SC_PAGE_UP = 0x4b;\nconst SC_DELETE = 0x4c;\nconst SC_END = 0x4d;\nconst SC_PAGE_DOWN = 0x4e;\nconst SC_RIGHT = 0x4f;\nconst SC_LEFT = 0x50;\nconst SC_DOWN = 0x51;\nconst SC_UP = 0x52;\n\nconst SC_NUM_LOCK = 0x53;\nconst SC_KP_SLASH = 0x54;\nconst SC_KP_ASTERISK = 0x55;\nconst SC_KP_MINUS = 0x56;\nconst SC_KP_PLUS = 0x57;\nconst SC_KP_ENTER = 0x58;\nconst SC_KP_1 = 0x59;\nconst SC_KP_2 = 0x5a;\nconst SC_KP_3 = 0x5b;\nconst SC_KP_4 = 0x5c;\nconst SC_KP_5 = 0x5d;\nconst SC_KP_6 = 0x5e;\nconst SC_KP_7 = 0x5f;\nconst SC_KP_8 = 0x60;\nconst SC_KP_9 = 0x61;\nconst SC_KP_0 = 0x62;\nconst SC_KP_DOT = 0x63;\n\nconst SC_BACKSLASH_PIPE = 0x64;\nconst SC_COMPOSE = 0x65;\nconst SC_POWER = 0x66;\nconst SC_KP_EQUAL = 0x67;\n\nconst SC_F13 = 0x68;\nconst SC_F14 = 0x69;\nconst SC_F15 = 0x6a;\nconst SC_F16 = 0x6b;\nconst SC_F17 = 0x6c;\nconst SC_F18 = 0x6d;\nconst SC_F19 = 0x6e;\nconst SC_F20 = 0x6f;\nconst SC_F21 = 0x70;\nconst SC_F22 = 0x71;\nconst SC_F23 = 0x72;\nconst SC_F24 = 0x73;\n\nconst SC_OPEN = 0x74;\nconst SC_HELP = 0x75;\nconst SC_MENU = 0x76;\nconst SC_SELECT = 0x77;\nconst SC_STOP = 0x78;\nconst SC_AGAIN = 0x79;\nconst SC_UNDO = 0x7a;\nconst SC_CUT = 0x7b;\nconst SC_COPY = 0x7c;\nconst SC_PASTE = 0x7d;\nconst SC_FIND = 0x7e;\nconst SC_MUTE = 0x7f;\nconst SC_VOLUME_UP = 0x80;\nconst SC_VOLUME_DOWN = 0x81;\nconst SC_KP_COMMA = 0x85;\n\nconst SC_L_CTRL = 0xe0;\nconst SC_L_SHIFT = 0xe1;\nconst SC_L_ALT = 0xe2;\nconst SC_L_META = 0xe3;\nconst SC_R_CTRL = 0xe4;\nconst SC_R_SHIFT = 0xe5;\nconst SC_R_ALT = 0xe6;\nconst SC_R_META = 0xe7;\n\n// From Consumer Page (0x0c)\nconst SC_CONSUMER_PLAY = 0xa0;                // UsageId 0xb0\nconst SC_CONSUMER_PAUSE = 0xa1;               // UsageId 0xb1\nconst SC_CONSUMER_RECORD = 0xa2;              // UsageId 0xb2\nconst SC_CONSUMER_FAST_FORWARD = 0xa3;        // UsageId 0xb3\nconst SC_CONSUMER_REWIND = 0xa4;              // UsageId 0xb4\nconst SC_CONSUMER_SCAN_NEXT_TRACK = 0xa5;     // UsageId 0xb5\nconst SC_CONSUMER_SCAN_PREVIOUS_TRACK = 0xa6; // UsageId 0xb6\nconst SC_CONSUMER_STOP = 0xa7;                // UsageId 0xb7\nconst SC_CONSUMER_EJECT = 0xa8;               // UsageId 0xb8\n\nconst SC_CONSUMER_STOP_EJECT = 0xbc;          // UsageId 0xcc\nconst SC_CONSUMER_PLAY_PAUSE = 0xbd;          // UsageId 0xcd\nconst SC_CONSUMER_PLAY_SKIP = 0xbe;           // UsageId 0xce\n\nconst SC_CONSUMER_MUTE = 0xd2;                // UsageId 0xe2\nconst SC_CONSUMER_VOLUME_UP = 0xd9;           // UsageId 0xe9\nconst SC_CONSUMER_VOLUME_DOWN = 0xda;         // UsageId 0xea\n\nconst SC_CONSUMER_BRIGHTNESS_UP = 0xde;       // UsageId 0x6f\nconst SC_CONSUMER_BRIGHTNESS_DOWN = 0xdf;     // UsageId 0x70\n \nconst LED_STATUS_NUM_LOCK = 0;\nconst LED_STATUS_CAPS_LOCK = 1;\nconst LED_STATUS_SCROLL_LOCK = 2;\nconst LED_STATUS_COMPOSE = 3;\nconst LED_STATUS_KANA = 4;\n\nconst AUTO_DRAW_NONE = 0;\nconst AUTO_DRAW_PAPER_TAPE = 1;\nconst AUTO_DRAW_STENO_LAYOUT = 2;\nconst AUTO_DRAW_WPM = 3;\nconst AUTO_DRAW_STROKES = 4;\n\nconst TEXT_ALIGNMENT_LEFT = 0;\nconst TEXT_ALIGNMENT_MIDDLE = 1;\nconst TEXT_ALIGNMENT_RIGHT = 2;\n\nconst FONT_ID_NORMAL = 0;\nconst FONT_ID_SMALL_DIGITS = 1;\nconst FONT_ID_MEDIUM_DIGITS = 2;\nconst FONT_ID_LARGE_DIGITS = 3;\n\nconst CONNECTION_NONE = 0;\nconst CONNECTION_BLE = 1;\nconst CONNECTION_USB = 2;\nconst CONNECTION_USB2 = 3;\n\nconst PAIR_CONNECTION_NONE = 0;\nconst PAIR_CONNECTION_BLE = 1;\nconst PAIR_CONNECTION_CABLE = 2;\n\nconst SCRIPT_ID_DISPLAY_OVERLAY = 0;\nconst SCRIPT_ID_BATTERY_UPDATE = 1;\nconst SCRIPT_ID_CONNECTION_UPDATE = 2;\nconst SCRIPT_ID_PAIR_CONNECTION_UPDATE = 3;\nconst SCRIPT_ID_KEYBOARD_LED_STATUS_UPDATE = 4;\nconst SCRIPT_ID_BLE_ADVERTISING_UPDATE = 5;\nconst SCRIPT_ID_BLE_SCANNING_UPDATE = 6;\nconst SCRIPT_ID_U2F_STATUS_UPDATE = 7;\nconst SCRIPT_ID_STENO_MODE_UPDATE = 9;\nconst SCRIPT_ID_BLE_PAIR_COMPLETE = 10;\n\n// Layout constants\n\nconst DISPLAY_WIDTH = JAVELIN_DISPLAY_WIDTH ?? 32;\nconst DISPLAY_HEIGHT = JAVELIN_DISPLAY_HEIGHT ?? 128;\nconst HAS_AUDIO = JAVELIN_HAS_AUDIO ?? 0;\n\nfunc noop() {}\n\nvar speed = 1;\nvar hueSpread = 4;\nvar hueShift = 0;\nvar brightness = 4;\nvar saturation = 5;\n\nvar keyColorData[42];\n\nconst TIMER_ID_RGB_UPDATE = 0;\nconst TIMER_ID_SCREEN_SAVER = 1;\nconst TIMER_ID_PAIRING_HOLD = 2;\nconst TIMER_ID_CAPS_RELEASE = 3;\n\nconst DYNAMIC_STENO_DISPLAY_WPM = 0;\nconst DYNAMIC_STENO_DISPLAY_PAPER_TAPE = 1;\nconst DYNAMIC_STENO_DISPLAY_STROKES = 2;\n\nconst MODIFIER_SHIFT = 2;\n\nvar lastButtonIndex;\nvar wordCaps;\nvar isBleSummaryActive;\nvar dynamicStenoDisplay;\nvar lastScanCodePressed;\nvar wasSteno12;\nvar wasSteno24;\nvar global24PressCount;\nvar wasSteno36;\n\nconst KEY_SHIFT = 0x100;\n\n// Defined globally since drawBleSummary() also needs it.\nconst SETTINGS_IMAGE = [[\n  20 20 00 00 00 00 00 c0 03 00 00 e0 07 00 00 e0\n  07 00 c0 e0 07 03 e0 f3 cf 07 f0 ff ff 0f f0 ff\n  ff 0f e0 ff ff 07 e0 ff ff 07 c0 ff ff 03 c0 7f\n  fe 03 e0 1f f8 07 fc 0f f0 3f fe 0f f0 7f fe 07\n  e0 7f fe 07 e0 7f fe 0f f0 7f fc 0f f0 3f e0 1f\n  f8 07 c0 7f fe 03 c0 ff ff 03 e0 ff ff 07 e0 ff\n  ff 07 f0 ff ff 0f f0 ff ff 0f e0 f3 cf 07 c0 e0\n  07 03 00 e0 07 00 00 e0 07 00 00 c0 03 00 00 00\n  00 00\n]];\n",
+				"header": "// Javelin constants\nconst SC_NONE = 0;\n\nconst SC_A = 0x04;\nconst SC_B = 0x05;\nconst SC_C = 0x06;\nconst SC_D = 0x07;\nconst SC_E = 0x08;\nconst SC_F = 0x09;\nconst SC_G = 0x0a;\nconst SC_H = 0x0b;\nconst SC_I = 0x0c;\nconst SC_J = 0x0d;\nconst SC_K = 0x0e;\nconst SC_L = 0x0f;\nconst SC_M = 0x10;\nconst SC_N = 0x11;\nconst SC_O = 0x12;\nconst SC_P = 0x13;\nconst SC_Q = 0x14;\nconst SC_R = 0x15;\nconst SC_S = 0x16;\nconst SC_T = 0x17;\nconst SC_U = 0x18;\nconst SC_V = 0x19;\nconst SC_W = 0x1a;\nconst SC_X = 0x1b;\nconst SC_Y = 0x1c;\nconst SC_Z = 0x1d;\n\nconst SC_1 = 0x1e;\nconst SC_2 = 0x1f;\nconst SC_3 = 0x20;\nconst SC_4 = 0x21;\nconst SC_5 = 0x22;\nconst SC_6 = 0x23;\nconst SC_7 = 0x24;\nconst SC_8 = 0x25;\nconst SC_9 = 0x26;\nconst SC_0 = 0x27;\n\nconst SC_ENTER = 0x28;\nconst SC_ESC = 0x29;\nconst SC_BACKSPACE = 0x2a;\nconst SC_TAB = 0x2b;\nconst SC_SPACE = 0x2c;\nconst SC_MINUS = 0x2d;\nconst SC_EQUAL = 0x2e;\nconst SC_L_BRACKET = 0x2f;\nconst SC_R_BRACKET = 0x30;\nconst SC_BACKSLASH = 0x31;\nconst SC_HASH_TILDE = 0x32;\nconst SC_SEMICOLON = 0x33;\nconst SC_APOSTROPHE = 0x34;\nconst SC_GRAVE = 0x35;\nconst SC_COMMA = 0x36;\nconst SC_DOT = 0x37;\nconst SC_SLASH = 0x38;\nconst SC_CAPS = 0x39;\n\nconst SC_F1 = 0x3a;\nconst SC_F2 = 0x3b;\nconst SC_F3 = 0x3c;\nconst SC_F4 = 0x3d;\nconst SC_F5 = 0x3e;\nconst SC_F6 = 0x3f;\nconst SC_F7 = 0x40;\nconst SC_F8 = 0x41;\nconst SC_F9 = 0x42;\nconst SC_F10 = 0x43;\nconst SC_F11 = 0x44;\nconst SC_F12 = 0x45;\n\nconst SC_SYS_RQ = 0x46;\nconst SC_SCROLL_LOCK = 0x47;\nconst SC_PAUSE = 0x48;\nconst SC_INSERT = 0x49;\nconst SC_HOME = 0x4a;\nconst SC_PAGE_UP = 0x4b;\nconst SC_DELETE = 0x4c;\nconst SC_END = 0x4d;\nconst SC_PAGE_DOWN = 0x4e;\nconst SC_RIGHT = 0x4f;\nconst SC_LEFT = 0x50;\nconst SC_DOWN = 0x51;\nconst SC_UP = 0x52;\n\nconst SC_NUM_LOCK = 0x53;\nconst SC_KP_SLASH = 0x54;\nconst SC_KP_ASTERISK = 0x55;\nconst SC_KP_MINUS = 0x56;\nconst SC_KP_PLUS = 0x57;\nconst SC_KP_ENTER = 0x58;\nconst SC_KP_1 = 0x59;\nconst SC_KP_2 = 0x5a;\nconst SC_KP_3 = 0x5b;\nconst SC_KP_4 = 0x5c;\nconst SC_KP_5 = 0x5d;\nconst SC_KP_6 = 0x5e;\nconst SC_KP_7 = 0x5f;\nconst SC_KP_8 = 0x60;\nconst SC_KP_9 = 0x61;\nconst SC_KP_0 = 0x62;\nconst SC_KP_DOT = 0x63;\n\nconst SC_BACKSLASH_PIPE = 0x64;\nconst SC_COMPOSE = 0x65;\nconst SC_POWER = 0x66;\nconst SC_KP_EQUAL = 0x67;\n\nconst SC_F13 = 0x68;\nconst SC_F14 = 0x69;\nconst SC_F15 = 0x6a;\nconst SC_F16 = 0x6b;\nconst SC_F17 = 0x6c;\nconst SC_F18 = 0x6d;\nconst SC_F19 = 0x6e;\nconst SC_F20 = 0x6f;\nconst SC_F21 = 0x70;\nconst SC_F22 = 0x71;\nconst SC_F23 = 0x72;\nconst SC_F24 = 0x73;\n\nconst SC_OPEN = 0x74;\nconst SC_HELP = 0x75;\nconst SC_MENU = 0x76;\nconst SC_SELECT = 0x77;\nconst SC_STOP = 0x78;\nconst SC_AGAIN = 0x79;\nconst SC_UNDO = 0x7a;\nconst SC_CUT = 0x7b;\nconst SC_COPY = 0x7c;\nconst SC_PASTE = 0x7d;\nconst SC_FIND = 0x7e;\nconst SC_MUTE = 0x7f;\nconst SC_VOLUME_UP = 0x80;\nconst SC_VOLUME_DOWN = 0x81;\nconst SC_KP_COMMA = 0x85;\n\nconst SC_L_CTRL = 0xe0;\nconst SC_L_SHIFT = 0xe1;\nconst SC_L_ALT = 0xe2;\nconst SC_L_META = 0xe3;\nconst SC_R_CTRL = 0xe4;\nconst SC_R_SHIFT = 0xe5;\nconst SC_R_ALT = 0xe6;\nconst SC_R_META = 0xe7;\n\n// From Consumer Page (0x0c)\nconst SC_CONSUMER_PLAY = 0xa0;                // UsageId 0xb0\nconst SC_CONSUMER_PAUSE = 0xa1;               // UsageId 0xb1\nconst SC_CONSUMER_RECORD = 0xa2;              // UsageId 0xb2\nconst SC_CONSUMER_FAST_FORWARD = 0xa3;        // UsageId 0xb3\nconst SC_CONSUMER_REWIND = 0xa4;              // UsageId 0xb4\nconst SC_CONSUMER_SCAN_NEXT_TRACK = 0xa5;     // UsageId 0xb5\nconst SC_CONSUMER_SCAN_PREVIOUS_TRACK = 0xa6; // UsageId 0xb6\nconst SC_CONSUMER_STOP = 0xa7;                // UsageId 0xb7\nconst SC_CONSUMER_EJECT = 0xa8;               // UsageId 0xb8\n\nconst SC_CONSUMER_STOP_EJECT = 0xbc;          // UsageId 0xcc\nconst SC_CONSUMER_PLAY_PAUSE = 0xbd;          // UsageId 0xcd\nconst SC_CONSUMER_PLAY_SKIP = 0xbe;           // UsageId 0xce\n\nconst SC_CONSUMER_MUTE = 0xd2;                // UsageId 0xe2\nconst SC_CONSUMER_VOLUME_UP = 0xd9;           // UsageId 0xe9\nconst SC_CONSUMER_VOLUME_DOWN = 0xda;         // UsageId 0xea\n\nconst SC_CONSUMER_BRIGHTNESS_UP = 0xde;       // UsageId 0x6f\nconst SC_CONSUMER_BRIGHTNESS_DOWN = 0xdf;     // UsageId 0x70\n \nconst LED_STATUS_NUM_LOCK = 0;\nconst LED_STATUS_CAPS_LOCK = 1;\nconst LED_STATUS_SCROLL_LOCK = 2;\nconst LED_STATUS_COMPOSE = 3;\nconst LED_STATUS_KANA = 4;\n\nconst AUTO_DRAW_NONE = 0;\nconst AUTO_DRAW_PAPER_TAPE = 1;\nconst AUTO_DRAW_STENO_LAYOUT = 2;\nconst AUTO_DRAW_WPM = 3;\nconst AUTO_DRAW_STROKES = 4;\n\nconst TEXT_ALIGNMENT_LEFT = 0;\nconst TEXT_ALIGNMENT_MIDDLE = 1;\nconst TEXT_ALIGNMENT_RIGHT = 2;\n\nconst FONT_ID_NORMAL = 0;\nconst FONT_ID_LARGE = 1;\nconst FONT_ID_DOS = 2;\nconst FONT_ID_SMALL_DIGITS = 3;\nconst FONT_ID_MEDIUM_DIGITS = 4;\nconst FONT_ID_LARGE_DIGITS = 5;\nconst FONT_ID_HUGE_DIGITS = 6;\n\nconst CONNECTION_NONE = 0;\nconst CONNECTION_BLE = 1;\nconst CONNECTION_USB = 2;\nconst CONNECTION_USB2 = 3;\n\nconst PAIR_CONNECTION_NONE = 0;\nconst PAIR_CONNECTION_BLE = 1;\nconst PAIR_CONNECTION_CABLE = 2;\n\nconst SCRIPT_ID_DISPLAY_OVERLAY = 0;\nconst SCRIPT_ID_BATTERY_UPDATE = 1;\nconst SCRIPT_ID_CONNECTION_UPDATE = 2;\nconst SCRIPT_ID_PAIR_CONNECTION_UPDATE = 3;\nconst SCRIPT_ID_KEYBOARD_LED_STATUS_UPDATE = 4;\nconst SCRIPT_ID_BLE_ADVERTISING_UPDATE = 5;\nconst SCRIPT_ID_BLE_SCANNING_UPDATE = 6;\nconst SCRIPT_ID_U2F_STATUS_UPDATE = 7;\nconst SCRIPT_ID_STENO_MODE_UPDATE = 9;\nconst SCRIPT_ID_BLE_PAIR_COMPLETE = 10;\n\n// Layout constants\n\nconst DISPLAY_WIDTH = JAVELIN_DISPLAY_WIDTH ?? 32;\nconst DISPLAY_HEIGHT = JAVELIN_DISPLAY_HEIGHT ?? 128;\nconst HAS_AUDIO = JAVELIN_HAS_AUDIO ?? 0;\n\nfunc noop() {}\n\nvar speed = 1;\nvar hueSpread = 4;\nvar hueShift = 0;\nvar brightness = 4;\nvar saturation = 5;\n\nvar keyColorData[42];\n\nconst TIMER_ID_RGB_UPDATE = 0;\nconst TIMER_ID_SCREEN_SAVER = 1;\nconst TIMER_ID_PAIRING_HOLD = 2;\nconst TIMER_ID_CAPS_RELEASE = 3;\n\nconst DYNAMIC_STENO_DISPLAY_WPM = 0;\nconst DYNAMIC_STENO_DISPLAY_PAPER_TAPE = 1;\nconst DYNAMIC_STENO_DISPLAY_STROKES = 2;\n\nconst MODIFIER_SHIFT = 2;\n\nvar lastButtonIndex;\nvar wordCaps;\nvar isBleSummaryActive;\nvar dynamicStenoDisplay;\nvar lastScanCodePressed;\nvar wasSteno12;\nvar wasSteno24;\nvar global24PressCount;\nvar wasSteno36;\n\nconst KEY_SHIFT = 0x100;\n\n// Defined globally since drawBleSummary() also needs it.\nconst SETTINGS_IMAGE = [[\n  20 20 00 00 00 00 00 c0 03 00 00 e0 07 00 00 e0\n  07 00 c0 e0 07 03 e0 f3 cf 07 f0 ff ff 0f f0 ff\n  ff 0f e0 ff ff 07 e0 ff ff 07 c0 ff ff 03 c0 7f\n  fe 03 e0 1f f8 07 fc 0f f0 3f fe 0f f0 7f fe 07\n  e0 7f fe 07 e0 7f fe 0f f0 7f fc 0f f0 3f e0 1f\n  f8 07 c0 7f fe 03 c0 ff ff 03 e0 ff ff 07 e0 ff\n  ff 07 f0 ff ff 0f f0 ff ff 0f e0 f3 cf 07 c0 e0\n  07 03 00 e0 07 00 00 e0 07 00 00 c0 03 00 00 00\n  00 00\n]];\n",
 				"init": "rgbInitRandomColors();\n\nsetScript(SCRIPT_ID_DISPLAY_OVERLAY, @drawDisplayOverlay);\nsetScript(SCRIPT_ID_BATTERY_UPDATE, @{\n  redrawDisplayOverlay();\n  updateBoardPower();\n});\nsetScript(SCRIPT_ID_CONNECTION_UPDATE, @onConnectionUpdate);\nsetScript(SCRIPT_ID_PAIR_CONNECTION_UPDATE, @onConnectionUpdate);\nsetScript(SCRIPT_ID_KEYBOARD_LED_STATUS_UPDATE, @{\n  rgbUpdate();\n  if (isBleSummaryActive) {\n    drawBleSummary();\n  } else {\n    updateDisplay();\n  }\n});\nsetScript(SCRIPT_ID_STENO_MODE_UPDATE, @{\n  if (isBleSummaryActive) {\n    drawBleSummary();\n  } else {\n    updateDisplay();\n  }\n});\nsetScript(SCRIPT_ID_BLE_ADVERTISING_UPDATE, @onConnectionUpdate);\nsetScript(SCRIPT_ID_U2F_STATUS_UPDATE, @{\n  updateDisplay();\n  updateBoardPower();\n});\nif (HAS_AUDIO) {\n  setScript(SCRIPT_ID_BLE_PAIR_COMPLETE, @{\n    // C-7 G-7 C-8 G-7 C-8 each for 100ms.\n    playSequence([[56 05 5d 05 62 05 5d 05 62 05 00]]);\n  });\n}\n\nupdateBoardPower();\nupdateScreenSaverTimer();\n",
 				"pressScanCode": "pressScanCodeButton(#buttonIndex, #modifierMask, #key, #isModifier);",
 				"releaseScanCode": "releaseScanCodeButton(#key);",
 				"pressStenoKey": "pressStenoKeyButton(#key);",
-				"activateLayer": "if (#flag(per_layer, \"Auto-Activate Modifiers on Layer\", false)) {\n  pressAll();\n}\nsetEnableButtonStates(#flag(per_layer, \"Enable individual keys in Key Layout tool\", false));\nupdateDisplay();\nrgbUpdate();\nrgbUpdateUnderglow();\n",
+				"activateLayer": "if (#flag(per_layer, \"Auto-Activate Modifiers on Layer\", false)) {\n  pressAll();\n}\nsetEnableButtonStates(#flag(per_layer, \"Enable individual keys in Key Layout tool\", false));\nupdateDisplay();\nupdateBoardPower();\n",
 				"press": "globalPress(#buttonIndex); \n",
 				"release": "globalRelease(); \n"
 			},
 			"user_scripts": {
-				"RGB Scripts": "const SPEED_VALUES      = [[ 00 04 08 0c 10 18 20 30 40 ]];\nconst HUE_SPREAD_VALUES = [[ 00 10 20 28 30 38 40 48 50 ]];\nconst SATURATION_VALUES = [[ 00 20 40 50 60 68 70 78 80 ]];\nconst BRIGHTNESS_VALUES = [[ 00 08 10 18 20 28 30 38 40 ]];\n\nfunc rgbUpdateKeyHueCycle(hShift, sat, spreadMultiplier, value) {\n  const HUE_CYCLE_RGB_ORDER = [[\n    00\n    0c 01\n    18 0d 02\n    19 0e 03\n    1a 0f 04\n    1b 10 05\n    24 1c 11\n    25 1d\n    26\n\n    27\n    28 1e\n    29 1f 12\n    20 13 06\n    21 14 07\n    22 15 08\n    23 16 09\n    17 0a\n    0b\n  ]];\n\n  for (var i = 0; i < 42; i = i + 1) {\n    setHsv(\n      HUE_CYCLE_RGB_ORDER[i],\n      spreadMultiplier*i + hShift,\n      sat,\n      value\n    );\n  }\n}\n\nfunc rgbUpdateUnderglowHueCycle(hShift, sat, spreadMultiplier, value) {\n  const COLOR_OFFSETS = [[\n    02 0b 0d  1d 1e 28\n    06 0f 14  16 1b 24\n  ]];\n\n  for (var i = 0; i < 12; i = i + 1) {\n    setHsv(\n      i + 42,\n      spreadMultiplier * COLOR_OFFSETS[i] + hShift,\n      sat,\n      value\n    );\n  }\n}\n\n#option(rgbUpdate, \"RGB Mode\", \"Hue Cycle\", rgbUpdateHueCycle)\n#option(rgbUpdateUnderglow, \"RGB Mode\",  \"Hue Cycle\",  noop)\nfunc rgbUpdateHueCycle() {\n    var hue = animationTime() * SPEED_VALUES[speed] + hueShift;\n    rgbUpdateKeyHueCycle(\n      hue,\n      SATURATION_VALUES[saturation] * 2,\n      HUE_SPREAD_VALUES[hueSpread] * 16,\n      BRIGHTNESS_VALUES[brightness]\n    );\n    rgbUpdateUnderglowHueCycle(\n      hue,\n      SATURATION_VALUES[saturation] * 2,\n      HUE_SPREAD_VALUES[hueSpread] * 16,\n      BRIGHTNESS_VALUES[brightness]\n    );\n}\n\nfunc rgbUpdateKeyConstantColor(r, g, b) {\n  for (var i = 0; i < 42; i = i + 1) {\n    setRgb(i, r, g, b);\n  }\n}\n\nfunc rgbUpdateAllConstantColor(r, g, b) {\n  for (var i = 0; i < 54; i = i + 1) {\n    setRgb(i, r, g, b);\n  }\n}\n\nfunc rgbUpdateKeyRandomColors(hShift, b, s) {\n  var alwaysFullBrightness = !shouldShowKeyAnimations();\n  if (alwaysFullBrightness) {\n    for (var i = 0; i < 42; i = i + 1) {\n      setHsv(i, hShift + keyColorData[i], s, b);\n    }\n  } else {\n    for (var i = 0; i < 42; i = i + 1) {\n      var v = keyColorData[i];\n      if (v < (32 << 16)) {\n        v = v + 0x10000;\n        keyColorData[i] = v;\n      }\n      setHsv(i, hShift + v, s, b * (v >>> 16) >>> 5);\n    }\n  }\n}\n\nfunc rgbUpdateButtonRandomColor(buttonIndex) {\n    keyColorData[buttonIndex] = rand() & 0xffff;\n\n    // If there's no update of keys in the tick loop, update it now.\n    if (!isTimerActive(TIMER_ID_RGB_UPDATE)) {\n      rgbUpdate();\n    }\n}\n\nfunc rgbInitRandomColors() {\n  for (var i = 0; i < 42; i = i + 1) {\n    keyColorData[i] = (rand() & 0xffff) | 0x200000;\n  }\n}\n\n// 256 step sine table.\nconst SINE_TABLE = [[ 80 83 86 89 8c 8f 92 95 98 9b 9e a2 a5 a7 aa ad b0 b3 b6 b9 bc be c1 c4 c6 c9 cb ce d0 d3 d5 d7 da dc de e0 e2 e4 e6 e8 ea eb ed ee f0 f1 f3 f4 f5 f6 f8 f9 fa fa fb fc fd fd fe fe fe ff ff ff ff ff ff ff fe fe fe fd fd fc fb fa fa f9 f8 f6 f5 f4 f3 f1 f0 ee ed eb ea e8 e6 e4 e2 e0 de dc da d7 d5 d3 d0 ce cb c9 c6 c4 c1 be bc b9 b6 b3 b0 ad aa a7 a5 a2 9e 9b 98 95 92 8f 8c 89 86 83 80 7c 79 76 73 70 6d 6a 67 64 61 5d 5a 58 55 52 4f 4c 49 46 43 41 3e 3b 39 36 34 31 2f 2c 2a 28 25 23 21 1f 1d 1b 19 17 15 14 12 11 0f 0e 0c 0b 0a 09 07 06 05 05 04 03 02 02 01 01 01 00 00 00 00 00 00 00 01 01 01 02 02 03 04 05 05 06 07 09 0a 0b 0c 0e 0f 11 12 14 15 17 19 1b 1d 1f 21 23 25 28 2a 2c 2f 31 34 36 39 3b 3e 41 43 46 49 4c 4f 52 55 58 5a 5d 61 64 67 6a 6d 70 73 76 79 7c ]];\n#option(rgbUpdate, \"RGB Mode\", \"Breathe\", rgbUpdateKeyBreatheCycle)\n#option(rgbUpdateUnderglow, \"RGB Mode\", \"Breathe\", noop)\nfunc rgbUpdateKeyBreatheCycle() {\n  // Sine wave between 4-20 brightness, with staggering of r, g, b values\n  // to reduce harsh steps.\n  var w = (0xc00 + (SINE_TABLE[(animationTime() >> 5) & 0xff] - 0x80) * (2 * 8));\n  rgbUpdateKeyConstantColor((w + 0x53) >> 8, w >> 8, (w + 0xa6) >> 8);\n}\n\nconst DISCONNECTED_KEY_ORDER = [[ 00 01 02 03 04 05 04 03 02 01 ]];\nfunc rgbUpdateKeyConnectingCycle() {\n  for (var i = 0; i < 42; i = i + 1) {\n    setRgb(i, 0, 0, 0);\n  }\n\n  var index = getTime() >> 6;\n  var keyId = DISCONNECTED_KEY_ORDER[index % 10];\n  setHsv(keyId, index << 10, 0xf0, 16);\n}\n\nfunc shouldShowKeyAnimations() var {\n  var activePairConnection = getActivePairConnection();\n  if (activePairConnection == PAIR_CONNECTION_NONE) {\n    // To avoid flicker at startup while connecting to BLE\n    // do not show button animations when disconnected.\n    return 0;\n  }\n\n  if (activePairConnection == PAIR_CONNECTION_BLE) {\n    // To avoid power drain over BLE, only show animations if\n    // both sides are powered.\n    return isMainPowered() && isPairPowered();\n  }\n\n  return isMainPowered() || isPairPowered();\n}\n\nfunc animationTime() var {\n  return shouldShowKeyAnimations() ? getTime() : 0;\n}\n\n#option(rgbUpdate, \"RGB Mode\", \"Random Colors\", rgbUpdateRandomColors)\nfunc rgbUpdateRandomColors() {\n    rgbUpdateKeyRandomColors(\n      animationTime() * SPEED_VALUES[speed] + hueShift,\n      BRIGHTNESS_VALUES[brightness],\n      SATURATION_VALUES[saturation] * 2,\n    );\n}\n\nfunc rgbUpdate() {\n  if (isBleAdvertising()) {\n    rgbUpdateKeyConnectingCycle();\n  } else if (isHostSleeping()) {\n    rgbUpdateKeyBreatheCycle();\n  } else {\n    #dispatch(per_layer, rgbUpdate, \"RGB Mode\", rgbUpdateHueCycle);\n  }\n}\n\nfunc setKeyRgb(r, g, b) {\n  r = r * brightness >> 3;\n  g = g * brightness >> 3;\n  b = b * brightness >> 3;\n  for(var i = 0; i < 42; i = i + 1) {\n    setRgb(i, r, g, b);\n  }\n}\n\nfunc setUnderglowRgb(r, g, b) {\n  r = r * brightness >> 3;\n  g = g * brightness >> 3;\n  b = b * brightness >> 3;\n  for(var i = 42; i < 54; i = i + 1) {\n    setRgb(i, r, g, b);\n  }\n}\n\nfunc rgbUpdateUnderglow() {\n  if (isBleAdvertising()) {\n    setUnderglowRgb(0, 0, 0);\n  } else if (isHostSleeping()) {\n    setUnderglowRgb(8, 8, 8);\n  } else {\n    #dispatch(per_layer, rgbUpdateUnderglow, \"RGB Mode\",  rgbUpdateUnderglowWhite);\n  }\n}\n\n#option(rgbUpdateUnderglow, \"RGB Mode\",  \"Random Colors\", rgbUpdateUnderglowWhite)\nfunc rgbUpdateUnderglowWhite() {\n  setUnderglowRgb(64, 64, 64);\n}\n\n#option(rgbButtonPress, \"RGB Mode\", \"Random Colors\", rgbButtonPressRandomColor)\nfunc rgbButtonPressRandomColor() {\n  keyColorData[lastButtonIndex] = rand() & 0xffff;\n\n  // If there's no update of keys in the tick loop, update it now.\n  if (!isTimerActive(TIMER_ID_RGB_UPDATE) && (isMainPowered() || isPairPowered())) {\n    rgbUpdate();\n  }\n}\n\n#option(rgbUpdate, \"RGB Mode\", \"Red\", rgbUpdateRed)\nfunc rgbUpdateRed() {\n  setKeyRgb(128, 0, 0);\n}\n\n#option(rgbUpdateUnderglow, \"RGB Mode\", \"Red\",  rgbUpdateUnderglowRed) \nfunc rgbUpdateUnderglowRed() {\n  setUnderglowRgb(128, 0, 0);\n}\n\n#option(rgbUpdate, \"RGB Mode\", \"Green\", rgbUpdateGreen)\nfunc rgbUpdateGreen() {\n  setKeyRgb(0, 128, 0);\n}\n\n#option(rgbUpdateUnderglow, \"RGB Mode\", \"Green\",  rgbUpdateUnderglowGreen) \nfunc rgbUpdateUnderglowGreen() {\n  setUnderglowRgb(0, 128, 0);\n}\n\n\n#option(rgbUpdate, \"RGB Mode\", \"Blue\", rgbUpdateBlue)\nfunc rgbUpdateBlue() {\n  setKeyRgb(0, 0, 128);\n}\n\n#option(rgbUpdateUnderglow, \"RGB Mode\", \"Blue\",  rgbUpdateUnderglowBlue) \nfunc rgbUpdateUnderglowBlue() {\n  setUnderglowRgb(0, 0, 128);\n}\n\nfunc rgbUpdateUnderglowOff() {\n  setUnderglowRgb(0, 0, 0);\n}\n",
-				"updateBoardPower": "func updateBoardPower() {\n  const RGB_UPDATE_TIME = 10;\n  const BLE_UPDATE_TIME = 50;\n\n  if (#flag(per_layer, \"Always Power RGB\", false) || isBleAdvertising()) {\n    startTimer(TIMER_ID_RGB_UPDATE, 32, 1, @rgbUpdate);\n    setBoardPower(1);\n  } else if (brightness == 0) {\n    stopTimer(TIMER_ID_RGB_UPDATE);\n    setBoardPower(getActivePairConnection() == PAIR_CONNECTION_CABLE);\n  } else if (getActivePairConnection() == PAIR_CONNECTION_BLE) {\n    if (isPairPowered() && isMainPowered()) {\n      startTimer(TIMER_ID_RGB_UPDATE, BLE_UPDATE_TIME, 1, @rgbUpdate);\n    } else {\n      stopTimer(TIMER_ID_RGB_UPDATE);\n    }\n    setBoardPower(isMainPowered());\n  } else {\n    // No pair, or cable pair.\n    if (isPairPowered() || isMainPowered()) {\n      startTimer(TIMER_ID_RGB_UPDATE, RGB_UPDATE_TIME, 1, @rgbUpdate);\n      setBoardPower(1);\n    } else {\n      stopTimer(TIMER_ID_RGB_UPDATE);\n      setBoardPower(0);\n    }\n  }\n  rgbUpdate();\n  rgbUpdateUnderglow();\n}",
+				"RGB Scripts": "const SPEED_VALUES      = [[ 00 04 08 0c 10 18 20 30 40 ]];\nconst HUE_SPREAD_VALUES = [[ 00 10 20 28 30 38 40 48 50 ]];\nconst SATURATION_VALUES = [[ 00 20 40 50 60 68 70 78 80 ]];\nconst BRIGHTNESS_VALUES = [[ 00 08 10 18 20 28 30 38 40 ]];\n\nfunc rgbUpdateKeyHueCycle(hShift, sat, spreadMultiplier, value) {\n  const HUE_CYCLE_RGB_ORDER = [[\n    00\n    0c 01\n    18 0d 02\n    19 0e 03\n    1a 0f 04\n    1b 10 05\n    24 1c 11\n    25 1d\n    26\n\n    27\n    28 1e\n    29 1f 12\n    20 13 06\n    21 14 07\n    22 15 08\n    23 16 09\n    17 0a\n    0b\n  ]];\n\n  for (var i = 0; i < 42; i = i + 1) {\n    setHsv(\n      HUE_CYCLE_RGB_ORDER[i],\n      spreadMultiplier*i + hShift,\n      sat,\n      value\n    );\n  }\n}\n\nfunc rgbUpdateUnderglowHueCycle(hShift, sat, spreadMultiplier, value) {\n  const COLOR_OFFSETS = [[\n    02 0b 0d  1d 1e 28\n    06 0f 14  16 1b 24\n  ]];\n\n  for (var i = 0; i < 12; i = i + 1) {\n    setHsv(\n      i + 42,\n      spreadMultiplier * COLOR_OFFSETS[i] + hShift,\n      sat,\n      value\n    );\n  }\n}\n\n#option(rgbUpdate, \"RGB Mode\", \"Hue Cycle\", rgbUpdateHueCycle)\n#option(rgbUpdateUnderglow, \"RGB Mode\",  \"Hue Cycle\",  noop)\nfunc rgbUpdateHueCycle() {\n    var hue = animationTime() * SPEED_VALUES[speed] + hueShift;\n    rgbUpdateKeyHueCycle(\n      hue,\n      SATURATION_VALUES[saturation] * 2,\n      HUE_SPREAD_VALUES[hueSpread] * 16,\n      BRIGHTNESS_VALUES[brightness]\n    );\n    rgbUpdateUnderglowHueCycle(\n      hue,\n      SATURATION_VALUES[saturation] * 2,\n      HUE_SPREAD_VALUES[hueSpread] * 16,\n      BRIGHTNESS_VALUES[brightness]\n    );\n}\n\nfunc rgbUpdateKeyConstantColor(r, g, b) {\n  for (var i = 0; i < 42; i = i + 1) {\n    setRgb(i, r, g, b);\n  }\n}\n\nfunc rgbUpdateAllConstantColor(r, g, b) {\n  for (var i = 0; i < 54; i = i + 1) {\n    setRgb(i, r, g, b);\n  }\n}\n\nfunc rgbUpdateKeyRandomColors(hShift, b, s) {\n  var alwaysFullBrightness = !shouldShowKeyAnimations();\n  if (alwaysFullBrightness) {\n    for (var i = 0; i < 42; i = i + 1) {\n      setHsv(i, hShift + keyColorData[i], s, b);\n    }\n  } else {\n    for (var i = 0; i < 42; i = i + 1) {\n      var v = keyColorData[i];\n      if (v < (32 << 16)) {\n        v = v + 0x10000;\n        keyColorData[i] = v;\n      }\n      setHsv(i, hShift + v, s, b * (v >>> 16) >>> 5);\n    }\n  }\n}\n\nfunc rgbUpdateButtonRandomColor(buttonIndex) {\n    keyColorData[buttonIndex] = rand() & 0xffff;\n\n    // If there's no update of keys in the tick loop, update it now.\n    if (!isTimerActive(TIMER_ID_RGB_UPDATE)) {\n      rgbUpdate();\n    }\n}\n\nfunc rgbInitRandomColors() {\n  for (var i = 0; i < 42; i = i + 1) {\n    keyColorData[i] = (rand() & 0xffff) | 0x200000;\n  }\n}\n\n// 256 step sine table.\nconst SINE_TABLE = [[ 80 83 86 89 8c 8f 92 95 98 9b 9e a2 a5 a7 aa ad b0 b3 b6 b9 bc be c1 c4 c6 c9 cb ce d0 d3 d5 d7 da dc de e0 e2 e4 e6 e8 ea eb ed ee f0 f1 f3 f4 f5 f6 f8 f9 fa fa fb fc fd fd fe fe fe ff ff ff ff ff ff ff fe fe fe fd fd fc fb fa fa f9 f8 f6 f5 f4 f3 f1 f0 ee ed eb ea e8 e6 e4 e2 e0 de dc da d7 d5 d3 d0 ce cb c9 c6 c4 c1 be bc b9 b6 b3 b0 ad aa a7 a5 a2 9e 9b 98 95 92 8f 8c 89 86 83 80 7c 79 76 73 70 6d 6a 67 64 61 5d 5a 58 55 52 4f 4c 49 46 43 41 3e 3b 39 36 34 31 2f 2c 2a 28 25 23 21 1f 1d 1b 19 17 15 14 12 11 0f 0e 0c 0b 0a 09 07 06 05 05 04 03 02 02 01 01 01 00 00 00 00 00 00 00 01 01 01 02 02 03 04 05 05 06 07 09 0a 0b 0c 0e 0f 11 12 14 15 17 19 1b 1d 1f 21 23 25 28 2a 2c 2f 31 34 36 39 3b 3e 41 43 46 49 4c 4f 52 55 58 5a 5d 61 64 67 6a 6d 70 73 76 79 7c ]];\n#option(rgbUpdate, \"RGB Mode\", \"Breathe\", rgbUpdateKeyBreatheCycle)\n#option(rgbUpdateUnderglow, \"RGB Mode\", \"Breathe\", noop)\nfunc rgbUpdateKeyBreatheCycle() {\n  // Sine wave between 4-20 brightness, with staggering of r, g, b values\n  // to reduce harsh steps.\n  var w = (0xc00 + (SINE_TABLE[(animationTime() >> 5) & 0xff] - 0x80) * (2 * 8));\n  rgbUpdateAllConstantColor((w + 0x53) >> 8, w >> 8, (w + 0xa6) >> 8);\n}\n\nconst DISCONNECTED_KEY_ORDER = [[ 00 01 02 03 04 05 04 03 02 01 ]];\nfunc rgbUpdateKeyConnectingCycle() {\n  for (var i = 0; i < 42; i = i + 1) {\n    setRgb(i, 0, 0, 0);\n  }\n\n  var index = getTime() >> 6;\n  var keyId = DISCONNECTED_KEY_ORDER[index % 10];\n  setHsv(keyId, index << 10, 0xf0, 16);\n}\n\nfunc shouldShowKeyAnimations() var {\n  var activePairConnection = getActivePairConnection();\n  if (activePairConnection == PAIR_CONNECTION_NONE) {\n    // To avoid flicker at startup while connecting to BLE\n    // do not show button animations when disconnected.\n    return 0;\n  }\n\n  if (activePairConnection == PAIR_CONNECTION_BLE) {\n    // To avoid power drain over BLE, only show animations if\n    // both sides are powered.\n    return isMainPowered() && isPairPowered();\n  }\n\n  return isMainPowered() || isPairPowered();\n}\n\nfunc animationTime() var {\n  return shouldShowKeyAnimations() ? getTime() : 0;\n}\n\n#option(rgbUpdate, \"RGB Mode\", \"Random Colors\", rgbUpdateRandomColors)\nfunc rgbUpdateRandomColors() {\n    rgbUpdateKeyRandomColors(\n      animationTime() * SPEED_VALUES[speed] + hueShift,\n      BRIGHTNESS_VALUES[brightness],\n      SATURATION_VALUES[saturation] * 2,\n    );\n}\n\nfunc rgbUpdate() {\n  if (isBleAdvertising()) {\n    rgbUpdateKeyConnectingCycle();\n  } else if (isHostSleeping()) {\n    rgbUpdateKeyBreatheCycle();\n  } else {\n    #dispatch(per_layer, rgbUpdate, \"RGB Mode\", rgbUpdateHueCycle);\n  }\n}\n\nfunc setKeyRgb(r, g, b) {\n  r = r * brightness >> 3;\n  g = g * brightness >> 3;\n  b = b * brightness >> 3;\n  for(var i = 0; i < 42; i = i + 1) {\n    setRgb(i, r, g, b);\n  }\n}\n\nfunc setUnderglowRgb(r, g, b) {\n  r = r * brightness >> 3;\n  g = g * brightness >> 3;\n  b = b * brightness >> 3;\n  for(var i = 42; i < 54; i = i + 1) {\n    setRgb(i, r, g, b);\n  }\n}\n\nfunc rgbUpdateUnderglow() {\n  if (isBleAdvertising()) {\n    setUnderglowRgb(0, 0, 0);\n  } else if (isHostSleeping()) {\n    setUnderglowRgb(8, 8, 8);\n  } else {\n    #dispatch(per_layer, rgbUpdateUnderglow, \"RGB Mode\",  rgbUpdateUnderglowWhite);\n  }\n}\n\n#option(rgbUpdateUnderglow, \"RGB Mode\",  \"Random Colors\", rgbUpdateUnderglowWhite)\nfunc rgbUpdateUnderglowWhite() {\n  setUnderglowRgb(64, 64, 64);\n}\n\n#option(rgbButtonPress, \"RGB Mode\", \"Random Colors\", rgbButtonPressRandomColor)\nfunc rgbButtonPressRandomColor() {\n  keyColorData[lastButtonIndex] = rand() & 0xffff;\n\n  // If there's no update of keys in the tick loop, update it now.\n  if (!isTimerActive(TIMER_ID_RGB_UPDATE) && (isMainPowered() || isPairPowered())) {\n    rgbUpdate();\n  }\n}\n\n#option(rgbUpdate, \"RGB Mode\", \"Red\", rgbUpdateRed)\nfunc rgbUpdateRed() {\n  setKeyRgb(128, 0, 0);\n}\n\n#option(rgbUpdateUnderglow, \"RGB Mode\", \"Red\",  rgbUpdateUnderglowRed) \nfunc rgbUpdateUnderglowRed() {\n  setUnderglowRgb(128, 0, 0);\n}\n\n#option(rgbUpdate, \"RGB Mode\", \"Green\", rgbUpdateGreen)\nfunc rgbUpdateGreen() {\n  setKeyRgb(0, 128, 0);\n}\n\n#option(rgbUpdateUnderglow, \"RGB Mode\", \"Green\",  rgbUpdateUnderglowGreen) \nfunc rgbUpdateUnderglowGreen() {\n  setUnderglowRgb(0, 128, 0);\n}\n\n\n#option(rgbUpdate, \"RGB Mode\", \"Blue\", rgbUpdateBlue)\nfunc rgbUpdateBlue() {\n  setKeyRgb(0, 0, 128);\n}\n\n#option(rgbUpdateUnderglow, \"RGB Mode\", \"Blue\",  rgbUpdateUnderglowBlue) \nfunc rgbUpdateUnderglowBlue() {\n  setUnderglowRgb(0, 0, 128);\n}\n\nfunc rgbUpdateUnderglowOff() {\n  setUnderglowRgb(0, 0, 0);\n}\n",
+				"updateBoardPower": "func updateBoardPower() {\n  const PAIR_BOARD_POWER_NO_OVERRIDE = 0;\n  const PAIR_BOARD_POWER_FORCE_OFF = 1;\n  const PAIR_BOARD_POWER_FORCE_ON = 2;\n\n  const RGB_UPDATE_TIME = 10;\n  const BLE_UPDATE_TIME = 50;\n\n  if (#flag(per_layer, \"Always Power RGB\", false)) {\n    setPairBoardPower(PAIR_BOARD_POWER_FORCE_ON);\n    startTimer(TIMER_ID_RGB_UPDATE, 32, 1, @rgbUpdate);\n    setBoardPower(1);\n  } else {\n    setPairBoardPower(PAIR_BOARD_POWER_NO_OVERRIDE);\n    if (isBleAdvertising()) {\n      startTimer(TIMER_ID_RGB_UPDATE, 32, 1, @rgbUpdate);\n      setBoardPower(1);\n    } else if (brightness == 0) {\n      stopTimer(TIMER_ID_RGB_UPDATE);\n      setBoardPower(getActivePairConnection() == PAIR_CONNECTION_CABLE);\n    } else if (getActivePairConnection() == PAIR_CONNECTION_BLE) {\n      if (isPairPowered() && isMainPowered()) {\n        startTimer(TIMER_ID_RGB_UPDATE, BLE_UPDATE_TIME, 1, @rgbUpdate);\n      } else {\n        stopTimer(TIMER_ID_RGB_UPDATE);\n      }\n      setBoardPower(isMainPowered());\n    } else {\n      // No pair, or cable pair.\n      if (isPairPowered() || isMainPowered()) {\n        startTimer(TIMER_ID_RGB_UPDATE, RGB_UPDATE_TIME, 1, @rgbUpdate);\n        setBoardPower(1);\n      } else {\n        stopTimer(TIMER_ID_RGB_UPDATE);\n        setBoardPower(0);\n      }\n    }\n  }\n  rgbUpdate();\n  rgbUpdateUnderglow();\n}",
 				"Display Scripts": "func updateDisplay() {\n  #dispatch(per_layer, drawDisplay, \"Display\", blankDisplay);\n}\n\nfunc blankDisplay() {\n  clearDisplay(0);\n  clearDisplay(1);\n  setAutoDraw(0, AUTO_DRAW_NONE);\n  setAutoDraw(1, AUTO_DRAW_NONE);\n}\n\n#option(drawDisplay, \"Display\", \"Paper Tape\", drawPaperTape)\nfunc drawPaperTape() {\n  setAutoDraw(0, AUTO_DRAW_PAPER_TAPE);\n  setAutoDraw(1, AUTO_DRAW_PAPER_TAPE);\n}\n\n#option(drawDisplay, \"Display\", \"Stroke Count\", drawStrokes)\nfunc drawStrokes() {\n  setAutoDraw(0, AUTO_DRAW_STROKES);\n  setAutoDraw(1, AUTO_DRAW_WPM);\n}\n\nfunc drawDisplay0(layerImage) {\n  const ICON_POSITIONS = [[\n    08 00 00 00 00 00 00 00\n    00 00 10 00 00 00 00 00\n    00 00 10 00 08 12 00 00\n    00 00 10 00 00 12 10 12\n  ]];\n\n  const SHIFT_IMAGE = [[\n    10 10\n    00 01 80 01 c0 01 e0 01 f0 7f f8 7f fc 7f fe 7f\n    fe 7f fc 7f f8 7f f0 7f e0 01 c0 01 80 01 00 01\n  ]];\n\n  const CONTROL_IMAGE = [[\n    10 10\n    00 00 00 00 40 00 60 00 30 00 18 00 0c 00 06 00\n    06 00 0c 00 18 00 30 00 60 00 40 00 00 00 00 00\n  ]];\n\n  const ALT_IMAGE = [[\n    10 10\n    00 00 00 30 00 30 00 30 00 30 00 38 00 1e 80 07\n    e0 01 78 30 1c 30 0c 30 0c 30 0c 30 0c 30 00 00\n  ]];\n\n  const COMMAND_IMAGE = [[\n    10 10\n    00 00 3c 3c 7e 7e 66 66 66 66 fe 7f fc 3f 60 06\n    60 06 fc 3f fe 7f 66 66 66 66 7e 7e 3c 3c 00 00\n  ]];\n\n  const CAPS_LOCK_IMAGE = [[\n    10 10\n    00 01 80 01 c0 01 e0 01 f0 67 f8 67 fc 67 fe 67\n    fe 67 fc 67 f8 67 f0 67 e0 01 c0 01 80 01 00 01\n  ]];\n\n  setAutoDraw(0, AUTO_DRAW_NONE);\n  isBleSummaryActive = 0;\n\n  clearDisplay(0);\n  drawImage(0, (DISPLAY_WIDTH - layerImage[0]) >> 1, DISPLAY_HEIGHT/2 - 48, layerImage);\n\n  var iconCount = (isScanCodePressed(SC_L_SHIFT) || isScanCodePressed(SC_R_SHIFT))\n    + (isScanCodePressed(SC_L_CTRL) || isScanCodePressed(SC_R_CTRL))\n    + (isScanCodePressed(SC_L_ALT) || isScanCodePressed(SC_R_ALT))\n    + (isScanCodePressed(SC_L_META) || isScanCodePressed(SC_R_META));\n  var positions = ICON_POSITIONS + 8 * (iconCount - 1);\n  var xOffset = DISPLAY_WIDTH/2 - 16;\n  var yOffset = DISPLAY_HEIGHT/2;\n\n  if (isScanCodePressed(SC_L_SHIFT) || isScanCodePressed(SC_R_SHIFT)) {\n    drawImage(0, xOffset+positions[0], yOffset+positions[1], SHIFT_IMAGE);\n    positions = positions + 2;\n  }\n  if (isScanCodePressed(SC_L_CTRL) || isScanCodePressed(SC_R_CTRL)) {\n    drawImage(0, xOffset+positions[0], yOffset+positions[1], CONTROL_IMAGE);\n    positions = positions + 2;\n  }\n  if (isScanCodePressed(SC_L_ALT) || isScanCodePressed(SC_R_ALT)) {\n    drawImage(0, xOffset+positions[0], yOffset+positions[1], ALT_IMAGE);\n    positions = positions + 2;\n  }\n  if (isScanCodePressed(SC_L_META) || isScanCodePressed(SC_R_META)) {\n    drawImage(0, xOffset+positions[0], yOffset+positions[1], COMMAND_IMAGE);\n  }\n\n  if (getLedStatus(LED_STATUS_CAPS_LOCK)) {\n    drawImage(0, DISPLAY_WIDTH/2 - 8, DISPLAY_HEIGHT/2 + 48, CAPS_LOCK_IMAGE);\n  } else if (wordCaps) {\n    drawImage(0, DISPLAY_WIDTH/2 - 8, DISPLAY_HEIGHT/2 + 48, SHIFT_IMAGE);\n  }\n}\n\n#option(drawDisplay, \"Display\", \"Steno Icon\", drawDisplaySteno)\nfunc drawDisplaySteno() {\n  const STENO_IMAGE = [[\n    20 20 ff ff 3f 00 ff ff ff 00 ff ff ff 03 ff ff\n    ff 07 ff ff ff 0f ff ff ff 1f ff f9 f3 3f ff f0\n    e1 3f ff f0 e1 7f ff e1 f0 7f ff e3 f8 ff ff 47\n    fc ff ff 07 fc ff ff 0f fe ff 0f 00 00 fe 0f 00\n    00 fe 0f 00 00 fe ff 0f fe ff ff 07 fc ff ff 47\n    fc ff ff e3 f8 ff ff e1 f0 7f ff f0 e1 7f ff f0\n    e1 3f ff f9 f3 3f ff ff ff 1f ff ff ff 0f ff ff\n    ff 07 ff ff ff 03 ff ff ff 00 ff ff 3f 00 00 00\n    00 00\n  ]];\n\n  drawDisplay0(STENO_IMAGE);\n  setAutoDraw(1, AUTO_DRAW_WPM);\n\n  var mode = getParameter(\"steno_mode\");\n  var text;\n  if (mode == \"gemini\")  {\n    text = \"Gemini\";\n  } else if(mode == \"tx_bolt\") {\n    text = \"TX Bolt\";\n  } else if(mode == \"procat\") {\n    text = \"ProCAT\";\n  } else if(mode == \"plover_hid\") {\n    text = \"Plover HID\";\n  } else {\n    return;\n  }\n  drawText(0, DISPLAY_WIDTH/2, DISPLAY_HEIGHT - 48 + 10, FONT_ID_NORMAL, TEXT_ALIGNMENT_MIDDLE, text);\n}\n\n#option(drawDisplay, \"Display\", \"ABC Icon\", drawDisplayAbc)\nfunc drawDisplayAbc() {\n  const ABC_IMAGE = [[\n    20 20 00 00 00 00 00 00 08 00 00 00 0c 00 00 00\n    0f 00 00 c0 0f 00 00 f0 09 00 00 bc 00 00 80 8f\n    00 00 80 bf 00 00 00 fc 08 00 00 f0 0f 00 00 c0\n    0f 00 00 00 0e 00 00 00 08 00 80 00 08 00 80 ff\n    0f 00 80 ff 0f 00 00 30 0c 00 00 10 08 00 00 30\n    0c 00 00 f0 0f 00 00 e0 07 00 00 00 00 00 00 e0\n    07 00 00 f0 0f 00 00 30 0c 00 00 10 08 00 00 30\n    0c 00 00 70 0e 00 00 60 06 00 00 00 00 00 00 00\n    00 00\n  ]];\n\n  drawDisplay0(ABC_IMAGE);\n  setAutoDraw(1, AUTO_DRAW_WPM);\n}\n\n#option(drawDisplay, \"Display\", \"Function Icon\", drawDisplayFunction)\nfunc drawDisplayFunction() {\n  const FUNCTION_IMAGE = [[\n    20 20\n    f0 ff ff 0f f8 ff ff 1f 0c 00 00 30 06 00 00 60\n    03 00 00 c0 03 00 06 c0 03 00 06 c0 03 c0 ff c7\n    03 e0 ff c7 03 60 06 c0 03 60 06 c0 03 00 00 c0\n    03 00 fe c7 03 00 fe c7 03 00 0c c0 03 00 06 c0\n    03 00 0e c0 03 00 fc c7 03 00 f8 c7 03 00 00 c0\n    03 00 00 c0 03 00 00 c0 03 00 00 c0 03 00 00 c0\n    03 00 00 c0 03 00 00 c0 03 00 00 c0 03 00 00 c0\n    06 00 00 60 0c 00 00 30 f8 ff ff 1f f0 ff ff 0f\n  ]];\n\n  drawDisplay0(FUNCTION_IMAGE);\n  setAutoDraw(1, AUTO_DRAW_WPM);\n}\n\n#option(drawDisplay, \"Display\", \"Symbol Icon\", drawDisplaySymbol)\nfunc drawDisplaySymbol() {\n  const SYMBOL_IMAGE = [[\n    20 20 00 00 00 00 00 00 00 00 18 00 00 00 18 00\n    00 00 1c 00 00 00 fe 3f ff 1b fe 3f ff 1b fe 3f\n    ff 1b 00 00 00 00 00 00 fc 0f 00 00 fe 1f 1c 38\n    ff 3f 1e 3c 07 38 1e 3e f3 33 06 3f f3 37 86 37\n    f3 37 c6 33 07 36 fe 31 ff 3b fe 30 fe 3b 3c 30\n    fc 19 00 00 00 00 1c 0c 00 03 1e 1c 18 3f 1e 3c\n    f8 3f c6 38 ff 3f c6 30 ff 03 e6 30 1f 3f fe 39\n    f8 3f fe 3f ff 3f bc 1f ff 03 00 0e 1f 03 00 00\n    18 00\n  ]];\n\n  drawDisplay0(SYMBOL_IMAGE);\n  setAutoDraw(1, AUTO_DRAW_WPM);\n}\n\n#option(drawDisplay, \"Display\", \"Navigation Icon\", drawDisplayNavigation)\nfunc drawDisplayNavigation() {\n  const NAVIGATION_IMAGE = [[\n    20 20 00 00 00 00 00 80 01 00 00 c0 03 00 00 e0\n    07 00 00 f0 0f 00 00 f8 1f 00 00 fc 3f 00 00 e0\n    07 00 00 e0 07 00 00 e0 07 00 40 e0 07 02 60 e0\n    07 06 70 00 00 0e f8 0f f0 1f fc 0f f0 3f fe 0f\n    f0 7f fe 0f f0 7f fc 0f f0 3f f8 0f f0 1f 70 00\n    00 0e 60 e0 07 06 40 e0 07 02 00 e0 07 00 00 e0\n    07 00 00 e0 07 00 00 fc 3f 00 00 f8 1f 00 00 f0\n    0f 00 00 e0 07 00 00 c0 03 00 00 80 01 00 00 00\n    00 00\n  ]];\n\n  drawDisplay0(NAVIGATION_IMAGE);\n  setAutoDraw(1, AUTO_DRAW_WPM);\n}\n\n#option(drawDisplay, \"Display\", \"Settings Icon\", drawDisplaySettings)\nfunc drawDisplaySettings() {\n  drawDisplay0(SETTINGS_IMAGE);\n  setAutoDraw(1, AUTO_DRAW_WPM);\n}\n\n#option(drawDisplay, \"Display\", \"Numpad Icon\", drawDisplayNumpad)\nfunc drawDisplayNumpad() {\n  const NUMPAD_IMAGE = [[\n    20 20 00 00 00 00 00 00 00 00 00 00 00 00 00 00\n    00 00 00 00 00 00 00 00 00 00 7e 7e 7e 7e 7e 7e\n    7e 7e 7e 7e 7e 7e 7e 7e 7e 7e 7e 7e 7e 7e 7e 7e\n    7e 7e 00 00 00 7e 00 00 00 7e 7e 7e 7e 7e 7e 7e\n    7e 7e 7e 7e 7e 7e 7e 7e 7e 7e 7e 7e 7e 7e 7e 7e\n    7e 7e 00 00 00 00 00 00 00 00 7e 7e 7e 7e 7e 7e\n    7e 7e 7e 7e 7e 7e 7e 7e 7e 7e 7e 7e 7e 7e 7e 7e\n    7e 7e 00 00 00 00 00 00 00 00 00 00 00 00 00 00\n    00 00\n  ]];\n\n  drawDisplay0(NUMPAD_IMAGE);\n  setAutoDraw(1, AUTO_DRAW_WPM);\n}\n\n#option(drawDisplay, \"Display\", \"Security Key Icon\", drawDisplaySecurityKey)\nfunc drawDisplaySecurityKey() {\n  const SECURITY_KEY_IMAGE = [[\n    20 20 00 00 00 00 00 00 00 00 00 00 00 00 00 00\n    00 00 00 00 00 00 00 00 00 00 c0 ff ff 00 e0 ff\n    ff 01 60 00 80 03 70 00 00 07 30 00 00 06 38 00\n    00 0c 18 00 18 1c 18 00 7e 18 0c 00 66 38 0c ff\n    c3 30 0c ff c3 30 0c 1b 66 38 18 1b 7e 18 18 01\n    18 1c 38 00 00 0c 30 00 00 06 70 00 00 07 60 00\n    80 03 e0 ff ff 01 c0 ff ff 00 00 00 00 00 00 00\n    00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\n    00 00\n  ]];\n\n  drawDisplay0(SECURITY_KEY_IMAGE);\n  setAutoDraw(1, AUTO_DRAW_WPM);\n}\n\n#option(drawDisplay, \"Display\", \"Dynamic Steno\", drawDisplayDynamicSteno)\nfunc drawDisplayDynamicSteno() {\n  if (dynamicStenoDisplay == 0) {\n    drawDisplaySteno();\n  } else if (dynamicStenoDisplay == 1) {\n    drawPaperTape();\n  } else if (dynamicStenoDisplay == 2) {\n    drawStrokes();\n  }\n}",
 				"DrawOverlay Scripts": "func drawDisplayOverlay() {\n  const OVERLAY_HEIGHT = 16;\n\n  const PAIR_CONNECTED_STATUS_IMAGE_OFFSETS = [[ 00 02 1c ]];\n  const PAIR_CONNECTED_STATUS_IMAGES = [[\n    // None\n    00 00\n\n    // BLE\n    0c 0c 00 00 98 00 98 01 98 03 98 07 98 01 98 01\n    9e 01 9c 01 98 01 90 01 00 00\n\n    // Cable\n    0c 0c 00 00 60 00 f0 00 f8 01 fc 03 f0 00 f0 00\n    fc 03 f8 01 f0 00 60 00 00 00\n  ]];\n\n  const USB_STATUS_IMAGE = [[\n    09 0c 30 00 78 00 b0 00 06 0d ff 0f 86 0c 58 00\n    3c 00 18 00\n  ]];\n\n  const BLUETOOTH_STATUS_IMAGE = [[\n    06 0c 08 01 90 00 ff 0f 62 04 94 02 08 01\n  ]];\n\n  const BATTERY_LEVEL_STATUS_IMAGES = [[\n    // battery0\n    0c 0c f8 01 08 01 08 01 08 01 08 01 08 01 08 01\n    08 01 08 01 08 01 f8 01 f0 00\n\n    // battery1\n    0c 0c f8 01 f8 01 08 01 08 01 08 01 08 01 08 01\n    08 01 08 01 08 01 f8 01 f0 00\n\n    // battery2\n    0c 0c f8 01 f8 01 f8 01 08 01 08 01 08 01 08 01\n    08 01 08 01 08 01 f8 01 f0 00\n\n    // battery3\n    0c 0c f8 01 f8 01 f8 01 f8 01 08 01 08 01 08 01\n    08 01 08 01 08 01 f8 01 f0 00\n\n    // battery4\n    0c 0c f8 01 f8 01 f8 01 f8 01 f8 01 08 01 08 01\n    08 01 08 01 08 01 f8 01 f0 00\n\n    // battery5\n    0c 0c f8 01 f8 01 f8 01 f8 01 f8 01 f8 01 08 01\n    08 01 08 01 08 01 f8 01 f0 00\n\n    // battery6\n    0c 0c f8 01 f8 01 f8 01 f8 01 f8 01 f8 01 f8 01\n    08 01 08 01 08 01 f8 01 f0 00\n\n    // battery7\n    0c 0c f8 01 f8 01 f8 01 f8 01 f8 01 f8 01 f8 01\n    f8 01 08 01 08 01 f8 01 f0 00\n\n    // battery8\n    0c 0c f8 01 f8 01 f8 01 f8 01 f8 01 f8 01 f8 01\n    f8 01 f8 01 08 01 f8 01 f0 00\n\n    // battery9\n    0c 0c f8 01 f8 01 f8 01 f8 01 f8 01 f8 01 f8 01\n    f8 01 f8 01 f8 01 f8 01 f0 00\n  ]];\n\n  const CHARGING_STATUS_IMAGE = [[\n    0c 0c f8 01 08 01 08 01 68 01 70 04 78 03 ec 01\n    e2 00 68 01 08 01 f8 01 f0 00\n  ]];\n\n  const BLE_PROFILE_DOTS = [[\n    02 10 c0 00 c0 00\n    02 10 b0 01 b0 01\n    02 10 d8 06 d8 06\n    02 10 b6 0d b6 0d\n  ]];\n\n  // Clear the region.\n  setDrawColor(0, 0);\n  drawRect(0, 0, 0, DISPLAY_WIDTH, OVERLAY_HEIGHT);\n  setDrawColor(0, 1);\n\n  drawImage(\n    0,\n    2, 2,\n    PAIR_CONNECTED_STATUS_IMAGES\n      + PAIR_CONNECTED_STATUS_IMAGE_OFFSETS[getActivePairConnection()]\n  );\n\n  var x = 15;\n  var activeConnection = getActiveConnection();\n  var activeConnectionCount = 0;\n  var activeConnectionPosition;\n  var activeConnectionUnderlineLength;\n  if (isConnected(CONNECTION_USB)) {\n    drawImage(0, x, 1, USB_STATUS_IMAGE);\n    if (activeConnection == CONNECTION_USB) {\n      activeConnectionPosition = x;\n      activeConnectionUnderlineLength = 9;\n    }\n    activeConnectionCount = activeConnectionCount + 1;\n    x = x + 11;\n  }\n  if (isConnected(CONNECTION_BLE)) {\n    drawImage(0, x+2, 1, BLUETOOTH_STATUS_IMAGE);\n    if (activeConnection == CONNECTION_BLE) {\n      activeConnectionPosition = x;\n      activeConnectionUnderlineLength = 13;\n    }\n\n    drawImage(0, x+9, 0, BLE_PROFILE_DOTS + 6*getBleProfile());\n\n    activeConnectionCount = activeConnectionCount + 1;\n    x = x + 15;\n  }\n  if (isConnected(CONNECTION_USB2)) {\n    drawImage(0, x, 1, USB_STATUS_IMAGE);\n    if (activeConnection == CONNECTION_USB2) {\n      activeConnectionPosition = x;\n      activeConnectionUnderlineLength = 9;\n    }\n    activeConnectionCount = activeConnectionCount + 1;\n    // x = x + 11;\n  }\n\n  if (activeConnectionCount > 1) {\n    drawRect(0,\n             activeConnectionPosition,\n             14,\n             activeConnectionPosition+activeConnectionUnderlineLength,\n             16);\n  }\n\n  if (isMainPowered()) {\n    if (isCharging()) {\n      drawImage(0, DISPLAY_WIDTH-14, 0, CHARGING_STATUS_IMAGE);\n    }\n  } else {\n    // Map 0-100 -> 0-9.\n    // (value * 9 + 50) / 100\n    var batteryIndex = (getBatteryPercentage() * 9 + 50) / 100;\n    drawImage(0, DISPLAY_WIDTH-14, 0, BATTERY_LEVEL_STATUS_IMAGES + batteryIndex * 26);\n  }\n}\n\nfunc redrawDisplayOverlay() {\n  // Mark the screen dirty\n  drawRect(0, 0, 0, 0, 0);\n}\n",
 				"onConnectionUpdate": "func onConnectionUpdate() {\n  if (isBleSummaryActive) {\n    drawBleSummary();\n  }\n  redrawDisplayOverlay();\n  updateBoardPower();\n}\n",
