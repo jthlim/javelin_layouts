@@ -675,7 +675,9 @@
 							}
 						}
 					}
-				]
+				],
+				null,
+				null
 			],
 			"scripts": {
 				"activateLayer": "wordCaps = 0;\n"
@@ -1730,7 +1732,9 @@
 							}
 						}
 					}
-				]
+				],
+				null,
+				null
 			],
 			"scripts": {},
 			"user_scripts": {
@@ -2684,6 +2688,8 @@
 				null,
 				null,
 				null,
+				null,
+				null,
 				null
 			],
 			"scripts": {},
@@ -3064,6 +3070,8 @@
 				[],
 				[],
 				[],
+				null,
+				null,
 				null,
 				null,
 				null,
@@ -3515,6 +3523,8 @@
 					}
 				],
 				[],
+				null,
+				null,
 				null
 			],
 			"scripts": {
@@ -3757,7 +3767,9 @@
 							}
 						}
 					}
-				]
+				],
+				null,
+				null
 			],
 			"scripts": {},
 			"user_scripts": {
@@ -3771,6 +3783,237 @@
 				"Always Power RGB": "false"
 			},
 			"sequences": {}
+		},
+		{
+			"id": 47696887,
+			"name": "Mouse",
+			"keys": [
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				[
+					{
+						"t": "p",
+						"d": {
+							"a": {
+								"t": "p",
+								"c": "leftControl"
+							}
+						}
+					},
+					{
+						"t": "r",
+						"d": {
+							"a": {
+								"t": "r",
+								"c": "leftControl"
+							}
+						}
+					}
+				],
+				[
+					{
+						"t": "p",
+						"d": {
+							"a": {
+								"t": "p",
+								"c": "mouseButton4"
+							}
+						}
+					},
+					{
+						"t": "r",
+						"d": {
+							"a": {
+								"t": "r",
+								"c": "mouseButton4"
+							}
+						}
+					}
+				],
+				[
+					{
+						"t": "p",
+						"d": {
+							"a": {
+								"t": "p",
+								"c": "mouseButton3"
+							}
+						}
+					},
+					{
+						"t": "r",
+						"d": {
+							"a": {
+								"t": "r",
+								"c": "mouseButton3"
+							}
+						}
+					}
+				],
+				[
+					{
+						"t": "p",
+						"d": {
+							"a": {
+								"t": "p",
+								"c": "mouseButton2"
+							}
+						}
+					},
+					{
+						"t": "r",
+						"d": {
+							"a": {
+								"t": "r",
+								"c": "mouseButton2"
+							}
+						}
+					}
+				],
+				[
+					{
+						"t": "p",
+						"d": {
+							"a": {
+								"t": "p",
+								"c": "mouseButton1"
+							}
+						}
+					},
+					{
+						"t": "r",
+						"d": {
+							"a": {
+								"t": "r",
+								"c": "mouseButton1"
+							}
+						}
+					}
+				],
+				[],
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				[
+					{
+						"t": "p",
+						"d": {
+							"a": {
+								"t": "p",
+								"c": "leftShift"
+							}
+						}
+					},
+					{
+						"t": "r",
+						"d": {
+							"a": {
+								"t": "r",
+								"c": "leftShift"
+							}
+						}
+					}
+				],
+				[],
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				[
+					{
+						"t": "p",
+						"d": {
+							"a": {
+								"t": "p",
+								"c": "leftCommand"
+							}
+						}
+					},
+					{
+						"t": "r",
+						"d": {
+							"a": {
+								"t": "r",
+								"c": "leftCommand"
+							}
+						}
+					}
+				],
+				[
+					{
+						"t": "p",
+						"d": {
+							"a": {
+								"t": "p",
+								"c": "leftAlt"
+							}
+						}
+					},
+					{
+						"t": "r",
+						"d": {
+							"a": {
+								"t": "r",
+								"c": "leftAlt"
+							}
+						}
+					}
+				],
+				[],
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"scripts": {},
+			"user_scripts": {
+				"RGB": "#option(rgbUpdate, \"RGB Mode\", \"Mouse Layer\", rgbUpdateMouseLayer)\nfunc rgbUpdateMouseLayer() {\n  for (var i = 0; i < 60; i = i + 1) {\n    setRgb(i, 0, 0, 0);\n  }\n\n  setRgb(13, 0, 0, 32);\n  setRgb(14, 0, 0, 32);\n  setRgb(15, 0, 0, 32);\n  setRgb(16, 0, 0, 32);\n  setRgb(12, 0, 32, 0);\n  setRgb(24, 0, 32, 0);\n  setRgb(41, 0, 32, 0);\n  setRgb(42, 0, 32, 0);\n}\n\n#option(rgbUpdateUnderglow, \"RGB Mode\", \"Mouse Layer\",  rgbUpdateUnderglowOff) \n\n",
+				"Mouse Activate": "var preMouseLayer = -1;\n\nfunc onMouseActive() {\n  if(!#flag(local, \"Auto-Activate layer when using pointer\", true)) {\n    return;\n  }\n\n  stopTimer(TIMER_ID_MOUSE_RETURN_DELAY);\n  if (preMouseLayer == -1) {\n    preMouseLayer = layer;\n    _action_setMouseLayer();\n  }\n}\n\nfunc onMouseInactive() {\n  if(!#flag(local, \"Auto-Activate layer when using pointer\", true)) {\n    return;\n  }\n\n  startTimer(TIMER_ID_MOUSE_RETURN_DELAY, 100, 0, @returnFromMouseLayer);\n}\n\nfunc returnFromMouseLayer() {\n  if (preMouseLayer == -1) return;\n\n  deactivateGlobal();\n  deactivateDynamic();\n  layer = preMouseLayer;\n  preMouseLayer = -1;\n  activateDynamic();\n  activateGlobal();\n}",
+				"Mouse Display": "#option(drawDisplay, \"Display\", \"Mouse Icon\", drawDisplayMouse)\nfunc drawDisplayMouse() {\n  const MOUSE_IMAGE = /* mouse.png */ [[\n  20 30 00 00 00 00 00 00 00 fe ff ff 7f 00 80 ff\n  ff ff ff 01 c0 01 00 00 80 03 70 00 00 00 00 0e\n  38 00 00 00 00 1c 18 00 00 00 00 18 0c 00 00 00\n  00 30 06 00 00 00 00 60 06 00 00 00 00 60 03 00\n  00 00 00 c0 03 00 00 00 00 c0 03 7c 00 00 00 c0\n  03 ff 01 00 00 c0 83 01 03 00 00 c0 ff 01 fe 01\n  00 c0 ff 01 fe 01 00 c0 83 01 03 00 00 c0 03 ff\n  01 00 00 c0 03 7c 00 00 00 c0 03 00 00 00 00 c0\n  03 00 00 00 00 c0 06 00 00 00 00 60 06 00 00 00\n  00 60 0c 00 00 00 00 30 18 00 00 00 00 18 38 00\n  00 00 00 1c 70 00 00 00 00 0e c0 01 00 00 80 03\n  80 ff ff ff ff 01 00 fe ff ff 7f 00 00 00 00 00\n  00 00\n]];\n\n  drawDisplay0(MOUSE_IMAGE, 0xffff);\n  setDrawColor(1, 0x8080ff);\n  setAutoDraw(1, AUTO_DRAW_WPM);\n}\n\n"
+			},
+			"options": {
+				"Auto-Activate Modifiers on Layer": "true",
+				"RGB Mode": "Mouse Layer",
+				"Enable individual keys in Key Layout tool": "true",
+				"Display": "Mouse Icon",
+				"Auto-Activate layer when using pointer": "true"
+			},
+			"sequences": {
+				"setMouseLayer": [
+					{
+						"t": "l",
+						"l": 47696887
+					}
+				]
+			}
 		}
 	],
 	"global": {
@@ -3828,10 +4071,12 @@
 				[],
 				[],
 				[],
-				[]
+				[],
+				null,
+				null
 			],
 			"scripts": {
-				"header": "// Javelin constants\nconst SC_NONE = 0;\n\nconst SC_A = 0x04;\nconst SC_B = 0x05;\nconst SC_C = 0x06;\nconst SC_D = 0x07;\nconst SC_E = 0x08;\nconst SC_F = 0x09;\nconst SC_G = 0x0a;\nconst SC_H = 0x0b;\nconst SC_I = 0x0c;\nconst SC_J = 0x0d;\nconst SC_K = 0x0e;\nconst SC_L = 0x0f;\nconst SC_M = 0x10;\nconst SC_N = 0x11;\nconst SC_O = 0x12;\nconst SC_P = 0x13;\nconst SC_Q = 0x14;\nconst SC_R = 0x15;\nconst SC_S = 0x16;\nconst SC_T = 0x17;\nconst SC_U = 0x18;\nconst SC_V = 0x19;\nconst SC_W = 0x1a;\nconst SC_X = 0x1b;\nconst SC_Y = 0x1c;\nconst SC_Z = 0x1d;\n\nconst SC_1 = 0x1e;\nconst SC_2 = 0x1f;\nconst SC_3 = 0x20;\nconst SC_4 = 0x21;\nconst SC_5 = 0x22;\nconst SC_6 = 0x23;\nconst SC_7 = 0x24;\nconst SC_8 = 0x25;\nconst SC_9 = 0x26;\nconst SC_0 = 0x27;\n\nconst SC_ENTER = 0x28;\nconst SC_ESC = 0x29;\nconst SC_BACKSPACE = 0x2a;\nconst SC_TAB = 0x2b;\nconst SC_SPACE = 0x2c;\nconst SC_MINUS = 0x2d;\nconst SC_EQUAL = 0x2e;\nconst SC_L_BRACKET = 0x2f;\nconst SC_R_BRACKET = 0x30;\nconst SC_BACKSLASH = 0x31;\nconst SC_HASH_TILDE = 0x32;\nconst SC_SEMICOLON = 0x33;\nconst SC_APOSTROPHE = 0x34;\nconst SC_GRAVE = 0x35;\nconst SC_COMMA = 0x36;\nconst SC_DOT = 0x37;\nconst SC_SLASH = 0x38;\nconst SC_CAPS = 0x39;\n\nconst SC_F1 = 0x3a;\nconst SC_F2 = 0x3b;\nconst SC_F3 = 0x3c;\nconst SC_F4 = 0x3d;\nconst SC_F5 = 0x3e;\nconst SC_F6 = 0x3f;\nconst SC_F7 = 0x40;\nconst SC_F8 = 0x41;\nconst SC_F9 = 0x42;\nconst SC_F10 = 0x43;\nconst SC_F11 = 0x44;\nconst SC_F12 = 0x45;\n\nconst SC_SYS_RQ = 0x46;\nconst SC_SCROLL_LOCK = 0x47;\nconst SC_PAUSE = 0x48;\nconst SC_INSERT = 0x49;\nconst SC_HOME = 0x4a;\nconst SC_PAGE_UP = 0x4b;\nconst SC_DELETE = 0x4c;\nconst SC_END = 0x4d;\nconst SC_PAGE_DOWN = 0x4e;\nconst SC_RIGHT = 0x4f;\nconst SC_LEFT = 0x50;\nconst SC_DOWN = 0x51;\nconst SC_UP = 0x52;\n\nconst SC_NUM_LOCK = 0x53;\nconst SC_KP_SLASH = 0x54;\nconst SC_KP_ASTERISK = 0x55;\nconst SC_KP_MINUS = 0x56;\nconst SC_KP_PLUS = 0x57;\nconst SC_KP_ENTER = 0x58;\nconst SC_KP_1 = 0x59;\nconst SC_KP_2 = 0x5a;\nconst SC_KP_3 = 0x5b;\nconst SC_KP_4 = 0x5c;\nconst SC_KP_5 = 0x5d;\nconst SC_KP_6 = 0x5e;\nconst SC_KP_7 = 0x5f;\nconst SC_KP_8 = 0x60;\nconst SC_KP_9 = 0x61;\nconst SC_KP_0 = 0x62;\nconst SC_KP_DOT = 0x63;\n\nconst SC_BACKSLASH_PIPE = 0x64;\nconst SC_COMPOSE = 0x65;\nconst SC_POWER = 0x66;\nconst SC_KP_EQUAL = 0x67;\n\nconst SC_F13 = 0x68;\nconst SC_F14 = 0x69;\nconst SC_F15 = 0x6a;\nconst SC_F16 = 0x6b;\nconst SC_F17 = 0x6c;\nconst SC_F18 = 0x6d;\nconst SC_F19 = 0x6e;\nconst SC_F20 = 0x6f;\nconst SC_F21 = 0x70;\nconst SC_F22 = 0x71;\nconst SC_F23 = 0x72;\nconst SC_F24 = 0x73;\n\nconst SC_OPEN = 0x74;\nconst SC_HELP = 0x75;\nconst SC_MENU = 0x76;\nconst SC_SELECT = 0x77;\nconst SC_STOP = 0x78;\nconst SC_AGAIN = 0x79;\nconst SC_UNDO = 0x7a;\nconst SC_CUT = 0x7b;\nconst SC_COPY = 0x7c;\nconst SC_PASTE = 0x7d;\nconst SC_FIND = 0x7e;\nconst SC_MUTE = 0x7f;\nconst SC_VOLUME_UP = 0x80;\nconst SC_VOLUME_DOWN = 0x81;\nconst SC_KP_COMMA = 0x85;\n\nconst SC_L_CTRL = 0xe0;\nconst SC_L_SHIFT = 0xe1;\nconst SC_L_ALT = 0xe2;\nconst SC_L_META = 0xe3;\nconst SC_R_CTRL = 0xe4;\nconst SC_R_SHIFT = 0xe5;\nconst SC_R_ALT = 0xe6;\nconst SC_R_META = 0xe7;\n\n// From Consumer Page (0x0c)\nconst SC_CONSUMER_PLAY = 0xa0;                // UsageId 0xb0\nconst SC_CONSUMER_PAUSE = 0xa1;               // UsageId 0xb1\nconst SC_CONSUMER_RECORD = 0xa2;              // UsageId 0xb2\nconst SC_CONSUMER_FAST_FORWARD = 0xa3;        // UsageId 0xb3\nconst SC_CONSUMER_REWIND = 0xa4;              // UsageId 0xb4\nconst SC_CONSUMER_SCAN_NEXT_TRACK = 0xa5;     // UsageId 0xb5\nconst SC_CONSUMER_SCAN_PREVIOUS_TRACK = 0xa6; // UsageId 0xb6\nconst SC_CONSUMER_STOP = 0xa7;                // UsageId 0xb7\nconst SC_CONSUMER_EJECT = 0xa8;               // UsageId 0xb8\n\nconst SC_CONSUMER_STOP_EJECT = 0xbc;          // UsageId 0xcc\nconst SC_CONSUMER_PLAY_PAUSE = 0xbd;          // UsageId 0xcd\nconst SC_CONSUMER_PLAY_SKIP = 0xbe;           // UsageId 0xce\n\nconst SC_CONSUMER_MUTE = 0xd2;                // UsageId 0xe2\nconst SC_CONSUMER_VOLUME_UP = 0xd9;           // UsageId 0xe9\nconst SC_CONSUMER_VOLUME_DOWN = 0xda;         // UsageId 0xea\n\nconst SC_CONSUMER_BRIGHTNESS_UP = 0xde;       // UsageId 0x6f\nconst SC_CONSUMER_BRIGHTNESS_DOWN = 0xdf;     // UsageId 0x70\n \nconst LED_STATUS_NUM_LOCK = 0;\nconst LED_STATUS_CAPS_LOCK = 1;\nconst LED_STATUS_SCROLL_LOCK = 2;\nconst LED_STATUS_COMPOSE = 3;\nconst LED_STATUS_KANA = 4;\n\nconst AUTO_DRAW_NONE = 0;\nconst AUTO_DRAW_PAPER_TAPE = 1;\nconst AUTO_DRAW_STENO_LAYOUT = 2;\nconst AUTO_DRAW_WPM = 3;\nconst AUTO_DRAW_STROKES = 4;\n\nconst TEXT_ALIGNMENT_LEFT = 0;\nconst TEXT_ALIGNMENT_MIDDLE = 1;\nconst TEXT_ALIGNMENT_RIGHT = 2;\n\nconst FONT_ID_DEFAULT = 0;\nconst FONT_ID_LARGE = 1;\nconst FONT_ID_DOS = 2;\nconst FONT_ID_SMALL_DIGITS = 3;\nconst FONT_ID_MEDIUM_DIGITS = 4;\nconst FONT_ID_LARGE_DIGITS = 5;\nconst FONT_ID_HUGE_DIGITS = 6;\n\nconst CONNECTION_NONE = 0;\nconst CONNECTION_BLE = 1;\nconst CONNECTION_USB = 2;\nconst CONNECTION_USB2 = 3;\n\nconst PAIR_CONNECTION_NONE = 0;\nconst PAIR_CONNECTION_BLE = 1;\nconst PAIR_CONNECTION_CABLE = 2;\n\nconst SCRIPT_ID_DISPLAY_OVERLAY = 0;\nconst SCRIPT_ID_BATTERY_UPDATE = 1;\nconst SCRIPT_ID_CONNECTION_UPDATE = 2;\nconst SCRIPT_ID_PAIR_CONNECTION_UPDATE = 3;\nconst SCRIPT_ID_KEYBOARD_LED_STATUS_UPDATE = 4;\nconst SCRIPT_ID_BLE_ADVERTISING_UPDATE = 5;\nconst SCRIPT_ID_BLE_SCANNING_UPDATE = 6;\nconst SCRIPT_ID_U2F_STATUS_UPDATE = 7;\nconst SCRIPT_ID_STENO_MODE_UPDATE = 9;\nconst SCRIPT_ID_BLE_PAIR_COMPLETE = 10;\n\n// Layout constants\n\nconst DISPLAY_WIDTH = JAVELIN_DISPLAY_WIDTH ?? 135;\nconst DISPLAY_HEIGHT = JAVELIN_DISPLAY_HEIGHT ?? 240;\nconst HAS_AUDIO = JAVELIN_HAS_AUDIO ?? 0;\n\nfunc noop() {}\n\nvar speed = 1;\nvar hueSpread = 4;\nvar hueShift = 0;\nvar brightness = 4;\nvar saturation = 5;\n\nvar keyColorData[50];\n\nconst TIMER_ID_RGB_UPDATE = 0;\nconst TIMER_ID_SCREEN_SAVER = 1;\nconst TIMER_ID_PAIRING_HOLD = 2;\nconst TIMER_ID_CAPS_RELEASE = 3;\n\nconst DYNAMIC_STENO_DISPLAY_WPM = 0;\nconst DYNAMIC_STENO_DISPLAY_PAPER_TAPE = 1;\nconst DYNAMIC_STENO_DISPLAY_STROKES = 2;\n\nconst MODIFIER_SHIFT = 2;\n\nvar lastButtonIndex;\nvar wordCaps;\nvar dynamicStenoDisplay;\nvar lastScanCodePressed;\nvar wasSteno12;\nvar wasSteno24;\nvar global24PressCount;\nvar wasSteno36;\n\nconst KEY_SHIFT = 0x100;\n\n",
+				"header": "// Javelin constants\nconst SC_NONE = 0;\n\nconst SC_A = 0x04;\nconst SC_B = 0x05;\nconst SC_C = 0x06;\nconst SC_D = 0x07;\nconst SC_E = 0x08;\nconst SC_F = 0x09;\nconst SC_G = 0x0a;\nconst SC_H = 0x0b;\nconst SC_I = 0x0c;\nconst SC_J = 0x0d;\nconst SC_K = 0x0e;\nconst SC_L = 0x0f;\nconst SC_M = 0x10;\nconst SC_N = 0x11;\nconst SC_O = 0x12;\nconst SC_P = 0x13;\nconst SC_Q = 0x14;\nconst SC_R = 0x15;\nconst SC_S = 0x16;\nconst SC_T = 0x17;\nconst SC_U = 0x18;\nconst SC_V = 0x19;\nconst SC_W = 0x1a;\nconst SC_X = 0x1b;\nconst SC_Y = 0x1c;\nconst SC_Z = 0x1d;\n\nconst SC_1 = 0x1e;\nconst SC_2 = 0x1f;\nconst SC_3 = 0x20;\nconst SC_4 = 0x21;\nconst SC_5 = 0x22;\nconst SC_6 = 0x23;\nconst SC_7 = 0x24;\nconst SC_8 = 0x25;\nconst SC_9 = 0x26;\nconst SC_0 = 0x27;\n\nconst SC_ENTER = 0x28;\nconst SC_ESC = 0x29;\nconst SC_BACKSPACE = 0x2a;\nconst SC_TAB = 0x2b;\nconst SC_SPACE = 0x2c;\nconst SC_MINUS = 0x2d;\nconst SC_EQUAL = 0x2e;\nconst SC_L_BRACKET = 0x2f;\nconst SC_R_BRACKET = 0x30;\nconst SC_BACKSLASH = 0x31;\nconst SC_HASH_TILDE = 0x32;\nconst SC_SEMICOLON = 0x33;\nconst SC_APOSTROPHE = 0x34;\nconst SC_GRAVE = 0x35;\nconst SC_COMMA = 0x36;\nconst SC_DOT = 0x37;\nconst SC_SLASH = 0x38;\nconst SC_CAPS = 0x39;\n\nconst SC_F1 = 0x3a;\nconst SC_F2 = 0x3b;\nconst SC_F3 = 0x3c;\nconst SC_F4 = 0x3d;\nconst SC_F5 = 0x3e;\nconst SC_F6 = 0x3f;\nconst SC_F7 = 0x40;\nconst SC_F8 = 0x41;\nconst SC_F9 = 0x42;\nconst SC_F10 = 0x43;\nconst SC_F11 = 0x44;\nconst SC_F12 = 0x45;\n\nconst SC_SYS_RQ = 0x46;\nconst SC_SCROLL_LOCK = 0x47;\nconst SC_PAUSE = 0x48;\nconst SC_INSERT = 0x49;\nconst SC_HOME = 0x4a;\nconst SC_PAGE_UP = 0x4b;\nconst SC_DELETE = 0x4c;\nconst SC_END = 0x4d;\nconst SC_PAGE_DOWN = 0x4e;\nconst SC_RIGHT = 0x4f;\nconst SC_LEFT = 0x50;\nconst SC_DOWN = 0x51;\nconst SC_UP = 0x52;\n\nconst SC_NUM_LOCK = 0x53;\nconst SC_KP_SLASH = 0x54;\nconst SC_KP_ASTERISK = 0x55;\nconst SC_KP_MINUS = 0x56;\nconst SC_KP_PLUS = 0x57;\nconst SC_KP_ENTER = 0x58;\nconst SC_KP_1 = 0x59;\nconst SC_KP_2 = 0x5a;\nconst SC_KP_3 = 0x5b;\nconst SC_KP_4 = 0x5c;\nconst SC_KP_5 = 0x5d;\nconst SC_KP_6 = 0x5e;\nconst SC_KP_7 = 0x5f;\nconst SC_KP_8 = 0x60;\nconst SC_KP_9 = 0x61;\nconst SC_KP_0 = 0x62;\nconst SC_KP_DOT = 0x63;\n\nconst SC_BACKSLASH_PIPE = 0x64;\nconst SC_COMPOSE = 0x65;\nconst SC_POWER = 0x66;\nconst SC_KP_EQUAL = 0x67;\n\nconst SC_F13 = 0x68;\nconst SC_F14 = 0x69;\nconst SC_F15 = 0x6a;\nconst SC_F16 = 0x6b;\nconst SC_F17 = 0x6c;\nconst SC_F18 = 0x6d;\nconst SC_F19 = 0x6e;\nconst SC_F20 = 0x6f;\nconst SC_F21 = 0x70;\nconst SC_F22 = 0x71;\nconst SC_F23 = 0x72;\nconst SC_F24 = 0x73;\n\nconst SC_OPEN = 0x74;\nconst SC_HELP = 0x75;\nconst SC_MENU = 0x76;\nconst SC_SELECT = 0x77;\nconst SC_STOP = 0x78;\nconst SC_AGAIN = 0x79;\nconst SC_UNDO = 0x7a;\nconst SC_CUT = 0x7b;\nconst SC_COPY = 0x7c;\nconst SC_PASTE = 0x7d;\nconst SC_FIND = 0x7e;\nconst SC_MUTE = 0x7f;\nconst SC_VOLUME_UP = 0x80;\nconst SC_VOLUME_DOWN = 0x81;\nconst SC_KP_COMMA = 0x85;\n\nconst SC_L_CTRL = 0xe0;\nconst SC_L_SHIFT = 0xe1;\nconst SC_L_ALT = 0xe2;\nconst SC_L_META = 0xe3;\nconst SC_R_CTRL = 0xe4;\nconst SC_R_SHIFT = 0xe5;\nconst SC_R_ALT = 0xe6;\nconst SC_R_META = 0xe7;\n\n// From Consumer Page (0x0c)\nconst SC_CONSUMER_PLAY = 0xa0;                // UsageId 0xb0\nconst SC_CONSUMER_PAUSE = 0xa1;               // UsageId 0xb1\nconst SC_CONSUMER_RECORD = 0xa2;              // UsageId 0xb2\nconst SC_CONSUMER_FAST_FORWARD = 0xa3;        // UsageId 0xb3\nconst SC_CONSUMER_REWIND = 0xa4;              // UsageId 0xb4\nconst SC_CONSUMER_SCAN_NEXT_TRACK = 0xa5;     // UsageId 0xb5\nconst SC_CONSUMER_SCAN_PREVIOUS_TRACK = 0xa6; // UsageId 0xb6\nconst SC_CONSUMER_STOP = 0xa7;                // UsageId 0xb7\nconst SC_CONSUMER_EJECT = 0xa8;               // UsageId 0xb8\n\nconst SC_CONSUMER_STOP_EJECT = 0xbc;          // UsageId 0xcc\nconst SC_CONSUMER_PLAY_PAUSE = 0xbd;          // UsageId 0xcd\nconst SC_CONSUMER_PLAY_SKIP = 0xbe;           // UsageId 0xce\n\nconst SC_CONSUMER_MUTE = 0xd2;                // UsageId 0xe2\nconst SC_CONSUMER_VOLUME_UP = 0xd9;           // UsageId 0xe9\nconst SC_CONSUMER_VOLUME_DOWN = 0xda;         // UsageId 0xea\n\nconst SC_CONSUMER_BRIGHTNESS_UP = 0xde;       // UsageId 0x6f\nconst SC_CONSUMER_BRIGHTNESS_DOWN = 0xdf;     // UsageId 0x70\n \nconst LED_STATUS_NUM_LOCK = 0;\nconst LED_STATUS_CAPS_LOCK = 1;\nconst LED_STATUS_SCROLL_LOCK = 2;\nconst LED_STATUS_COMPOSE = 3;\nconst LED_STATUS_KANA = 4;\n\nconst AUTO_DRAW_NONE = 0;\nconst AUTO_DRAW_PAPER_TAPE = 1;\nconst AUTO_DRAW_STENO_LAYOUT = 2;\nconst AUTO_DRAW_WPM = 3;\nconst AUTO_DRAW_STROKES = 4;\n\nconst TEXT_ALIGNMENT_LEFT = 0;\nconst TEXT_ALIGNMENT_MIDDLE = 1;\nconst TEXT_ALIGNMENT_RIGHT = 2;\n\nconst FONT_ID_DEFAULT = 0;\nconst FONT_ID_LARGE = 1;\nconst FONT_ID_DOS = 2;\nconst FONT_ID_SMALL_DIGITS = 3;\nconst FONT_ID_MEDIUM_DIGITS = 4;\nconst FONT_ID_LARGE_DIGITS = 5;\nconst FONT_ID_HUGE_DIGITS = 6;\n\nconst CONNECTION_NONE = 0;\nconst CONNECTION_BLE = 1;\nconst CONNECTION_USB = 2;\nconst CONNECTION_USB2 = 3;\n\nconst PAIR_CONNECTION_NONE = 0;\nconst PAIR_CONNECTION_BLE = 1;\nconst PAIR_CONNECTION_CABLE = 2;\n\nconst SCRIPT_ID_DISPLAY_OVERLAY = 0;\nconst SCRIPT_ID_BATTERY_UPDATE = 1;\nconst SCRIPT_ID_CONNECTION_UPDATE = 2;\nconst SCRIPT_ID_PAIR_CONNECTION_UPDATE = 3;\nconst SCRIPT_ID_KEYBOARD_LED_STATUS_UPDATE = 4;\nconst SCRIPT_ID_BLE_ADVERTISING_UPDATE = 5;\nconst SCRIPT_ID_BLE_SCANNING_UPDATE = 6;\nconst SCRIPT_ID_U2F_STATUS_UPDATE = 7;\nconst SCRIPT_ID_STENO_MODE_UPDATE = 9;\nconst SCRIPT_ID_BLE_PAIR_COMPLETE = 10;\n\n// Layout constants\n\nconst DISPLAY_WIDTH = JAVELIN_DISPLAY_WIDTH ?? 135;\nconst DISPLAY_HEIGHT = JAVELIN_DISPLAY_HEIGHT ?? 240;\nconst HAS_AUDIO = JAVELIN_HAS_AUDIO ?? 0;\n\nfunc noop() {}\n\nvar speed = 1;\nvar hueSpread = 4;\nvar hueShift = 0;\nvar brightness = 4;\nvar saturation = 5;\n\nvar keyColorData[50];\n\nconst TIMER_ID_RGB_UPDATE = 0;\nconst TIMER_ID_SCREEN_SAVER = 1;\nconst TIMER_ID_PAIRING_HOLD = 2;\nconst TIMER_ID_CAPS_RELEASE = 3;\nconst TIMER_ID_MOUSE_RETURN_DELAY = 4;\n\nconst DYNAMIC_STENO_DISPLAY_WPM = 0;\nconst DYNAMIC_STENO_DISPLAY_PAPER_TAPE = 1;\nconst DYNAMIC_STENO_DISPLAY_STROKES = 2;\n\nconst MODIFIER_SHIFT = 2;\n\nvar lastButtonIndex;\nvar wordCaps;\nvar dynamicStenoDisplay;\nvar lastScanCodePressed;\nvar wasSteno12;\nvar wasSteno24;\nvar global24PressCount;\nvar wasSteno36;\n\nconst KEY_SHIFT = 0x100;\n\n",
 				"init": "rgbInitRandomColors();\n\nsetScript(SCRIPT_ID_KEYBOARD_LED_STATUS_UPDATE, @{\n  rgbUpdate();\n  updateDisplay();\n});\nsetScript(SCRIPT_ID_STENO_MODE_UPDATE, @{\n  updateDisplay();\n});\n\nstartTimer(TIMER_ID_RGB_UPDATE, 32, 1, @rgbUpdate);\nupdateScreenSaverTimer();\n",
 				"pressScanCode": "pressScanCodeButton(#buttonIndex, #modifierMask, #key, #isModifier);",
 				"releaseScanCode": "releaseScanCodeButton(#key);",
@@ -3845,12 +4090,16 @@
 				"Display Scripts": "func updateDisplay() {\n  #dispatch(per_layer, drawDisplay, \"Display\", blankDisplay);\n}\n\nfunc blankDisplay() {\n  clearDisplay(0);\n  clearDisplay(1);\n  setAutoDraw(0, AUTO_DRAW_NONE);\n  setAutoDraw(1, AUTO_DRAW_NONE);\n}\n\n#option(drawDisplay, \"Display\", \"Paper Tape\", drawPaperTape)\nfunc drawPaperTape() {\n  setAutoDraw(0, AUTO_DRAW_PAPER_TAPE);\n  setAutoDraw(1, AUTO_DRAW_PAPER_TAPE);\n}\n\n#option(drawDisplay, \"Display\", \"Stroke Count\", drawStrokes)\nfunc drawStrokes() {\n  setDrawColor(0, 0x80ff00);\n  setAutoDraw(0, AUTO_DRAW_STROKES);\n  setDrawColor(1, 0x8080ff);\n  setAutoDraw(1, AUTO_DRAW_WPM);\n}\n\nfunc drawDisplay0(layerImage, drawColor) {\n  const SHIFT_IMAGE = [[\n    10 10\n    00 01 80 01 c0 01 e0 01 f0 7f f8 7f fc 7f fe 7f\n    fe 7f fc 7f f8 7f f0 7f e0 01 c0 01 80 01 00 01\n  ]];\n\n  const CONTROL_IMAGE = [[\n    10 10\n    00 00 00 00 40 00 60 00 30 00 18 00 0c 00 06 00\n    06 00 0c 00 18 00 30 00 60 00 40 00 00 00 00 00\n  ]];\n\n  const ALT_IMAGE = [[\n    10 10\n    00 00 00 30 00 30 00 30 00 30 00 38 00 1e 80 07\n    e0 01 78 30 1c 30 0c 30 0c 30 0c 30 0c 30 00 00\n  ]];\n\n  const COMMAND_IMAGE = [[\n    10 10\n    00 00 3c 3c 7e 7e 66 66 66 66 fe 7f fc 3f 60 06\n    60 06 fc 3f fe 7f 66 66 66 66 7e 7e 3c 3c 00 00\n  ]];\n\n  const CAPS_LOCK_IMAGE = [[\n    10 10\n    00 01 80 01 c0 01 e0 01 f0 67 f8 67 fc 67 fe 67\n    fe 67 fc 67 f8 67 f0 67 e0 01 c0 01 80 01 00 01\n  ]];\n\n  setAutoDraw(0, AUTO_DRAW_NONE);\n\n  clearDisplay(0);\n  setDrawColor(0, drawColor);\n\n  drawImage(0, (DISPLAY_WIDTH - layerImage[0]) >> 1, (DISPLAY_HEIGHT - layerImage[1])/2 - 16, layerImage);\n\n  var iconCount = (isScanCodePressed(SC_L_SHIFT) || isScanCodePressed(SC_R_SHIFT))\n    + (isScanCodePressed(SC_L_CTRL) || isScanCodePressed(SC_R_CTRL))\n    + (isScanCodePressed(SC_L_ALT) || isScanCodePressed(SC_R_ALT))\n    + (isScanCodePressed(SC_L_META) || isScanCodePressed(SC_R_META));\n  var iconWidth = iconCount * 16 + (iconCount - 1) * 2;\n  var xOffset = DISPLAY_WIDTH / 2 - iconWidth / 2;\n  var yOffset = DISPLAY_HEIGHT - 32;\n\n  setDrawColor(0, 0x808080);\n  if (isScanCodePressed(SC_L_SHIFT) || isScanCodePressed(SC_R_SHIFT)) {\n    drawImage(0, xOffset, yOffset, SHIFT_IMAGE);\n    xOffset = xOffset + 18;\n  }\n  if (isScanCodePressed(SC_L_CTRL) || isScanCodePressed(SC_R_CTRL)) {\n    drawImage(0, xOffset, yOffset, CONTROL_IMAGE);\n    xOffset = xOffset + 18;\n  }\n  if (isScanCodePressed(SC_L_ALT) || isScanCodePressed(SC_R_ALT)) {\n    drawImage(0, xOffset, yOffset, ALT_IMAGE);\n    xOffset = xOffset + 18;\n  }\n  if (isScanCodePressed(SC_L_META) || isScanCodePressed(SC_R_META)) {\n    drawImage(0, xOffset, yOffset, COMMAND_IMAGE);\n  }\n\n  if (getLedStatus(LED_STATUS_CAPS_LOCK)) {\n    drawImage(0, DISPLAY_WIDTH/2 - 8, DISPLAY_HEIGHT/2 + 48, CAPS_LOCK_IMAGE);\n  } else if (wordCaps) {\n    drawImage(0, DISPLAY_WIDTH/2 - 8, DISPLAY_HEIGHT/2 + 48, SHIFT_IMAGE);\n  }\n}\n\n#option(drawDisplay, \"Display\", \"Steno Icon\", drawDisplaySteno)\nfunc drawDisplaySteno() {\n  const STENO_IMAGE = /* steno.png */ [[\n  40 40 ff ff ff ff ff 1f 00 00 ff ff ff ff ff ff\n  01 00 ff ff ff ff ff ff 03 00 ff ff ff ff ff ff\n  1f 00 ff ff ff ff ff ff 1f 00 ff ff ff ff ff ff\n  7f 00 ff ff ff ff ff ff 7f 00 ff ff ff ff ff ff\n  ff 01 ff ff ff ff ff ff ff 01 ff ff ff ff ff ff\n  ff 07 ff ff ff ff ff ff ff 07 ff ff ff ff ff ff\n  ff 1f ff ff ff ff ff ff ff 1f ff ff c3 ff 0f ff\n  ff 1f ff ff 81 ff 07 fe ff 3f ff ff 81 ff 07 fe\n  ff 7f ff ff 01 ff 03 fe ff 7f ff ff 01 fe 01 fe\n  ff 7f ff ff 03 fe 01 ff ff 7f ff ff 07 fe 81 ff\n  ff ff ff ff 0f fc c0 ff ff ff ff ff 1f 78 e0 ff\n  ff ff ff ff 1f 78 e0 ff ff ff ff ff 3f 38 f0 ff\n  ff ff ff ff 7f 10 f8 ff ff ff ff ff 7f 00 f8 ff\n  ff ff ff ff ff 00 fc ff ff ff ff ff ff 01 fe ff\n  ff ff ff ff ff 01 fe ff ff ff ff 01 00 00 00 00\n  fe ff ff 01 00 00 00 00 fe ff ff 01 00 00 00 00\n  fe ff ff 01 00 00 00 00 fe ff ff ff ff 01 fe ff\n  ff ff ff ff ff 01 fe ff ff ff ff ff ff 00 fc ff\n  ff ff ff ff 7f 00 f8 ff ff ff ff ff 7f 10 f8 ff\n  ff ff ff ff 3f 38 f0 ff ff ff ff ff 1f 78 e0 ff\n  ff ff ff ff 1f 78 e0 ff ff ff ff ff 0f fc c0 ff\n  ff ff ff ff 07 fe 81 ff ff ff ff ff 03 fe 01 ff\n  ff 7f ff ff 01 fe 01 fe ff 7f ff ff 01 ff 03 fe\n  ff 7f ff ff 81 ff 07 fe ff 7f ff ff 81 ff 07 fe\n  ff 3f ff ff c3 ff 0f ff ff 1f ff ff ff ff ff ff\n  ff 1f ff ff ff ff ff ff ff 1f ff ff ff ff ff ff\n  ff 07 ff ff ff ff ff ff ff 07 ff ff ff ff ff ff\n  ff 01 ff ff ff ff ff ff ff 01 ff ff ff ff ff ff\n  7f 00 ff ff ff ff ff ff 7f 00 ff ff ff ff ff ff\n  1f 00 ff ff ff ff ff ff 1f 00 ff ff ff ff ff ff\n  07 00 ff ff ff ff ff ff 01 00 ff ff ff ff ff 3f\n  00 00 ff ff ff ff ff 0f 00 00 00 00 00 00 00 00\n  00 00\n]];\n\n  drawDisplay0(STENO_IMAGE, 0x9af9da);\n  setDrawColor(1, 0x8080ff);\n  setAutoDraw(1, AUTO_DRAW_WPM);\n\n  var mode = getParameter(\"steno_mode\");\n  var text;\n  if (mode == \"gemini\")  {\n    text = \"Gemini\";\n  } else if(mode == \"tx_bolt\") {\n    text = \"TX Bolt\";\n  } else if(mode == \"procat\") {\n    text = \"ProCAT\";\n  } else if(mode == \"plover_hid\") {\n    text = \"Plover HID\";\n  } else {\n    return;\n  }\n  drawText(0, DISPLAY_WIDTH/2, 4*DISPLAY_HEIGHT/5, FONT_ID_LARGE, TEXT_ALIGNMENT_MIDDLE, text);\n}\n\n#option(drawDisplay, \"Display\", \"ABC Icon\", drawDisplayAbc)\nfunc drawDisplayAbc() {\n  const QWERTY_IMAGE = /* qwerty.png */ [[\n  82 1d 00 00 00 00 00 3e 00 00 c0 ff 01 00 e0 ff\n  07 00 f8 ff 0f 00 f8 ff 1f 00 7c 00 1e 00 1c 00\n  38 04 0e 00 38 06 06 00 30 07 06 00 60 03 06 00\n  e0 03 02 00 e0 03 06 00 e0 03 06 00 e0 03 06 00\n  60 03 0e 00 70 07 0e 00 38 0f 3c 00 3c 0e fc 80\n  1f 0e f8 ff 1f 0e f0 ff 0f 0e e0 ff 03 0c 86 ff\n  00 0c 0e 00 00 0c 3e 00 00 0c fe 01 00 0c fe 0f\n  00 0c fe ff 00 0e e6 ff 07 0f 06 ff 3f 00 00 f0\n  7f 00 00 80 7f 00 00 c0 0f 00 00 f8 01 00 00 3f\n  00 00 e0 03 00 00 7c 00 00 00 fe 03 00 00 fe 1f\n  00 00 f0 ff 00 00 80 ff 03 00 00 fe 1f 00 00 f0\n  7f 00 00 80 7f 00 00 c0 1f 00 06 f8 01 00 86 3f\n  00 00 fe 03 00 00 7e 00 00 00 0e 00 00 00 06 00\n  20 00 06 00 20 00 06 00 20 00 0e 00 38 00 fe ff\n  3f 00 fe ff 3f 00 fe ff 3f 00 fe ff 3f 00 06 0c\n  20 00 06 0c 20 00 06 0c 20 00 06 1e 20 00 86 7f\n  20 00 0e 00 30 00 1e 00 30 00 7e 00 38 00 7e 00\n  3e 00 00 80 3f 00 06 80 3f 00 06 00 20 00 06 00\n  20 00 1e 00 38 00 fe ff 3f 00 fe ff 3f 00 fe ff\n  3f 00 fe ff 3f 00 06 18 20 00 06 38 20 00 06 78\n  20 00 06 fc 00 00 0e fc 03 00 be ff 07 00 fc cf\n  0f 00 fc 87 1f 00 f8 03 3f 00 f0 01 3e 00 7e 00\n  38 00 7e 00 38 00 1e 00 30 00 06 00 20 00 06 00\n  20 00 06 00 20 00 06 00 20 00 06 00 20 00 06 00\n  30 00 fe ff 3f 00 fe ff 3f 00 fe ff 3f 00 fe ff\n  3f 00 06 00 30 00 06 00 20 00 06 00 20 00 06 00\n  00 00 06 00 00 00 0e 00 00 00 3e 00 00 00 7e 00\n  00 00 06 00 00 00 0e 00 00 00 1e 00 00 00 7e 00\n  00 00 fe 01 00 00 fe 03 20 00 f6 0f 20 00 c6 3f\n  30 00 80 ff 3f 00 00 fe 3f 00 00 f8 3f 00 00 f8\n  3f 00 00 1c 30 00 06 0f 20 00 c6 03 20 00 fe 00\n  00 00 7e 00 00 00 1e 00 00 00 0e 00 00 00 06 00\n  00 00 06 00 00 00 00 00 00 00\n]];\n\n  drawDisplay0(QWERTY_IMAGE, 0xffffff);\n  setDrawColor(1, 0x8080ff);\n  setAutoDraw(1, AUTO_DRAW_WPM);\n}\n\n#option(drawDisplay, \"Display\", \"Function Icon\", drawDisplayFunction)\nfunc drawDisplayFunction() {\n  const FUNCTION_IMAGE = /* function.png */ [[\n  40 40 00 fc ff ff ff ff 3f 00 00 ff ff ff ff ff\n  ff 00 c0 ff ff ff ff ff ff 03 e0 ff ff ff ff ff\n  ff 07 f0 07 00 00 00 00 e0 0f f8 01 00 00 00 00\n  80 1f fc 00 00 00 00 00 00 3f 7c 00 00 00 00 00\n  00 3e 3e 00 00 00 00 00 00 7c 1e 00 00 00 00 00\n  00 78 1f 00 00 00 3c 00 00 f8 0f 00 00 00 3c 00\n  00 f0 0f 00 00 00 3c 00 00 f0 0f 00 00 00 3c 00\n  00 f0 0f 00 00 f0 ff ff 3f f0 0f 00 00 f8 ff ff\n  3f f0 0f 00 00 fc ff ff 3f f0 0f 00 00 fc ff ff\n  3f f0 0f 00 00 3c 3c 00 00 f0 0f 00 00 3c 3c 00\n  00 f0 0f 00 00 3c 3c 00 00 f0 0f 00 00 3c 3c 00\n  00 f0 0f 00 00 00 00 00 00 f0 0f 00 00 00 00 00\n  00 f0 0f 00 00 00 fc ff 3f f0 0f 00 00 00 fc ff\n  3f f0 0f 00 00 00 fc ff 3f f0 0f 00 00 00 fc ff\n  3f f0 0f 00 00 00 f0 01 00 f0 0f 00 00 00 f8 00\n  00 f0 0f 00 00 00 7c 00 00 f0 0f 00 00 00 7c 00\n  00 f0 0f 00 00 00 fc 00 00 f0 0f 00 00 00 fc 01\n  00 f0 0f 00 00 00 f8 ff 3f f0 0f 00 00 00 f0 ff\n  3f f0 0f 00 00 00 e0 ff 3f f0 0f 00 00 00 c0 ff\n  3f f0 0f 00 00 00 00 00 00 f0 0f 00 00 00 00 00\n  00 f0 0f 00 00 00 00 00 00 f0 0f 00 00 00 00 00\n  00 f0 0f 00 00 00 00 00 00 f0 0f 00 00 00 00 00\n  00 f0 0f 00 00 00 00 00 00 f0 0f 00 00 00 00 00\n  00 f0 0f 00 00 00 00 00 00 f0 0f 00 00 00 00 00\n  00 f0 0f 00 00 00 00 00 00 f0 0f 00 00 00 00 00\n  00 f0 0f 00 00 00 00 00 00 f0 0f 00 00 00 00 00\n  00 f0 0f 00 00 00 00 00 00 f0 1f 00 00 00 00 00\n  00 f8 1e 00 00 00 00 00 00 78 3e 00 00 00 00 00\n  00 7c 7c 00 00 00 00 00 00 3e fc 00 00 00 00 00\n  00 3f f8 01 00 00 00 00 80 1f f0 07 00 00 00 00\n  e0 0f e0 ff ff ff ff ff ff 07 c0 ff ff ff ff ff\n  ff 03 00 ff ff ff ff ff ff 00 00 fc ff ff ff ff\n  3f 00\n]];\n\n  drawDisplay0(FUNCTION_IMAGE, 0x80c0ff);\n  setDrawColor(1, 0x8080ff);\n  setAutoDraw(1, AUTO_DRAW_WPM);\n}\n\n#option(drawDisplay, \"Display\", \"Symbol Icon\", drawDisplaySymbol)\nfunc drawDisplaySymbol() {\n  const SYMBOL_IMAGE = /* symbols.png */ [[\n  40 40 00 00 00 00 00 00 00 00 00 00 00 00 00 00\n  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\n  00 00 c0 03 00 00 00 00 00 00 c0 03 00 00 00 00\n  00 00 e0 03 00 00 00 00 00 00 e0 03 00 00 00 00\n  00 00 f0 03 00 00 00 00 00 00 f8 03 00 00 00 00\n  00 00 fc ff ff 0f ff ff cf 03 fc ff ff 0f ff ff\n  cf 03 fc ff ff 0f ff ff cf 03 fc ff ff 0f ff ff\n  cf 03 fc ff ff 0f ff ff cf 03 fc ff ff 0f ff ff\n  cf 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00\n  00 00 00 00 00 00 f0 ff ff 00 00 00 00 00 f8 ff\n  ff 01 00 00 00 00 fc ff ff 03 00 00 00 00 fe ff\n  ff 07 c0 01 80 0f fe ff ff 0f e0 03 c0 0f ff ff\n  ff 0f f0 03 e0 0f 7f 00 c0 0f f8 03 f0 0f 3f 00\n  80 0f fc 01 f8 0f 1f ff 0f 0f fc 00 fc 0f 8f ff\n  1f 0f 7c 00 fe 0f 8f ff 3f 0f 3c 00 7f 0f 8f ff\n  3f 0f 3c 80 3f 0f 8f ff 3f 0f 3c c0 1f 0f 1f ff\n  3f 0f 3c e0 0f 0f 3f 00 3c 0f 7c f0 07 0f 7f 00\n  1e 0f fc fc 03 0f ff ff 8f 0f f8 ff 01 0f fe ff\n  cf 0f f8 ff 00 0f fe ff cf 0f f0 3f 00 0f fc ff\n  c7 0f e0 1f 00 0f f8 ff c3 07 80 0f 00 0f f0 ff\n  c1 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00\n  00 00 c0 01 60 00 00 00 0f 00 f0 03 f0 00 00 00\n  0f 0f f8 03 f0 01 c0 03 ff 0f f8 03 f0 03 c0 e3\n  ff 0f fc 03 f0 07 c0 ff ff 0f fc 01 e0 07 c0 ff\n  ff 0f 7c f0 c0 0f f8 ff ff 00 3c f0 80 0f ff ff\n  0f 00 3c f0 00 0f ff 1f 0f 00 3c f0 00 0f ff 03\n  0f 00 3c f8 00 0f ff 03 0f 0f 7c fc 00 0f cf 03\n  ff 0f fc ff 81 0f c0 e3 ff 0f fc ff 83 0f c0 ff\n  ff 0f f8 ff cf 0f c0 ff ff 0f f8 ff ff 07 f8 ff\n  ff 00 f0 cf ff 03 ff ff 0f 00 c0 87 ff 01 ff 1f\n  0f 00 00 00 fc 00 ff 03 0f 00 00 00 78 00 ff 03\n  0f 00 00 00 00 00 cf 03 00 00 00 00 00 00 c0 03\n  00 00\n]];\n\n  drawDisplay0(SYMBOL_IMAGE, 0xffffff);\n  setDrawColor(1, 0x8080ff);\n  setAutoDraw(1, AUTO_DRAW_WPM);\n}\n\n#option(drawDisplay, \"Display\", \"Navigation Icon\", drawDisplayNavigation)\nfunc drawDisplayNavigation() {\n  const NAVIGATION_IMAGE = /* navigation.png */ [[\n  40 40 00 00 00 00 00 00 00 00 00 00 00 00 00 00\n  00 00 00 00 00 c0 03 00 00 00 00 00 00 e0 07 00\n  00 00 00 00 00 70 0e 00 00 00 00 00 00 38 1c 00\n  00 00 00 00 00 1c 38 00 00 00 00 00 00 0e 70 00\n  00 00 00 00 00 07 e0 00 00 00 00 00 80 03 c0 01\n  00 00 00 00 c0 01 80 03 00 00 00 00 e0 00 00 07\n  00 00 00 00 f0 0f f0 0f 00 00 00 00 f0 0f f0 0f\n  00 00 00 00 00 0c 30 00 00 00 00 00 00 0c 30 00\n  00 00 00 00 00 0c 30 00 00 00 00 00 00 0c 30 00\n  00 00 00 00 00 0c 30 00 00 00 00 00 00 0c 30 00\n  00 00 00 30 00 0c 30 00 0c 00 00 38 00 0c 30 00\n  1c 00 00 3c 00 fc 3f 00 3c 00 00 3e 00 fc 3f 00\n  7c 00 00 37 00 00 00 00 ec 00 80 33 00 00 00 00\n  cc 01 c0 f1 ff 00 00 ff 8f 03 e0 f0 ff 00 00 ff\n  0f 07 70 00 c0 00 00 03 00 0e 38 00 c0 00 00 03\n  00 1c 1c 00 c0 00 00 03 00 38 0c 00 c0 00 00 03\n  00 30 0c 00 c0 00 00 03 00 30 1c 00 c0 00 00 03\n  00 38 38 00 c0 00 00 03 00 1c 70 00 c0 00 00 03\n  00 0e e0 f0 ff 00 00 ff 0f 07 c0 f1 ff 00 00 ff\n  8f 03 80 33 00 00 00 00 cc 01 00 37 00 00 00 00\n  ec 00 00 3e 00 fc 3f 00 7c 00 00 3c 00 fc 3f 00\n  3c 00 00 38 00 0c 30 00 1c 00 00 30 00 0c 30 00\n  0c 00 00 00 00 0c 30 00 00 00 00 00 00 0c 30 00\n  00 00 00 00 00 0c 30 00 00 00 00 00 00 0c 30 00\n  00 00 00 00 00 0c 30 00 00 00 00 00 00 0c 30 00\n  00 00 00 00 f0 0f f0 0f 00 00 00 00 f0 0f f0 0f\n  00 00 00 00 e0 00 00 07 00 00 00 00 c0 01 80 03\n  00 00 00 00 80 03 c0 01 00 00 00 00 00 07 e0 00\n  00 00 00 00 00 0e 70 00 00 00 00 00 00 1c 38 00\n  00 00 00 00 00 38 1c 00 00 00 00 00 00 70 0e 00\n  00 00 00 00 00 e0 07 00 00 00 00 00 00 c0 03 00\n  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\n  00 00\n]];\n\n  drawDisplay0(NAVIGATION_IMAGE, 0xffc0c0);\n  setDrawColor(1, 0x8080ff);\n  setAutoDraw(1, AUTO_DRAW_WPM);\n}\n\n#option(drawDisplay, \"Display\", \"Settings Icon\", drawDisplaySettings)\nfunc drawDisplaySettings() {\nconst SETTINGS_IMAGE = /* settings.png */ [[\n  40 40 00 00 00 00 00 00 00 00 00 00 00 00 00 00\n  00 00 00 00 00 f0 0f 00 00 00 00 00 00 f8 1f 00\n  00 00 00 00 00 fc 3f 00 00 00 00 00 00 fc 3f 00\n  00 00 00 00 00 fc 3f 00 00 00 00 00 00 fe 7f 00\n  00 00 00 f0 00 fe 7f 00 0f 00 00 f8 03 fe 7f c0\n  1f 00 00 fc 0f ff ff f0 3f 00 00 fe 9f ff ff f9\n  7f 00 00 ff ff ff ff ff ff 00 00 ff ff ff ff ff\n  ff 00 00 ff ff ff ff ff ff 00 00 ff ff ff ff ff\n  ff 00 00 fe ff ff ff ff 7f 00 00 fc ff ff ff ff\n  7f 00 00 fc ff ff ff ff 3f 00 00 fc ff ff ff ff\n  3f 00 00 f8 ff ff ff ff 1f 00 00 f0 ff ff ff ff\n  0f 00 00 f0 ff 3f fc ff 0f 00 00 f8 ff 0f f0 ff\n  1f 00 00 fc ff 03 c0 ff 3f 00 80 ff ff 01 80 ff\n  ff 01 f0 ff ff 00 00 ff ff 0f f8 ff ff 00 00 ff\n  ff 1f fc ff 7f 00 00 fe ff 3f fc ff 7f 00 00 fe\n  ff 3f fc ff 3f 00 00 fc ff 3f fc ff 3f 00 00 fc\n  ff 3f fc ff 3f 00 00 fc ff 3f fc ff 3f 00 00 fc\n  ff 3f fc ff 7f 00 00 fe ff 3f fc ff 7f 00 00 fe\n  ff 3f f8 ff ff 00 00 ff ff 1f f0 ff ff 00 00 ff\n  ff 0f 80 ff ff 01 80 ff ff 01 00 fc ff 03 c0 ff\n  3f 00 00 f8 ff 0f f0 ff 1f 00 00 f0 ff 3f fc ff\n  0f 00 00 f0 ff ff ff ff 0f 00 00 f8 ff ff ff ff\n  1f 00 00 fc ff ff ff ff 3f 00 00 fc ff ff ff ff\n  3f 00 00 fe ff ff ff ff 7f 00 00 fe ff ff ff ff\n  7f 00 00 ff ff ff ff ff ff 00 00 ff ff ff ff ff\n  ff 00 00 ff ff ff ff ff ff 00 00 ff ff ff ff ff\n  ff 00 00 fe 9f ff ff f9 7f 00 00 fc 0f ff ff f0\n  3f 00 00 f8 03 fe 7f c0 1f 00 00 f0 00 fe 7f 00\n  0f 00 00 00 00 fe 7f 00 00 00 00 00 00 fc 3f 00\n  00 00 00 00 00 fc 3f 00 00 00 00 00 00 fc 3f 00\n  00 00 00 00 00 f8 1f 00 00 00 00 00 00 f0 0f 00\n  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\n  00 00\n]];\n\n  drawDisplay0(SETTINGS_IMAGE, 0xffc000);\n  setDrawColor(1, 0x8080ff);\n  setAutoDraw(1, AUTO_DRAW_WPM);\n}\n\n#option(drawDisplay, \"Display\", \"Numpad Icon\", drawDisplayNumpad)\nfunc drawDisplayNumpad() {\n  const NUMPAD_IMAGE = /* numpad.png */ [[\n  40 40 00 00 00 00 00 00 00 00 00 00 00 00 00 00\n  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\n  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\n  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\n  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\n  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\n  00 00 f8 1f f8 1f f8 1f f8 1f fc 3f fc 3f fc 3f\n  fc 3f fc 3f fc 3f fc 3f fc 3f fc 3f fc 3f fc 3f\n  fc 3f fc 3f fc 3f fc 3f fc 3f fc 3f fc 3f fc 3f\n  fc 3f fc 3f fc 3f fc 3f fc 3f fc 3f fc 3f fc 3f\n  fc 3f fc 3f fc 3f fc 3f fc 3f fc 3f fc 3f fc 3f\n  fc 3f fc 3f fc 3f fc 3f fc 3f f8 1f f8 1f f8 1f\n  fc 3f 00 00 00 00 00 00 fc 3f 00 00 00 00 00 00\n  fc 3f 00 00 00 00 00 00 fc 3f 00 00 00 00 00 00\n  fc 3f f8 1f f8 1f f8 1f fc 3f fc 3f fc 3f fc 3f\n  fc 3f fc 3f fc 3f fc 3f fc 3f fc 3f fc 3f fc 3f\n  fc 3f fc 3f fc 3f fc 3f fc 3f fc 3f fc 3f fc 3f\n  fc 3f fc 3f fc 3f fc 3f fc 3f fc 3f fc 3f fc 3f\n  fc 3f fc 3f fc 3f fc 3f fc 3f fc 3f fc 3f fc 3f\n  fc 3f fc 3f fc 3f fc 3f fc 3f f8 1f f8 1f f8 1f\n  f8 1f 00 00 00 00 00 00 00 00 00 00 00 00 00 00\n  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\n  00 00 f8 1f f8 1f f8 1f f8 1f fc 3f fc 3f fc 3f\n  fc 3f fc 3f fc 3f fc 3f fc 3f fc 3f fc 3f fc 3f\n  fc 3f fc 3f fc 3f fc 3f fc 3f fc 3f fc 3f fc 3f\n  fc 3f fc 3f fc 3f fc 3f fc 3f fc 3f fc 3f fc 3f\n  fc 3f fc 3f fc 3f fc 3f fc 3f fc 3f fc 3f fc 3f\n  fc 3f fc 3f fc 3f fc 3f fc 3f f8 1f f8 1f f8 1f\n  f8 1f 00 00 00 00 00 00 00 00 00 00 00 00 00 00\n  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\n  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\n  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00\n  00 00\n]];\n\n  drawDisplay0(NUMPAD_IMAGE, 0xffff00);\n  setDrawColor(1, 0x8080ff);\n  setAutoDraw(1, AUTO_DRAW_WPM);\n}\n\n#option(drawDisplay, \"Display\", \"Dynamic Steno\", drawDisplayDynamicSteno)\nfunc drawDisplayDynamicSteno() {\n  if (dynamicStenoDisplay == 0) {\n    drawDisplaySteno();\n  } else if (dynamicStenoDisplay == 1) {\n    drawPaperTape();\n  } else if (dynamicStenoDisplay == 2) {\n    drawStrokes();\n  }\n}\n\n#option(drawDisplay, \"Display\", \"WPM\", drawWPM)\nfunc drawWPM() {\n  setDrawColor(0, 0x8080ff);\n  setAutoDraw(0, AUTO_DRAW_WPM);\n}",
 				"onConnectionUpdate": "func onConnectionUpdate() {\n  redrawDisplayOverlay();\n}\n",
 				"Button Overrides": "func isModifierKey(key) var {\n  return SC_L_CTRL <= key && key <= SC_R_META;\n}\n\nfunc isWordCapsKey(key) var {\n  return SC_A <= key && key <= SC_Z;\n}\n\nfunc isWordCapsContinuingKey(key, modifiers) var {\n  if (key == SC_BACKSPACE) return 1;\n  if (SC_1 <= key && key <= SC_0) return 1;\n  if (key == SC_MINUS && (modifiers & 0x22)) {\n    return 1;\n  }\n  key = key | 4;\n  return key == SC_R_SHIFT || key == SC_R_ALT;\n}\n\nvar wordPressActivatedShift = 0;\nvar lastPressScanCode = 0;\nvar lastPressModifiers = 0;\n\nfunc pressScanCodeButton(buttonIndex, modifiers, scanCode, isModifier) {\n  if (isInPressAll()) {\n    if(isModifier) return;\n    if(!isModifierKey(scanCode) || (wasSteno24 && buttonIndex == 24)) {\n      return;\n    }\n  }\n\n  // When rapidly pressing a pair of keys, where the first includes shift,\n  // and the second one doesn't, the second can easily end up with the shift\n  // version unintentionally. This is especially evident with symbols, so\n  // release it here if the last key has shift, but the new key doesn't.\n  if (isScanCodePressed(lastPressScanCode) && !isModifierKey(scanCode)) {\n    if ((lastPressModifiers & MODIFIER_SHIFT) && (modifiers & MODIFIER_SHIFT) == 0) {\n      // Makes it possible to tap \"+=\" quickly.\n      releaseScanCode(lastPressScanCode);\n      releaseScanCode(SC_L_SHIFT);\n    }\n  }\n\n  var displayNeedsUpdate = 0;\n  if (wordCaps) {\n    if (isWordCapsKey(scanCode)) {\n      if (!isScanCodePressed(SC_L_SHIFT)) {\n        pressScanCode(SC_L_SHIFT);\n        wordPressActivatedShift = 1;\n      }\n    } else if(!isWordCapsContinuingKey(scanCode, modifiers)) {\n      wordCaps = 0;\n      displayNeedsUpdate = 1;\n    }\n  }\n\n  pressScanCode(scanCode);\n\n  if (!isModifier) {\n    lastPressScanCode = scanCode;\n    lastPressModifiers = modifiers;\n    lastScanCodePressed = scanCode | ((modifiers & MODIFIER_SHIFT) ? KEY_SHIFT : 0);\n  }\n \n  if (displayNeedsUpdate || isModifierKey(scanCode)) {\n    updateDisplay();\n  }\n}\n\nfunc releaseScanCodeButton(scanCode) {\n  releaseScanCode(scanCode);\n\n  if (wordCaps) {\n    if (wordPressActivatedShift && isWordCapsKey(scanCode)) {\n      releaseScanCode(SC_L_SHIFT);\n      wordPressActivatedShift = 0;\n    }\n  }\n\n  if (isModifierKey(scanCode)) {\n    updateDisplay();\n  }\n}\n\nfunc pressStenoKeyButton(scanCode) {\n  if (isInPressAll()) return;\n  pressStenoKey(scanCode);\n}\n\nfunc globalPress(buttonIndex) {\n  lastButtonIndex = buttonIndex;\n  updateScreenSaverTimer();\n  #dispatch(per_layer, rgbButtonPress, \"RGB Mode\", noop);\n}\n\nfunc globalRelease() {\n  updateScreenSaverTimer();\n}\n\n",
-				"Screen Saver Scripts": "const SCREEN_SAVER_TIMEOUT = 900000; // 15 minutes.\n\nfunc shouldUseScreenSaver() var {\n  if (getActivePairConnection() == PAIR_CONNECTION_BLE) {\n    return isPairPowered() && isMainPowered();\n  } else {\n    // No pair, or cable pair.\n    return isPairPowered() || isMainPowered();\n  }\n}\n\nvar isShowingScreenSaver = 0;\nvar screenSaverStartTime;\nvar screenSaverPosition[8];\nvar screenSaverVelocity[8];\nfunc startScreenSaver() {\n  if (!shouldUseScreenSaver()) return;\n\n  setAutoDraw(0, AUTO_DRAW_NONE);\n  setAutoDraw(1, AUTO_DRAW_NONE);\n\n  isShowingScreenSaver = 1;\n  screenSaverStartTime = getTime();\n  for (var i = 0; i < 8; i = i + 1) {\n    screenSaverPosition[i] = rand();\n\n    var velocity = (rand() & 0x1ff) - 256;\n    velocity = velocity + (velocity < 0 ? -128 : 128);\n    screenSaverVelocity[i] = velocity;\n  }\n  drawScreenSaver();\n  startTimer(TIMER_ID_SCREEN_SAVER, 50, 1, @drawScreenSaver);\n}\n\nfunc wrap(x, max) var {\n  x = x % (2 * max);\n  if (x < 0) x = -x;\n  return x < max ? x : 2 * max - x;\n}\n\nfunc drawScreenSaver() {\n  const OVERLAY_HEIGHT = 16;\n\n  var timeElapsed = getTime() - screenSaverStartTime;\n\n  for (var display = 0; display < 2; display = display + 1) {\n    var index = 4 * display;\n    clearDisplay(display);\n\n    for (var i = 0; i < 12; i = i + 1) {\n      var effectiveTime = timeElapsed + i * 100;\n      setDrawColorHsv(display, 10 * effectiveTime, 224, 255);\n      drawLine(\n        display,\n        wrap(screenSaverPosition[index    ] + (effectiveTime * screenSaverVelocity[index    ] >> 13), DISPLAY_WIDTH),\n        wrap(screenSaverPosition[index + 1] + (effectiveTime * screenSaverVelocity[index + 1] >> 13), DISPLAY_HEIGHT - OVERLAY_HEIGHT) + OVERLAY_HEIGHT,\n        wrap(screenSaverPosition[index + 2] + (effectiveTime * screenSaverVelocity[index + 2] >> 13), DISPLAY_WIDTH),\n        wrap(screenSaverPosition[index + 3] + (effectiveTime * screenSaverVelocity[index + 3] >> 13), DISPLAY_HEIGHT - OVERLAY_HEIGHT) + OVERLAY_HEIGHT,\n      );\n    }\n  }\n}\n\nfunc updateScreenSaverTimer() {\n  if (isShowingScreenSaver) {\n    isShowingScreenSaver = 0;\n    updateDisplay();\n  }\n  startTimer(TIMER_ID_SCREEN_SAVER, SCREEN_SAVER_TIMEOUT, 1, @startScreenSaver);\n}\n\n",
+				"Screen Saver Scripts": "const SCREEN_SAVER_TIMEOUT = 900000; // 15 minutes.\n\nfunc shouldUseScreenSaver() var {\n  if (getActivePairConnection() == PAIR_CONNECTION_BLE) {\n    return isPairPowered() && isMainPowered();\n  } else {\n    // No pair, or cable pair.\n    return isPairPowered() || isMainPowered();\n  }\n}\n\nvar isShowingScreenSaver = 0;\nvar screenSaverStartTime;\nfunc startScreenSaver() {\n  if (!shouldUseScreenSaver()) return;\n\n  setAutoDraw(0, AUTO_DRAW_NONE);\n  setAutoDraw(1, AUTO_DRAW_NONE);\n\n  isShowingScreenSaver = 1;\n  screenSaverStartTime = getTime();\n\n  #dispatch(local, startScreenSaver, \"Screen Saver\", startBouncingLines);\n\n  drawScreenSaver();\n  startTimer(TIMER_ID_SCREEN_SAVER, 50, 1, @drawScreenSaver);\n}\n\nfunc drawScreenSaver() {\n  #dispatch(local, screenSaver, \"Screen Saver\", drawBouncingLines);\n}\n\nfunc updateScreenSaverTimer() {\n  if (isShowingScreenSaver) {\n    isShowingScreenSaver = 0;\n    updateDisplay();\n  }\n  startTimer(TIMER_ID_SCREEN_SAVER, SCREEN_SAVER_TIMEOUT, 1, @startScreenSaver);\n}\n\n",
 				"Magic Key Scripts": "var magicKey;\n\nfunc pressMagicKey(buttonIndex) {\n  magicKey = SC_NONE;\n  if (lastScanCodePressed == SC_MINUS\n      || lastScanCodePressed == SC_EQUAL) {\n    magicKey = SC_DOT | KEY_SHIFT;\n  } else if (lastScanCodePressed == (SC_9 | KEY_SHIFT)\n             || lastScanCodePressed == SC_BACKSLASH\n             || lastScanCodePressed == (SC_APOSTROPHE | KEY_SHIFT)) {\n    magicKey = SC_APOSTROPHE | KEY_SHIFT;\n  } else if (SC_1 <= lastScanCodePressed && lastScanCodePressed <= SC_0) {\n    magicKey = SC_COMMA;\n  } else if (SC_KP_1 <= lastScanCodePressed && lastScanCodePressed <= SC_KP_0) {\n    magicKey = SC_COMMA;\n  } else if ((lastScanCodePressed | KEY_SHIFT) == (SC_L_BRACKET | KEY_SHIFT)) {\n    magicKey = SC_ENTER;\n  } else if (lastScanCodePressed == SC_COMMA\n             || lastScanCodePressed == SC_DOT\n             || lastScanCodePressed == SC_KP_DOT) {\n    magicKey = SC_SPACE;\n  }\n\n  if (magicKey & KEY_SHIFT) {\n    pressScanCodeButton(buttonIndex, 0, SC_L_SHIFT, 1);\n  } \n  pressScanCodeButton(buttonIndex, (magicKey & KEY_SHIFT) ? MODIFIER_SHIFT : 0, magicKey & (KEY_SHIFT - 1), 0);\n}\n\nfunc releaseMagicKey() {\n  releaseScanCodeButton(magicKey & (KEY_SHIFT - 1));\n  if (magicKey & KEY_SHIFT) {\n    releaseScanCodeButton(SC_L_SHIFT);\n  } \n}",
-				"Encoder Scripts": "func onEncoderCW0(delta) {\n  printValue(\"onEncoderCW0\", delta);\n}\n\nfunc onEncoderCCW0(delta) {\n  printValue(\"onEncoderCCW0\", delta);\n}\n\nfunc onEncoderCW1(delta) {\n  printValue(\"onEncoderCW1\", delta);\n}\n\nfunc onEncoderCCW1(delta) {\n  printValue(\"onEncoderCCW1\", delta);\n}\n\nfunc onEncoderCW2(delta) {\n  printValue(\"onEncoderCW2\", delta);\n}\n\nfunc onEncoderCCW2(delta) {\n  printValue(\"onEncoderCCW2\", delta);\n}\n\nfunc onEncoderCW3(delta) {\n  printValue(\"onEncoderCW3\", delta);\n}\n\nfunc onEncoderCCW3(delta) {\n  printValue(\"onEncoderCCW3\", delta);\n}",
-				"Pointer Scripts": "var lastX0;\nvar lastY0;\nvar lastZ0;\nvar z0PressTime;\nvar z0ReleaseTime;\nfunc onPointerUpdate0(x, y, z) {\n  if (z == 0) {\n    if (lastZ0 != 0) {\n      z0ReleaseTime = getTime();\n      var timeSincePress = getTime() - z0PressTime;\n      if (25 < timeSincePress && timeSincePress < 100) {\n        tapMouseButton(0);\n      }\n    }\n  } else {\n    if (lastZ0 == 0) {\n      if (getTime() - z0ReleaseTime > 150) {\n        z0PressTime = getTime();\n      }\n    } else {\n      moveMouse(x - lastX0, y - lastY0);\n    }\n  }\n  lastX0 = x;\n  lastY0 = y;\n  lastZ0 = z;\n}\n\nvar lastX1;\nvar lastY1;\nvar lastZ1;\nvar z1PressTime;\nvar z1ReleaseTime;\nfunc onPointerUpdate1(x, y, z) {\n  if (z == 0) {\n    if (lastZ1 != 0) {\n      z1ReleaseTime = getTime();\n      var timeSincePress = getTime() - z1PressTime;\n      if (25 < timeSincePress && timeSincePress < 100) {\n        tapMouseButton(0);\n      }\n    }\n  } else {\n    if (lastZ1 == 0) {\n      if (getTime() - z1ReleaseTime > 150) {\n        z1PressTime = getTime();\n      }\n    } else {\n      moveMouse(x - lastX1, y - lastY1);\n    }\n  }\n  lastX1 = x;\n  lastY1 = y;\n  lastZ1 = z;\n}\n"
+				"Encoder Scripts": "func onEncoderCW0(delta) {\n  printValue(\"onEncoderCW0\", delta);\n  tapScanCode(0xd9);\n}\n\nfunc onEncoderCCW0(delta) {\n  printValue(\"onEncoderCCW0\", delta);\n  tapScanCode(0xda);\n}\n\nfunc onEncoderCW1(delta) {\n  printValue(\"onEncoderCW1\", delta);\n  tapScanCode(0xd9);\n}\n\nfunc onEncoderCCW1(delta) {\n  printValue(\"onEncoderCCW1\", delta);\n  tapScanCode(0xda);\n}\n\nfunc onEncoderCW2(delta) {\n  printValue(\"onEncoderCW2\", delta);\n  tapScanCode(0xd9);\n}\n\nfunc onEncoderCCW2(delta) {\n  printValue(\"onEncoderCCW2\", delta);\n  tapScanCode(0xda);\n}\n\nfunc onEncoderCW3(delta) {\n  printValue(\"onEncoderCW3\", delta);\n  tapScanCode(0xd9);\n}\n\nfunc onEncoderCCW3(delta) {\n  printValue(\"onEncoderCCW3\", delta);\n  tapScanCode(0xda);\n}",
+				"Pointer Scripts": "var lastX0;\nvar lastY0;\nvar lastZ0;\nvar z0PressTime;\nvar z0ReleaseTime;\nfunc onPointerUpdate0(x, y, z) {\n  if (z == 0) {\n    if (lastZ0 != 0) {\n      z0ReleaseTime = getTime();\n      var timeSincePress = getTime() - z0PressTime;\n      if (25 < timeSincePress && timeSincePress < 100) {\n        tapMouseButton(0);\n      }\n      onMouseInactive();\n    }\n  } else {\n    if (lastZ0 == 0) {\n      if (getTime() - z0ReleaseTime > 150) {\n        z0PressTime = getTime();\n      }\n      onMouseActive();\n    } else {\n      moveMouse(x - lastX0, y - lastY0);\n    }\n  }\n  lastX0 = x;\n  lastY0 = y;\n  lastZ0 = z;\n}\n\nvar lastX1;\nvar lastY1;\nvar lastZ1;\nvar z1PressTime;\nvar z1ReleaseTime;\nfunc onPointerUpdate1(x, y, z) {\n  if (z == 0) {\n    if (lastZ1 != 0) {\n      z1ReleaseTime = getTime();\n      var timeSincePress = getTime() - z1PressTime;\n      if (25 < timeSincePress && timeSincePress < 100) {\n        tapMouseButton(0);\n      }\n      onMouseInactive();\n    }\n  } else {\n    if (lastZ1 == 0) {\n      if (getTime() - z1ReleaseTime > 150) {\n        z1PressTime = getTime();\n      }\n      onMouseActive();\n    } else {\n      moveMouse(x - lastX1, y - lastY1);\n    }\n  }\n  lastX1 = x;\n  lastY1 = y;\n  lastZ1 = z;\n}\n",
+				"Screen Saver: Game of Life": "var pixelSpawnCounter;\n\n#option(startScreenSaver, \"Screen Saver\", \"Game of Life\", startGameOfLife)\nfunc startGameOfLife() {\n  for (var d = 0; d < 2; d = d + 1) {\n    clearDisplay(d);\n    for (var i = 0; i < 32; i = i + 1) {\n      spawnPixelBundle(d);\n    }\n  }\n}\n\n#option(screenSaver, \"Screen Saver\", \"Game of Life\", drawGameOfLife)\nfunc drawGameOfLife() {\n  var timeElapsed = getTime() - screenSaverStartTime;\n  var counterElapsed = timeElapsed / 250;\n  if (counterElapsed != pixelSpawnCounter) {\n    pixelSpawnCounter = counterElapsed;\n    spawnPixelBundle(0);\n    spawnPixelBundle(1);\n  }\n\n  drawEffect(0, 0, 0);\n  drawEffect(1, 0, 0);\n}\n\nfunc spawnPixelBundle(d) {\n  const COLORS = [[\n    ff 00 00\n    00 ff 00\n    00 00 ff\n    ff ff 00\n    ff 00 ff\n    00 ff ff\n    ff ff ff\n  ]];\n  var colOffset = (rand() % 7) * 3;\n  setDrawColorRgb(d, COLORS[colOffset], COLORS[colOffset+1], COLORS[colOffset+2]);\n\n\n  var x = rand();\n  var y = rand();\n\n  for (var yy = 0; yy < 5; yy = yy + 1) {\n    for (var xx = 0; xx < 5; xx = xx + 1) {\n      if (rand() % 100 <= 80) {\n        drawPixel(d, (x + xx) % DISPLAY_WIDTH, (y + yy) % DISPLAY_HEIGHT);\n      }\n    }\n  }\n}\n\n",
+				"Screen Saver: Bouncing Lines": "var screenSaverPosition[8];\nvar screenSaverVelocity[8];\n\n#option(startScreenSaver, \"Screen Saver\", \"Bouncing Lines\", startBouncingLines)\nfunc startBouncingLines() {\n  for (var i = 0; i < 8; i = i + 1) {\n    screenSaverPosition[i] = rand();\n\n    var velocity = (rand() & 0x1ff) - 256;\n    velocity = velocity + (velocity < 0 ? -128 : 128);\n    screenSaverVelocity[i] = velocity;\n  }\n}\n\n#option(screenSaver, \"Screen Saver\", \"Bouncing Lines\", drawBouncingLines)\nfunc drawBouncingLines() {\n  const OVERLAY_HEIGHT = 16;\n\n  var timeElapsed = getTime() - screenSaverStartTime;\n\n  for (var display = 0; display < 2; display = display + 1) {\n    var index = 4 * display;\n    clearDisplay(display);\n\n    for (var i = 0; i < 12; i = i + 1) {\n      var effectiveTime = timeElapsed + i * 100;\n      setDrawColorHsv(display, 10 * effectiveTime, 224, 255);\n      drawLine(\n        display,\n        wrap(screenSaverPosition[index    ] + (effectiveTime * screenSaverVelocity[index    ] >> 13), DISPLAY_WIDTH),\n        wrap(screenSaverPosition[index + 1] + (effectiveTime * screenSaverVelocity[index + 1] >> 13), DISPLAY_HEIGHT - OVERLAY_HEIGHT) + OVERLAY_HEIGHT,\n        wrap(screenSaverPosition[index + 2] + (effectiveTime * screenSaverVelocity[index + 2] >> 13), DISPLAY_WIDTH),\n        wrap(screenSaverPosition[index + 3] + (effectiveTime * screenSaverVelocity[index + 3] >> 13), DISPLAY_HEIGHT - OVERLAY_HEIGHT) + OVERLAY_HEIGHT,\n      );\n    }\n  }\n}\n\nfunc wrap(x, max) var {\n  x = x % (2 * max);\n  if (x < 0) x = -x;\n  return x < max ? x : 2 * max - x;\n}\n\n"
 			},
-			"options": {},
+			"options": {
+				"Screen Saver": "Game of Life"
+			},
 			"sequences": {}
 		}
 	}

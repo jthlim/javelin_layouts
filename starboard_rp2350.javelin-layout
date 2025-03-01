@@ -4,86 +4,6 @@
 			"id": 0,
 			"name": "Default",
 			"keys": [
-				[
-					{
-						"t": "p",
-						"d": {
-							"a": {
-								"t": "p",
-								"c": "stenoNum1"
-							}
-						}
-					},
-					{
-						"t": "r",
-						"d": {
-							"a": {
-								"t": "r",
-								"c": "stenoNum1"
-							}
-						}
-					}
-				],
-				[
-					{
-						"t": "p",
-						"d": {
-							"a": {
-								"t": "p",
-								"c": "stenoNum2"
-							}
-						}
-					},
-					{
-						"t": "r",
-						"d": {
-							"a": {
-								"t": "r",
-								"c": "stenoNum2"
-							}
-						}
-					}
-				],
-				[
-					{
-						"t": "p",
-						"d": {
-							"a": {
-								"t": "p",
-								"c": "stenoNum3"
-							}
-						}
-					},
-					{
-						"t": "r",
-						"d": {
-							"a": {
-								"t": "r",
-								"c": "stenoNum3"
-							}
-						}
-					}
-				],
-				[
-					{
-						"t": "p",
-						"d": {
-							"a": {
-								"t": "p",
-								"c": "stenoNum4"
-							}
-						}
-					},
-					{
-						"t": "r",
-						"d": {
-							"a": {
-								"t": "r",
-								"c": "stenoNum4"
-							}
-						}
-					}
-				],
 				[],
 				[
 					{
@@ -171,7 +91,7 @@
 						"d": {
 							"a": {
 								"t": "p",
-								"c": "stenoStar1"
+								"c": "stenoNum1"
 							}
 						}
 					},
@@ -180,7 +100,7 @@
 						"d": {
 							"a": {
 								"t": "r",
-								"c": "stenoStar1"
+								"c": "stenoNum1"
 							}
 						}
 					}
@@ -191,7 +111,7 @@
 						"d": {
 							"a": {
 								"t": "p",
-								"c": "stenoStar2"
+								"c": "stenoStar1"
 							}
 						}
 					},
@@ -200,7 +120,7 @@
 						"d": {
 							"a": {
 								"t": "r",
-								"c": "stenoStar2"
+								"c": "stenoStar1"
 							}
 						}
 					}
@@ -301,6 +221,267 @@
 							"a": {
 								"t": "r",
 								"c": "stenoDR"
+							}
+						}
+					}
+				],
+				[],
+				[
+					{
+						"t": "p",
+						"d": {
+							"a": {
+								"t": "p",
+								"c": "stenoS2"
+							}
+						}
+					},
+					{
+						"t": "r",
+						"d": {
+							"a": {
+								"t": "r",
+								"c": "stenoS2"
+							}
+						}
+					}
+				],
+				[
+					{
+						"t": "p",
+						"d": {
+							"a": {
+								"t": "p",
+								"c": "stenoKL"
+							}
+						}
+					},
+					{
+						"t": "r",
+						"d": {
+							"a": {
+								"t": "r",
+								"c": "stenoKL"
+							}
+						}
+					}
+				],
+				[
+					{
+						"t": "p",
+						"d": {
+							"a": {
+								"t": "p",
+								"c": "stenoWL"
+							}
+						}
+					},
+					{
+						"t": "r",
+						"d": {
+							"a": {
+								"t": "r",
+								"c": "stenoWL"
+							}
+						}
+					}
+				],
+				[
+					{
+						"t": "p",
+						"d": {
+							"a": {
+								"t": "p",
+								"c": "stenoRL"
+							}
+						}
+					},
+					{
+						"t": "r",
+						"d": {
+							"a": {
+								"t": "r",
+								"c": "stenoRL"
+							}
+						}
+					}
+				],
+				[
+					{
+						"t": "p",
+						"d": {
+							"a": {
+								"t": "p",
+								"c": "stenoRR"
+							}
+						}
+					},
+					{
+						"t": "r",
+						"d": {
+							"a": {
+								"t": "r",
+								"c": "stenoRR"
+							}
+						}
+					}
+				],
+				[
+					{
+						"t": "p",
+						"d": {
+							"a": {
+								"t": "p",
+								"c": "stenoBR"
+							}
+						}
+					},
+					{
+						"t": "r",
+						"d": {
+							"a": {
+								"t": "r",
+								"c": "stenoBR"
+							}
+						}
+					}
+				],
+				[
+					{
+						"t": "p",
+						"d": {
+							"a": {
+								"t": "p",
+								"c": "stenoGR"
+							}
+						}
+					},
+					{
+						"t": "r",
+						"d": {
+							"a": {
+								"t": "r",
+								"c": "stenoGR"
+							}
+						}
+					}
+				],
+				[
+					{
+						"t": "p",
+						"d": {
+							"a": {
+								"t": "p",
+								"c": "stenoSR"
+							}
+						}
+					},
+					{
+						"t": "r",
+						"d": {
+							"a": {
+								"t": "r",
+								"c": "stenoSR"
+							}
+						}
+					}
+				],
+				[
+					{
+						"t": "p",
+						"d": {
+							"a": {
+								"t": "p",
+								"c": "stenoZR"
+							}
+						}
+					},
+					{
+						"t": "r",
+						"d": {
+							"a": {
+								"t": "r",
+								"c": "stenoZR"
+							}
+						}
+					}
+				],
+				[
+					{
+						"t": "p",
+						"d": {
+							"a": {
+								"t": "p",
+								"c": "stenoA"
+							}
+						}
+					},
+					{
+						"t": "r",
+						"d": {
+							"a": {
+								"t": "r",
+								"c": "stenoA"
+							}
+						}
+					}
+				],
+				[
+					{
+						"t": "p",
+						"d": {
+							"a": {
+								"t": "p",
+								"c": "stenoO"
+							}
+						}
+					},
+					{
+						"t": "r",
+						"d": {
+							"a": {
+								"t": "r",
+								"c": "stenoO"
+							}
+						}
+					}
+				],
+				[
+					{
+						"t": "p",
+						"d": {
+							"a": {
+								"t": "p",
+								"c": "stenoE"
+							}
+						}
+					},
+					{
+						"t": "r",
+						"d": {
+							"a": {
+								"t": "r",
+								"c": "stenoE"
+							}
+						}
+					}
+				],
+				[
+					{
+						"t": "p",
+						"d": {
+							"a": {
+								"t": "p",
+								"c": "stenoU"
+							}
+						}
+					},
+					{
+						"t": "r",
+						"d": {
+							"a": {
+								"t": "r",
+								"c": "stenoU"
 							}
 						}
 					}
@@ -315,324 +496,12 @@
 							}
 						}
 					}
-				],
-				[
-					{
-						"t": "p",
-						"d": {
-							"a": {
-								"t": "p",
-								"c": "stenoS2"
-							}
-						}
-					},
-					{
-						"t": "r",
-						"d": {
-							"a": {
-								"t": "r",
-								"c": "stenoS2"
-							}
-						}
-					}
-				],
-				[
-					{
-						"t": "p",
-						"d": {
-							"a": {
-								"t": "p",
-								"c": "stenoKL"
-							}
-						}
-					},
-					{
-						"t": "r",
-						"d": {
-							"a": {
-								"t": "r",
-								"c": "stenoKL"
-							}
-						}
-					}
-				],
-				[
-					{
-						"t": "p",
-						"d": {
-							"a": {
-								"t": "p",
-								"c": "stenoWL"
-							}
-						}
-					},
-					{
-						"t": "r",
-						"d": {
-							"a": {
-								"t": "r",
-								"c": "stenoWL"
-							}
-						}
-					}
-				],
-				[
-					{
-						"t": "p",
-						"d": {
-							"a": {
-								"t": "p",
-								"c": "stenoRL"
-							}
-						}
-					},
-					{
-						"t": "r",
-						"d": {
-							"a": {
-								"t": "r",
-								"c": "stenoRL"
-							}
-						}
-					}
-				],
-				[
-					{
-						"t": "p",
-						"d": {
-							"a": {
-								"t": "p",
-								"c": "stenoStar3"
-							}
-						}
-					},
-					{
-						"t": "r",
-						"d": {
-							"a": {
-								"t": "r",
-								"c": "stenoStar3"
-							}
-						}
-					}
-				],
-				[
-					{
-						"t": "p",
-						"d": {
-							"a": {
-								"t": "p",
-								"c": "stenoStar4"
-							}
-						}
-					},
-					{
-						"t": "r",
-						"d": {
-							"a": {
-								"t": "r",
-								"c": "stenoStar4"
-							}
-						}
-					}
-				],
-				[
-					{
-						"t": "p",
-						"d": {
-							"a": {
-								"t": "p",
-								"c": "stenoRR"
-							}
-						}
-					},
-					{
-						"t": "r",
-						"d": {
-							"a": {
-								"t": "r",
-								"c": "stenoRR"
-							}
-						}
-					}
-				],
-				[
-					{
-						"t": "p",
-						"d": {
-							"a": {
-								"t": "p",
-								"c": "stenoBR"
-							}
-						}
-					},
-					{
-						"t": "r",
-						"d": {
-							"a": {
-								"t": "r",
-								"c": "stenoBR"
-							}
-						}
-					}
-				],
-				[
-					{
-						"t": "p",
-						"d": {
-							"a": {
-								"t": "p",
-								"c": "stenoGR"
-							}
-						}
-					},
-					{
-						"t": "r",
-						"d": {
-							"a": {
-								"t": "r",
-								"c": "stenoGR"
-							}
-						}
-					}
-				],
-				[
-					{
-						"t": "p",
-						"d": {
-							"a": {
-								"t": "p",
-								"c": "stenoSR"
-							}
-						}
-					},
-					{
-						"t": "r",
-						"d": {
-							"a": {
-								"t": "r",
-								"c": "stenoSR"
-							}
-						}
-					}
-				],
-				[
-					{
-						"t": "p",
-						"d": {
-							"a": {
-								"t": "p",
-								"c": "stenoZR"
-							}
-						}
-					},
-					{
-						"t": "r",
-						"d": {
-							"a": {
-								"t": "r",
-								"c": "stenoZR"
-							}
-						}
-					}
-				],
-				[
-					{
-						"t": "p",
-						"d": {
-							"a": {
-								"t": "p",
-								"c": "stenoA"
-							}
-						}
-					},
-					{
-						"t": "r",
-						"d": {
-							"a": {
-								"t": "r",
-								"c": "stenoA"
-							}
-						}
-					}
-				],
-				[
-					{
-						"t": "p",
-						"d": {
-							"a": {
-								"t": "p",
-								"c": "stenoO"
-							}
-						}
-					},
-					{
-						"t": "r",
-						"d": {
-							"a": {
-								"t": "r",
-								"c": "stenoO"
-							}
-						}
-					}
-				],
-				[
-					{
-						"t": "p",
-						"d": {
-							"a": {
-								"t": "p",
-								"c": "stenoE"
-							}
-						}
-					},
-					{
-						"t": "r",
-						"d": {
-							"a": {
-								"t": "r",
-								"c": "stenoE"
-							}
-						}
-					}
-				],
-				[
-					{
-						"t": "p",
-						"d": {
-							"a": {
-								"t": "p",
-								"c": "stenoU"
-							}
-						}
-					},
-					{
-						"t": "r",
-						"d": {
-							"a": {
-								"t": "r",
-								"c": "stenoU"
-							}
-						}
-					}
-				],
-				[
-					{
-						"t": "p",
-						"d": {
-							"a": {
-								"t": "c",
-								"c": "launch_bootloader"
-							}
-						}
-					}
 				]
 			],
 			"scripts": {},
 			"user_scripts": {},
 			"options": {
-				"Enable individual keys in Key Layout tool": "true",
-				"LED": "Steno Mode"
+				"Enable individual keys in Key Layout tool": "true"
 			},
 			"sequences": {}
 		}
@@ -669,21 +538,14 @@
 				null,
 				null,
 				null,
-				null,
-				null,
-				null,
-				null,
-				null,
-				null,
-				[]
+				null
 			],
 			"scripts": {
-				"activateLayer": "setEnableButtonStates(#flag(per_layer, \"Enable individual keys in Key Layout tool\", false));\nupdateLeds();\n",
-				"init": "const SCRIPT_ID_STENO_MODE_UPDATE = 9;\n\nsetScript(SCRIPT_ID_STENO_MODE_UPDATE, @updateLeds);\nupdateLeds();\n\n",
-				"header": "const BLINK_TIMER_ID = 0;\n"
+				"init": "const SCRIPT_ID_STENO_MODE_UPDATE = 9;\n\n// Update the RGB LED and register callback for future steno mode updates.\nonStenoModeUpdate();\nsetScript(SCRIPT_ID_STENO_MODE_UPDATE, @onStenoModeUpdate);\n",
+				"activateLayer": "setEnableButtonStates(#flag(per_layer, \"Enable individual keys in Key Layout tool\", false));\n"
 			},
 			"user_scripts": {
-				"LED Scripts": "const RED_LED_PIN = 17;\nconst GREEN_LED_PIN = 16;\n\nvar blinkLedCallback;\nvar blinkLedCount;\n\nfunc updateLeds() {\n  if (blinkLedCount == 0) {\n    #dispatch(per_layer, ledUpdate, \"LED\", updateLedNoChange);\n  }\n}\n\n#option(ledUpdate, \"LED\", \"No Change\", updateLedNoChange)\nfunc updateLedNoChange() {}\n\n#option(ledUpdate, \"LED\", \"Green Only\", updateLedGreenOnly)\nfunc updateLedGreenOnly() {\n  setGpioPin(GREEN_LED_PIN, 1);\n  setGpioPin(RED_LED_PIN, 0);\n}\n\n#option(ledUpdate, \"LED\", \"Both Off\", updateLedBothOff)\nfunc updateLedBothOff() {\n  setGpioPin(GREEN_LED_PIN, 0);\n  setGpioPin(RED_LED_PIN, 0);\n}\n\n#option(ledUpdate, \"LED\", \"Red Only\", updateLedRedOnly)\nfunc updateLedRedOnly() {\n  setGpioPin(GREEN_LED_PIN, 0);\n  setGpioPin(RED_LED_PIN, 1);\n}\n\n#option(ledUpdate, \"LED\", \"Dim Red Only\", updateLedDimRedOnly)\nfunc updateLedDimRedOnly() {\n  setGpioPin(GREEN_LED_PIN, 0);\n  setGpioPinDutyCycle(RED_LED_PIN, 25);\n}\n\n#option(ledUpdate, \"LED\", \"Green & Red\", updateLedGreenAndRed)\nfunc updateLedGreenAndRed() {\n  setGpioPin(GREEN_LED_PIN, 1);\n  setGpioPin(RED_LED_PIN, 1);\n}\n\n#option(ledUpdate, \"LED\", \"Steno Mode\", setLedsForStenoMode)\nfunc setLedsForStenoMode() {\n  var stenoMode = getParameter(\"steno_mode\");\n  if (stenoMode == \"embedded\") {\n    setGpioPin(GREEN_LED_PIN, 1);\n    setGpioPin(RED_LED_PIN, 0);\n  } else {\n    setGpioPin(GREEN_LED_PIN, 1);\n    setGpioPinDutyCycle(RED_LED_PIN, 25);\n  }\n}\n\nfunc blinkCallback() {\n  blinkLedCount = blinkLedCount - 1;\n  if (blinkLedCount == 0) {\n    stopTimer(BLINK_TIMER_ID);\n    updateLeds();\n  } else if (blinkLedCount & 1) {\n    updateLedBothOff();\n  } else {\n    blinkLedCallback();\n  }\n}\n\nfunc blinkLed(function, count) {\n  blinkLedCallback = function;\n  blinkLedCount = 2 * count + 1;\n  startTimer(BLINK_TIMER_ID, 500, 1, @blinkCallback);\n  blinkCallback();\n}\n"
+				"StenoModeUpdate Callback": "func onStenoModeUpdate() {\n  var stenoMode = getParameter(\"steno_mode\");\n  if (stenoMode == \"embedded\") {\n    setGpioPin(25, 1);\n  } else {\n    setGpioPin(25, 0);\n  }\n}"
 			},
 			"options": {},
 			"sequences": {}

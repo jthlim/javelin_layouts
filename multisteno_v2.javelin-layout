@@ -1687,7 +1687,7 @@
 			"scripts": {},
 			"user_scripts": {},
 			"options": {
-				"LED": "Light Red Only",
+				"LED": "Dim Red Only",
 				"Enable individual keys in Key Layout tool": "false"
 			},
 			"sequences": {}
@@ -2623,7 +2623,7 @@
 			"user_scripts": {},
 			"options": {
 				"Enable individual keys in Key Layout tool": "false",
-				"LED": "No Change"
+				"LED": "Red Only"
 			},
 			"sequences": {}
 		},
@@ -2693,7 +2693,7 @@
 									},
 									{
 										"t": "s",
-										"script": "//\nblinkLed(@updateLedLightRedOnly, 3);"
+										"script": "//\nblinkLed(@updateLedDimRedOnly, 3);"
 									}
 								]
 							}
@@ -2782,7 +2782,7 @@
 			"scripts": {},
 			"user_scripts": {},
 			"options": {
-				"LED": "No Change",
+				"LED": "Green & Red",
 				"Enable individual keys in Key Layout tool": "true"
 			},
 			"sequences": {}
@@ -2854,7 +2854,7 @@
 				"header": "const BLINK_TIMER_ID = 0;\n"
 			},
 			"user_scripts": {
-				"LED Scripts": "const RED_LED_PIN = 17;\nconst GREEN_LED_PIN = 16;\n\nvar blinkLedCallback;\nvar blinkLedCount;\n\nfunc updateLeds() {\n  if (blinkLedCount == 0) {\n    #dispatch(per_layer, ledUpdate, \"LED\", updateLedNoChange);\n  }\n}\n\n#option(ledUpdate, \"LED\", \"No Change\", updateLedNoChange)\nfunc updateLedNoChange() {}\n\n#option(ledUpdate, \"LED\", \"Green Only\", updateLedGreenOnly)\nfunc updateLedGreenOnly() {\n  setGpioPin(GREEN_LED_PIN, 1);\n  setGpioPin(RED_LED_PIN, 0);\n}\n\n#option(ledUpdate, \"LED\", \"Both Off\", updateLedBothOff)\nfunc updateLedBothOff() {\n  setGpioPin(GREEN_LED_PIN, 0);\n  setGpioPin(RED_LED_PIN, 0);\n}\n\n#option(ledUpdate, \"LED\", \"Red Only\", updateLedRedOnly)\nfunc updateLedRedOnly() {\n  setGpioPin(GREEN_LED_PIN, 0);\n  setGpioPin(RED_LED_PIN, 1);\n}\n\n#option(ledUpdate, \"LED\", \"Light Red Only\", updateLedLightRedOnly)\nfunc updateLedLightRedOnly() {\n  setGpioPin(GREEN_LED_PIN, 0);\n  setGpioPinDutyCycle(RED_LED_PIN, 25);\n}\n\n#option(ledUpdate, \"LED\", \"Green & Red\", updateLedGreenAndRed)\nfunc updateLedGreenAndRed() {\n  setGpioPin(GREEN_LED_PIN, 1);\n  setGpioPin(RED_LED_PIN, 1);\n}\n\n#option(ledUpdate, \"LED\", \"Steno Mode\", setLedsForStenoMode)\nfunc setLedsForStenoMode() {\n  var stenoMode = getParameter(\"steno_mode\");\n  if (stenoMode == \"embedded\") {\n    setGpioPin(GREEN_LED_PIN, 1);\n    setGpioPin(RED_LED_PIN, 0);\n  } else {\n    setGpioPin(GREEN_LED_PIN, 1);\n    setGpioPinDutyCycle(RED_LED_PIN, 25);\n  }\n}\n\nfunc blinkLed(function, count) {\n  blinkLedCallback = function;\n  blinkLedCount = 2 * count + 1;\n  startTimer(BLINK_TIMER_ID, 500, 1, @{\n    blinkLedCount = blinkLedCount - 1;\n    if (blinkLedCount == 0) {\n      stopTimer(BLINK_TIMER_ID);\n      updateLeds();\n    } else if (blinkLedCount & 1) {\n      updateLedBothOff();\n    } else {\n      blinkLedCallback();\n    }\n  });\n}\n"
+				"LED Scripts": "const RED_LED_PIN = 17;\nconst GREEN_LED_PIN = 16;\n\nvar blinkLedCallback;\nvar blinkLedCount;\n\nfunc updateLeds() {\n  if (blinkLedCount == 0) {\n    #dispatch(per_layer, ledUpdate, \"LED\", updateLedNoChange);\n  }\n}\n\n#option(ledUpdate, \"LED\", \"No Change\", updateLedNoChange)\nfunc updateLedNoChange() {}\n\n#option(ledUpdate, \"LED\", \"Green Only\", updateLedGreenOnly)\nfunc updateLedGreenOnly() {\n  setGpioPin(GREEN_LED_PIN, 1);\n  setGpioPin(RED_LED_PIN, 0);\n}\n\n#option(ledUpdate, \"LED\", \"Both Off\", updateLedBothOff)\nfunc updateLedBothOff() {\n  setGpioPin(GREEN_LED_PIN, 0);\n  setGpioPin(RED_LED_PIN, 0);\n}\n\n#option(ledUpdate, \"LED\", \"Red Only\", updateLedRedOnly)\nfunc updateLedRedOnly() {\n  setGpioPin(GREEN_LED_PIN, 0);\n  setGpioPin(RED_LED_PIN, 1);\n}\n\n#option(ledUpdate, \"LED\", \"Dim Red Only\", updateLedDimRedOnly)\nfunc updateLedDimRedOnly() {\n  setGpioPin(GREEN_LED_PIN, 0);\n  setGpioPinDutyCycle(RED_LED_PIN, 25);\n}\n\n#option(ledUpdate, \"LED\", \"Green & Red\", updateLedGreenAndRed)\nfunc updateLedGreenAndRed() {\n  setGpioPin(GREEN_LED_PIN, 1);\n  setGpioPin(RED_LED_PIN, 1);\n}\n\n#option(ledUpdate, \"LED\", \"Steno Mode\", setLedsForStenoMode)\nfunc setLedsForStenoMode() {\n  var stenoMode = getParameter(\"steno_mode\");\n  if (stenoMode == \"embedded\") {\n    setGpioPin(GREEN_LED_PIN, 1);\n    setGpioPin(RED_LED_PIN, 0);\n  } else {\n    setGpioPin(GREEN_LED_PIN, 1);\n    setGpioPinDutyCycle(RED_LED_PIN, 25);\n  }\n}\n\nfunc blinkCallback() {\n  blinkLedCount = blinkLedCount - 1;\n  if (blinkLedCount == 0) {\n    stopTimer(BLINK_TIMER_ID);\n    updateLeds();\n  } else if (blinkLedCount & 1) {\n    updateLedBothOff();\n  } else {\n    blinkLedCallback();\n  }\n}\n\nfunc blinkLed(function, count) {\n  blinkLedCallback = function;\n  blinkLedCount = 2 * count + 1;\n  startTimer(BLINK_TIMER_ID, 500, 1, @blinkCallback);\n  blinkCallback();\n}\n"
 			},
 			"options": {},
 			"sequences": {}
