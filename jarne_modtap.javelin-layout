@@ -130,7 +130,7 @@
 						"d": {
 							"a": {
 								"t": "p",
-								"c": "stenoStar2"
+								"c": "stenoStar3"
 							}
 						}
 					},
@@ -139,7 +139,7 @@
 						"d": {
 							"a": {
 								"t": "r",
-								"c": "stenoStar2"
+								"c": "stenoStar3"
 							}
 						}
 					}
@@ -374,7 +374,7 @@
 						"d": {
 							"a": {
 								"t": "p",
-								"c": "stenoStar3"
+								"c": "stenoStar2"
 							}
 						}
 					},
@@ -383,7 +383,7 @@
 						"d": {
 							"a": {
 								"t": "r",
-								"c": "stenoStar3"
+								"c": "stenoStar2"
 							}
 						}
 					}

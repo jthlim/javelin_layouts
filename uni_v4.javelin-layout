@@ -27,7 +27,9 @@
 						"t": "s",
 						"d": {
 							"s": "",
+							"q": "",
 							"p": "updateStenoMode();\n",
+							"t": "",
 							"r": ""
 						}
 					}
@@ -118,7 +120,7 @@
 						"d": {
 							"a": {
 								"t": "p",
-								"c": "stenoStar2"
+								"c": "stenoStar3"
 							}
 						}
 					},
@@ -127,7 +129,7 @@
 						"d": {
 							"a": {
 								"t": "r",
-								"c": "stenoStar2"
+								"c": "stenoStar3"
 							}
 						}
 					}
@@ -235,7 +237,9 @@
 						"t": "s",
 						"d": {
 							"s": "",
+							"q": "",
 							"p": "updateStenoMode();\n",
+							"t": "",
 							"r": ""
 						}
 					}
@@ -326,7 +330,7 @@
 						"d": {
 							"a": {
 								"t": "p",
-								"c": "stenoStar3"
+								"c": "stenoStar2"
 							}
 						}
 					},
@@ -335,7 +339,7 @@
 						"d": {
 							"a": {
 								"t": "r",
-								"c": "stenoStar3"
+								"c": "stenoStar2"
 							}
 						}
 					}
@@ -483,7 +487,9 @@
 						"t": "s",
 						"d": {
 							"s": "",
+							"q": "",
 							"p": "updateStenoMode();\n",
+							"t": "",
 							"r": ""
 						}
 					}
@@ -591,7 +597,9 @@
 						"t": "s",
 						"d": {
 							"s": "",
+							"q": "",
 							"p": "updateStenoMode();\n",
+							"t": "",
 							"r": ""
 						}
 					}
