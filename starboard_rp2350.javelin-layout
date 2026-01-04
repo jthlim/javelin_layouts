@@ -492,7 +492,18 @@
 						"d": {
 							"a": {
 								"t": "s",
-								"script": "// Toggle\\nSteno\\nMode\n// Toggle the steno mode between embedded and Gemini PR when USR is pressed.\n// LED RGB is updated in Global StenoModeUpdate callback.\nif (getParameter(\"steno_mode\") != \"embedded\") {\n  console(\"set_steno_mode embedded\");\n} else {\n  console(\"set_steno_mode gemini\");\n}\nreleaseAll();"
+								"script": "// Toggle\\nSteno\\nMode\n// Toggle the steno mode between embedded and Gemini PR when USR is pressed.\n// LED RGB is updated in Global StenoModeUpdate callback.\nif (getParameter(\"steno_mode\") != \"embedded\") {\n  console(\"set_steno_mode embedded\");\n} else {\n  console(\"set_steno_mode plover_hid\");\n}\nreleaseAll();"
+							}
+						}
+					}
+				],
+				[
+					{
+						"t": "p",
+						"d": {
+							"a": {
+								"t": "c",
+								"c": "launch_bootloader"
 							}
 						}
 					}
@@ -538,6 +549,7 @@
 				null,
 				null,
 				null,
+				null,
 				null
 			],
 			"scripts": {
@@ -545,7 +557,7 @@
 				"activateLayer": "setEnableButtonStates(#flag(per_layer, \"Enable individual keys in Key Layout tool\", false));\n"
 			},
 			"user_scripts": {
-				"StenoModeUpdate Callback": "func onStenoModeUpdate() {\n  var stenoMode = getParameter(\"steno_mode\");\n  if (stenoMode == \"embedded\") {\n    setGpioPin(25, 1);\n  } else {\n    setGpioPin(25, 0);\n  }\n}"
+				"StenoModeUpdate Callback": "func onStenoModeUpdate() {\n  var stenoMode = getParameter(\"steno_mode\");\n  if (stenoMode == \"embedded\") {\n    setRgb(0, 0, 1, 0);\n  } else if (stenoMode == \"gemini\") {\n    setRgb(0, 1, 0, 0);\n  } else if (stenoMode == \"tx_bolt\") {\n    setRgb(0, 0, 0, 1);\n  } else if (stenoMode == \"procat\") {\n    setRgb(0, 1, 1, 0);\n  } else if (stenoMode == \"plover_hid\") {\n    setRgb(0, 0, 1, 1);\n  }\n}"
 			},
 			"options": {},
 			"sequences": {}
