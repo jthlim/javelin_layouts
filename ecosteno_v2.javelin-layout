@@ -311,7 +311,7 @@
 						"d": {
 							"a": {
 								"t": "s",
-								"script": "// Toggle\\nSteno\\nMode\n// Toggle the steno mode between embedded and Gemini PR when USR is pressed.\n// LED RGB is updated in Global StenoModeUpdate callback.\nif (getParameter(\"steno_mode\") != \"embedded\") {\n  console(\"set_steno_mode embedded\");\n} else {\n  console(\"set_steno_mode plover_hid\");\n}\nreleaseAll();"
+								"script": "// Toggle\\nSteno\\nMode\n// Toggle the steno mode between embedded and Plover HID.\n// LED RGB is updated in Global StenoModeUpdate callback.\nif (getParameter(\"steno_mode\") != \"embedded\") {\n  console(\"set_steno_mode embedded\");\n} else {\n  console(\"set_steno_mode plover_hid\");\n}\nreleaseAll();"
 							}
 						}
 					}
@@ -628,55 +628,16 @@
 					}
 				]
 			],
-			"scripts": {},
-			"user_scripts": {},
 			"options": {
 				"Enable individual keys in Key Layout tool": "true",
 				"LED": "Steno Mode"
-			},
-			"sequences": {}
+			}
 		}
 	],
 	"global": {
-		"scripts": [],
 		"layer": {
 			"id": -1,
 			"name": "Global",
-			"keys": [
-				null,
-				null,
-				null,
-				null,
-				null,
-				null,
-				null,
-				null,
-				null,
-				null,
-				null,
-				null,
-				null,
-				null,
-				null,
-				null,
-				null,
-				null,
-				null,
-				null,
-				null,
-				null,
-				null,
-				null,
-				null,
-				null,
-				null,
-				null,
-				null,
-				null,
-				null,
-				null,
-				[]
-			],
 			"scripts": {
 				"activateLayer": "setEnableButtonStates(#flag(per_layer, \"Enable individual keys in Key Layout tool\", false));\nupdateLeds();\n",
 				"init": "const SCRIPT_ID_STENO_MODE_UPDATE = 9;\n\nsetScript(SCRIPT_ID_STENO_MODE_UPDATE, @updateLeds);\nupdateLeds();\n\n",
@@ -684,9 +645,7 @@
 			},
 			"user_scripts": {
 				"LED Scripts": "const RED_LED_PIN = 17;\nconst GREEN_LED_PIN = 16;\n\nvar blinkLedCallback;\nvar blinkLedCount;\n\nfunc updateLeds() {\n  if (blinkLedCount == 0) {\n    #dispatch(per_layer, ledUpdate, \"LED\", updateLedNoChange);\n  }\n}\n\n#option(ledUpdate, \"LED\", \"No Change\", updateLedNoChange)\nfunc updateLedNoChange() {}\n\n#option(ledUpdate, \"LED\", \"Green Only\", updateLedGreenOnly)\nfunc updateLedGreenOnly() {\n  setGpioPin(GREEN_LED_PIN, 1);\n  setGpioPin(RED_LED_PIN, 0);\n}\n\n#option(ledUpdate, \"LED\", \"Both Off\", updateLedBothOff)\nfunc updateLedBothOff() {\n  setGpioPin(GREEN_LED_PIN, 0);\n  setGpioPin(RED_LED_PIN, 0);\n}\n\n#option(ledUpdate, \"LED\", \"Red Only\", updateLedRedOnly)\nfunc updateLedRedOnly() {\n  setGpioPin(GREEN_LED_PIN, 0);\n  setGpioPin(RED_LED_PIN, 1);\n}\n\n#option(ledUpdate, \"LED\", \"Dim Red Only\", updateLedDimRedOnly)\nfunc updateLedDimRedOnly() {\n  setGpioPin(GREEN_LED_PIN, 0);\n  setGpioPinDutyCycle(RED_LED_PIN, 25);\n}\n\n#option(ledUpdate, \"LED\", \"Green & Red\", updateLedGreenAndRed)\nfunc updateLedGreenAndRed() {\n  setGpioPin(GREEN_LED_PIN, 1);\n  setGpioPin(RED_LED_PIN, 1);\n}\n\n#option(ledUpdate, \"LED\", \"Steno Mode\", setLedsForStenoMode)\nfunc setLedsForStenoMode() {\n  var stenoMode = getParameter(\"steno_mode\");\n  if (stenoMode == \"embedded\") {\n    setGpioPin(GREEN_LED_PIN, 1);\n    setGpioPin(RED_LED_PIN, 0);\n  } else {\n    setGpioPin(GREEN_LED_PIN, 1);\n    setGpioPinDutyCycle(RED_LED_PIN, 25);\n  }\n}\n\nfunc blinkCallback() {\n  blinkLedCount = blinkLedCount - 1;\n  if (blinkLedCount == 0) {\n    stopTimer(BLINK_TIMER_ID);\n    updateLeds();\n  } else if (blinkLedCount & 1) {\n    updateLedBothOff();\n  } else {\n    blinkLedCallback();\n  }\n}\n\nfunc blinkLed(function, count) {\n  blinkLedCallback = function;\n  blinkLedCount = 2 * count + 1;\n  startTimer(BLINK_TIMER_ID, 500, 1, @blinkCallback);\n  blinkCallback();\n}\n"
-			},
-			"options": {},
-			"sequences": {}
+			}
 		}
 	}
 }
